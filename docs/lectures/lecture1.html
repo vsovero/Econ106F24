@@ -20,69 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -164,9 +101,189 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning Goals</a></li>
-  <li><a href="#example-code" id="toc-example-code" class="nav-link" data-scroll-target="#example-code">Example Code</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#econ-1-06" id="toc-econ-1-06" class="nav-link active" data-scroll-target="#econ-1-06">Econ 1 06</a></li>
+  <li><a href="#ou-tl-i-ne" id="toc-ou-tl-i-ne" class="nav-link" data-scroll-target="#ou-tl-i-ne">Ou tl i ne</a></li>
+  <li><a href="#cla-ss-o-ve-rvi-ew" id="toc-cla-ss-o-ve-rvi-ew" class="nav-link" data-scroll-target="#cla-ss-o-ve-rvi-ew">Cla ss O ve rvi ew</a></li>
+  <li><a href="#in-tro-t-o-r" id="toc-in-tro-t-o-r" class="nav-link" data-scroll-target="#in-tro-t-o-r">In tro t o R :</a></li>
+  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
+  <li><a href="#o-pe-ra-t-ors" id="toc-o-pe-ra-t-ors" class="nav-link" data-scroll-target="#o-pe-ra-t-ors">O pe ra t ors</a></li>
+  <li><a href="#fu-nct-io-ns" id="toc-fu-nct-io-ns" class="nav-link" data-scroll-target="#fu-nct-io-ns">Fu nct io ns</a></li>
+  <li><a href="#o-bj-ect-s" id="toc-o-bj-ect-s" class="nav-link" data-scroll-target="#o-bj-ect-s">O bj ect s</a></li>
+  <li><a href="#d-at-ai-se-ver-yw-he-re" id="toc-d-at-ai-se-ver-yw-he-re" class="nav-link" data-scroll-target="#d-at-ai-se-ver-yw-he-re">D at ai se ver yw he re</a></li>
+  <li><a href="#in-20-15-t-h-e-he-a-lt-hca-re-i-nd-us-t-ry" id="toc-in-20-15-t-h-e-he-a-lt-hca-re-i-nd-us-t-ry" class="nav-link" data-scroll-target="#in-20-15-t-h-e-he-a-lt-hca-re-i-nd-us-t-ry">In 20 15 t h e he a lt hca re i nd us t ry</a></li>
+  <li><a href="#t-h-e-a-mou-nt-of-t-ex-t-d-at-a-g-en-er-at-e-d" id="toc-t-h-e-a-mou-nt-of-t-ex-t-d-at-a-g-en-er-at-e-d" class="nav-link" data-scroll-target="#t-h-e-a-mou-nt-of-t-ex-t-d-at-a-g-en-er-at-e-d">T h e a mou nt of t ex t d at a g en er at e d</a></li>
+  <li><a href="#h-tt-p-s" id="toc-h-tt-p-s" class="nav-link" data-scroll-target="#h-tt-p-s">h tt p s: //</a></li>
+  <li><a href="#n-ee-d-aj-o-b-le-ar-n-ho-w-tow-o-rk-wi-th-d-ata" id="toc-n-ee-d-aj-o-b-le-ar-n-ho-w-tow-o-rk-wi-th-d-ata" class="nav-link" data-scroll-target="#n-ee-d-aj-o-b-le-ar-n-ho-w-tow-o-rk-wi-th-d-ata">N ee d aj o b? Le ar n ho w tow o rk wi th d ata</a></li>
+  <li><a href="#da-t-a-an-al-yst-e-mph-asi-so-n" id="toc-da-t-a-an-al-yst-e-mph-asi-so-n" class="nav-link" data-scroll-target="#da-t-a-an-al-yst-e-mph-asi-so-n">Da t a an al yst: e mph asi so n</a></li>
+  <li><a href="#data-li-te-ra-cy-i-s-the-ab-i-li-ty" id="toc-data-li-te-ra-cy-i-s-the-ab-i-li-ty" class="nav-link" data-scroll-target="#data-li-te-ra-cy-i-s-the-ab-i-li-ty">Data li te ra cy i s the ab i li ty</a></li>
+  <li><a href="#in-ten-de-d-aud-i-en-ce" id="toc-in-ten-de-d-aud-i-en-ce" class="nav-link" data-scroll-target="#in-ten-de-d-aud-i-en-ce">In ten de d Aud i en ce</a></li>
+  <li><a href="#s" id="toc-s" class="nav-link" data-scroll-target="#s">S</a></li>
+  <li><a href="#ser-ve-asr-esearc-hassi-st-ant-s" id="toc-ser-ve-asr-esearc-hassi-st-ant-s" class="nav-link" data-scroll-target="#ser-ve-asr-esearc-hassi-st-ant-s">ser ve asr esearc hassi st ant s</a></li>
+  <li><a href="#c-onduct-em-pi-ri-c-alanaly-ses" id="toc-c-onduct-em-pi-ri-c-alanaly-ses" class="nav-link" data-scroll-target="#c-onduct-em-pi-ri-c-alanaly-ses">c onduct em pi ri c alanaly ses</a></li>
+  <li><a href="#are-i-nter-ested-i-nd-ata-sci-enc-ecar-eers." id="toc-are-i-nter-ested-i-nd-ata-sci-enc-ecar-eers." class="nav-link" data-scroll-target="#are-i-nter-ested-i-nd-ata-sci-enc-ecar-eers.">are i nter ested i nD ata Sci enc ecar eers.</a></li>
+  <li><a href="#p-re-req-ui-sit-es-eco-n-1-01-s-ta-t-ist-ics" id="toc-p-re-req-ui-sit-es-eco-n-1-01-s-ta-t-ist-ics" class="nav-link" data-scroll-target="#p-re-req-ui-sit-es-eco-n-1-01-s-ta-t-ist-ics">P re req ui sit es: Eco n 1 01 (S ta t ist ics)</a></li>
+  <li><a href="#no-pri-or-p-ro-gra-mm-ing-exp-eri-en-ce-is-ne-ed-ed" id="toc-no-pri-or-p-ro-gra-mm-ing-exp-eri-en-ce-is-ne-ed-ed" class="nav-link" data-scroll-target="#no-pri-or-p-ro-gra-mm-ing-exp-eri-en-ce-is-ne-ed-ed">No pri or p ro gra mm ing exp eri en ce is ne ed ed</a></li>
+  <li><a href="#c-ou-r-seob-j-ecti-ve-s" id="toc-c-ou-r-seob-j-ecti-ve-s" class="nav-link" data-scroll-target="#c-ou-r-seob-j-ecti-ve-s">C ou r seOb j ecti ve s</a></li>
+  <li><a href="#m-aste-r-the-ab-i-li-ty-t-oc-olle-ct-p-r-oc-ess-i-nte-r-pr-et" id="toc-m-aste-r-the-ab-i-li-ty-t-oc-olle-ct-p-r-oc-ess-i-nte-r-pr-et" class="nav-link" data-scroll-target="#m-aste-r-the-ab-i-li-ty-t-oc-olle-ct-p-r-oc-ess-i-nte-r-pr-et">M aste r the ab i li ty t oc olle ct, p r oc ess, i nte r pr et ,</a></li>
+  <li><a href="#dev-e-lop-v-i-sual-iz-ati-on-ski-lls-ne-cessar-y-to" id="toc-dev-e-lop-v-i-sual-iz-ati-on-ski-lls-ne-cessar-y-to" class="nav-link" data-scroll-target="#dev-e-lop-v-i-sual-iz-ati-on-ski-lls-ne-cessar-y-to">Dev e lop v i sual iz ati on ski lls ne cessar y to</a></li>
+  <li><a href="#c-ommun-i-cate-fi-n-di-ng-st-ov-ar-i-ou-sau-di-e-nce-san-d" id="toc-c-ommun-i-cate-fi-n-di-ng-st-ov-ar-i-ou-sau-di-e-nce-san-d" class="nav-link" data-scroll-target="#c-ommun-i-cate-fi-n-di-ng-st-ov-ar-i-ou-sau-di-e-nce-san-d">C ommun i cate fi n di ng st ov ar i ou sau di e nce san d</a></li>
+  <li><a href="#w-hya-re-w-e-usi-ng-r-i-n-thi-sco-ur-se" id="toc-w-hya-re-w-e-usi-ng-r-i-n-thi-sco-ur-se" class="nav-link" data-scroll-target="#w-hya-re-w-e-usi-ng-r-i-n-thi-sco-ur-se">W hya re w e usi ng R i n thi sco ur se?</a></li>
+  <li><a href="#é-m-t6-b-6m" id="toc-é-m-t6-b-6m" class="nav-link" data-scroll-target="#é-m-t6-b-6m">‰ ¬}É m ¡¡ T%”6 b¡ % }6€m …¡</a></li>
+  <li><a href="#áë-ê-ë" id="toc-áë-ê-ë" class="nav-link" data-scroll-target="#áë-ê-ë">‰ ¬}Áë ” ¡Ê €}¡” ë%</a></li>
+  <li><a href="#it-ha-sa-lar-ge-an-d-act-iv-e" id="toc-it-ha-sa-lar-ge-an-d-act-iv-e" class="nav-link" data-scroll-target="#it-ha-sa-lar-ge-an-d-act-iv-e">It ha sa lar ge an d act iv e</a></li>
+  <li><a href="#m-or-e-of-a-tr-ue" id="toc-m-or-e-of-a-tr-ue" class="nav-link" data-scroll-target="#m-or-e-of-a-tr-ue">M or e of a tr ue</a></li>
+  <li><a href="#r-vs.p-ytho-n" id="toc-r-vs.p-ytho-n" class="nav-link" data-scroll-target="#r-vs.p-ytho-n">R vs.P ytho n</a></li>
+  <li><a href="#b-uil-t-fo-r-s-ta-t-is-tics-a-nd-d-at-a" id="toc-b-uil-t-fo-r-s-ta-t-is-tics-a-nd-d-at-a" class="nav-link" data-scroll-target="#b-uil-t-fo-r-s-ta-t-is-tics-a-nd-d-at-a">B uil t fo r s ta t is tics a nd d at a</a></li>
+  <li><a href="#b-e-tt-e-r-at-eco-no-me-t-ri-cs-an-d-d-a-ta" id="toc-b-e-tt-e-r-at-eco-no-me-t-ri-cs-an-d-d-a-ta" class="nav-link" data-scroll-target="#b-e-tt-e-r-at-eco-no-me-t-ri-cs-an-d-d-a-ta">B e tt e r at eco no me t ri cs an d d a ta</a></li>
+  <li><a href="#b-uil-t-fo-r-gen-e-ral" id="toc-b-uil-t-fo-r-gen-e-ral" class="nav-link" data-scroll-target="#b-uil-t-fo-r-gen-e-ral">B uil t fo r gen e ral</a></li>
+  <li><a href="#b-e-tt-e-r-at-ma-chi-n-e-le-a-rni-n-g" id="toc-b-e-tt-e-r-at-ma-chi-n-e-le-a-rni-n-g" class="nav-link" data-scroll-target="#b-e-tt-e-r-at-ma-chi-n-e-le-a-rni-n-g">B e tt e r at ma chi n e le a rni n g</a></li>
+  <li><a href="#r-i-sa-me-an-sn-ot-an-en-d" id="toc-r-i-sa-me-an-sn-ot-an-en-d" class="nav-link" data-scroll-target="#r-i-sa-me-an-sn-ot-an-en-d">R i sa me an s,n ot an en d</a></li>
+  <li><a href="#t-he-go-also-f-thi-sc-our-se-ar-e" id="toc-t-he-go-also-f-thi-sc-our-se-ar-e" class="nav-link" data-scroll-target="#t-he-go-also-f-thi-sc-our-se-ar-e">T he go also f thi sc our se ar e</a></li>
+  <li><a href="#ty6-àê-té-6éb-ë-éë-bt-tì" id="toc-ty6-àê-té-6éb-ë-éë-bt-tì" class="nav-link" data-scroll-target="#ty6-àê-té-6éb-ë-éë-bt-tì">‰ ¬} %6‰ Ty6€‰‰ à¡}Ê %‰ TÉ 6É}b ¡…ë Éë … bT… TÌ¡}</a></li>
+  <li><a href="#ty6-à-6b-l6ì-ë-lt-à6ìàb-m6" id="toc-ty6-à-6b-l6ì-ë-lt-à6ìàb-m6" class="nav-link" data-scroll-target="#ty6-à-6b-l6ì-ë-lt-à6ìàb-m6">‰ ¬} Ty6€‰‰ à¡… 6%…¡b‰ }l6Ì ë …lT%”‰ à6€Ìà‰b m6…¡} }¡}</a></li>
+  <li><a href="#yo-ur-e-v-entu-al-goa-l" id="toc-yo-ur-e-v-entu-al-goa-l" class="nav-link" data-scroll-target="#yo-ur-e-v-entu-al-goa-l">Yo ur e v entu al goa l:</a></li>
+  <li><a href="#yo-u-wil-lli-k-ely-l-ear-n-all-the-set-ools-at-some-p-oi-nt." id="toc-yo-u-wil-lli-k-ely-l-ear-n-all-the-set-ools-at-some-p-oi-nt." class="nav-link" data-scroll-target="#yo-u-wil-lli-k-ely-l-ear-n-all-the-set-ools-at-some-p-oi-nt.">Yo u wil lli k ely l ear n all the set ools at some p oi nt.</a></li>
+  <li><a href="#gr-ad-i-ng" id="toc-gr-ad-i-ng" class="nav-link" data-scroll-target="#gr-ad-i-ng">Gr ad i ng</a></li>
+  <li><a href="#l-ab-assi-gn-m-en-ts" id="toc-l-ab-assi-gn-m-en-ts" class="nav-link" data-scroll-target="#l-ab-assi-gn-m-en-ts">L ab Assi gn m en ts</a></li>
+  <li><a href="#l-ab-a-ssig-nme-nt-s-gi-ves-you-t-he-o-pp-or-t-un-it-yt-o-pra-ct-ice-t-h-e" id="toc-l-ab-a-ssig-nme-nt-s-gi-ves-you-t-he-o-pp-or-t-un-it-yt-o-pra-ct-ice-t-h-e" class="nav-link" data-scroll-target="#l-ab-a-ssig-nme-nt-s-gi-ves-you-t-he-o-pp-or-t-un-it-yt-o-pra-ct-ice-t-h-e">L ab a ssig nme nt s: gi ves you t he o pp or t un it yt o pra ct ice t h e</a></li>
+  <li><a href="#two-com-po-ne-nt-s-writ-e-up-a-nd-r-scrip-t" id="toc-two-com-po-ne-nt-s-writ-e-up-a-nd-r-scrip-t" class="nav-link" data-scroll-target="#two-com-po-ne-nt-s-writ-e-up-a-nd-r-scrip-t">Two com po ne nt s: writ e up a nd R scrip t</a></li>
+  <li><a href="#du-e-o-n-s-un-da-ysa-t-11-5-9p-m" id="toc-du-e-o-n-s-un-da-ysa-t-11-5-9p-m" class="nav-link" data-scroll-target="#du-e-o-n-s-un-da-ysa-t-11-5-9p-m">Du e o n S un da ysa t 11 :5 9p m</a></li>
+  <li><a href="#i-will-d-ro-p-t-he-lowe-st-lab-score-at-t-he-en-d-of-t-he-qu-ar-te-r" id="toc-i-will-d-ro-p-t-he-lowe-st-lab-score-at-t-he-en-d-of-t-he-qu-ar-te-r" class="nav-link" data-scroll-target="#i-will-d-ro-p-t-he-lowe-st-lab-score-at-t-he-en-d-of-t-he-qu-ar-te-r">I will d ro p t he lowe st lab score at t he en d of t he qu ar te r</a></li>
+  <li><a href="#r-ese-ar-ch-pr-oj-e-ct" id="toc-r-ese-ar-ch-pr-oj-e-ct" class="nav-link" data-scroll-target="#r-ese-ar-ch-pr-oj-e-ct">R ese ar ch Pr oj e ct</a></li>
+  <li><a href="#t-he-go-alo-f-thi-sc-lass-is-to-gi-v-e-y-ou-the-sk-il-lsto-c-ond-uc-t" id="toc-t-he-go-alo-f-thi-sc-lass-is-to-gi-v-e-y-ou-the-sk-il-lsto-c-ond-uc-t" class="nav-link" data-scroll-target="#t-he-go-alo-f-thi-sc-lass-is-to-gi-v-e-y-ou-the-sk-il-lsto-c-ond-uc-t">T he go alo f thi sc lass is to gi v e y ou the sk il lsto c ond uc t</a></li>
+  <li><a href="#t-hr-ee-p-ro-j-ect-mi-lesto-nes-wi-ll-walk-y-ou-thr-ou-gh-th-e" id="toc-t-hr-ee-p-ro-j-ect-mi-lesto-nes-wi-ll-walk-y-ou-thr-ou-gh-th-e" class="nav-link" data-scroll-target="#t-hr-ee-p-ro-j-ect-mi-lesto-nes-wi-ll-walk-y-ou-thr-ou-gh-th-e">T hr ee p ro j ect mi lesto nes wi ll walk y ou thr ou gh th e</a></li>
+  <li><a href="#all-thr-e-ewi-ll-co-unt" id="toc-all-thr-e-ewi-ll-co-unt" class="nav-link" data-scroll-target="#all-thr-e-ewi-ll-co-unt">All thr e ewi ll co unt</a></li>
+  <li><a href="#f-i-nal-pr-o-du-ct" id="toc-f-i-nal-pr-o-du-ct" class="nav-link" data-scroll-target="#f-i-nal-pr-o-du-ct">F i nal pr o du ct:</a></li>
+  <li><a href="#w-ri-t-eup-150-0wor-ds" id="toc-w-ri-t-eup-150-0wor-ds" class="nav-link" data-scroll-target="#w-ri-t-eup-150-0wor-ds">W ri t eup( ~ 150 0wor ds)</a></li>
+  <li><a href="#doc-ument-at-i-on-rs-cri-p-ts" id="toc-doc-ument-at-i-on-rs-cri-p-ts" class="nav-link" data-scroll-target="#doc-ument-at-i-on-rs-cri-p-ts">doc ument at i on( rs cri p ts)</a></li>
+  <li><a href="#e-xamples-ofs-tuden-t" id="toc-e-xamples-ofs-tuden-t" class="nav-link" data-scroll-target="#e-xamples-ofs-tuden-t">E xamples ofS tuden t</a></li>
+  <li><a href="#c-ha-tgp-t-gen-er-at-ive-ai" id="toc-c-ha-tgp-t-gen-er-at-ive-ai" class="nav-link" data-scroll-target="#c-ha-tgp-t-gen-er-at-ive-ai">C ha tGP T/ Gen er at ive AI</a></li>
+  <li><a href="#i-t-is-up-t-o-you-w-he-th-er-you-w-an-t-t-o-u-se-g-en-er-at-ive-a-i-t-o-he-lp" id="toc-i-t-is-up-t-o-you-w-he-th-er-you-w-an-t-t-o-u-se-g-en-er-at-ive-a-i-t-o-he-lp" class="nav-link" data-scroll-target="#i-t-is-up-t-o-you-w-he-th-er-you-w-an-t-t-o-u-se-g-en-er-at-ive-a-i-t-o-he-lp">I t is up t o you w he th er you w an t t o u se g en er at ive A I t o he lp</a></li>
+  <li><a href="#g-ui-de-line-s" id="toc-g-ui-de-line-s" class="nav-link" data-scroll-target="#g-ui-de-line-s">G ui de line s:</a></li>
+  <li><a href="#t-he-cod-e-has-t-o-use-t-he-t-ool-sco-vered-i-n-lect-ure" id="toc-t-he-cod-e-has-t-o-use-t-he-t-ool-sco-vered-i-n-lect-ure" class="nav-link" data-scroll-target="#t-he-cod-e-has-t-o-use-t-he-t-ool-sco-vered-i-n-lect-ure">T he cod e has t o use t he t ool sco vered i n lect ure</a></li>
+  <li><a href="#you-ca-nno-t-use-i-t-f-or-th-e-writ-t-en-po-rti-on-of-lab-a-ssign-ment-s-or" id="toc-you-ca-nno-t-use-i-t-f-or-th-e-writ-t-en-po-rti-on-of-lab-a-ssign-ment-s-or" class="nav-link" data-scroll-target="#you-ca-nno-t-use-i-t-f-or-th-e-writ-t-en-po-rti-on-of-lab-a-ssign-ment-s-or">You ca nno t use i t f or th e writ t en po rti on of lab a ssign ment s or</a></li>
+  <li><a href="#you-n-eed-t-o-st-at-e-whe-th-er-you-use-d-it-f-or-you-rco-de-an-d-how-." id="toc-you-n-eed-t-o-st-at-e-whe-th-er-you-use-d-it-f-or-you-rco-de-an-d-how-." class="nav-link" data-scroll-target="#you-n-eed-t-o-st-at-e-whe-th-er-you-use-d-it-f-or-you-rco-de-an-d-how-.">You n eed t o st at e whe th er you use d it f or you rco de an d how .</a></li>
+  <li><a href="#po-l-l-eve-ryw-h-er-e" id="toc-po-l-l-eve-ryw-h-er-e" class="nav-link" data-scroll-target="#po-l-l-eve-ryw-h-er-e">Po l l Eve ryw h er e</a></li>
+  <li><a href="#i-u-se-poll-eve-rywhe-re-to" id="toc-i-u-se-poll-eve-rywhe-re-to" class="nav-link" data-scroll-target="#i-u-se-poll-eve-rywhe-re-to">I u se Poll Eve rywhe re to</a></li>
+  <li><a href="#my-pol-ls-wil-l-be-ava-ila-ble-h-ere" id="toc-my-pol-ls-wil-l-be-ava-ila-ble-h-ere" class="nav-link" data-scroll-target="#my-pol-ls-wil-l-be-ava-ila-ble-h-ere">My pol ls wil l be ava ila ble h ere</a></li>
+  <li><a href="#po-l-l-eve-ryw-h-er-e-1" id="toc-po-l-l-eve-ryw-h-er-e-1" class="nav-link" data-scroll-target="#po-l-l-eve-ryw-h-er-e-1">Po l l Eve ryw h er e</a></li>
+  <li><a href="#ple-ase-use-yo-ur" id="toc-ple-ase-use-yo-ur" class="nav-link" data-scroll-target="#ple-ase-use-yo-ur">Ple ase use yo ur</a></li>
+  <li><a href="#you-w-ill-b-e-redi-rect-ed-t-o-th-e-ucr-sso" id="toc-you-w-ill-b-e-redi-rect-ed-t-o-th-e-ucr-sso" class="nav-link" data-scroll-target="#you-w-ill-b-e-redi-rect-ed-t-o-th-e-ucr-sso">You w ill b e redi rect ed t o th e UCR SSO</a></li>
+  <li><a href="#l-ectu-re-qu-i-zzes-un-gr-a-de-d" id="toc-l-ectu-re-qu-i-zzes-un-gr-a-de-d" class="nav-link" data-scroll-target="#l-ectu-re-qu-i-zzes-un-gr-a-de-d">L ectu re Qu i zzes( un gr a de d)</a></li>
+  <li><a href="#p-ost-e-d-on-can-vas-f-o-r-you-to-pr-act-ice-a-f-t-er-le-ct-ur-e" id="toc-p-ost-e-d-on-can-vas-f-o-r-you-to-pr-act-ice-a-f-t-er-le-ct-ur-e" class="nav-link" data-scroll-target="#p-ost-e-d-on-can-vas-f-o-r-you-to-pr-act-ice-a-f-t-er-le-ct-ur-e">P ost e d on Can vas f o r you to pr act ice a f t er le ct ur e</a></li>
+  <li><a href="#do-es-n-ot-cou-nt-t-owa-rd-s-you-r-gr-ad-e" id="toc-do-es-n-ot-cou-nt-t-owa-rd-s-you-r-gr-ad-e" class="nav-link" data-scroll-target="#do-es-n-ot-cou-nt-t-owa-rd-s-you-r-gr-ad-e">Do es n ot cou nt t owa rd s you r gr ad e</a></li>
+  <li><a href="#fe-el-f-re-e-t-o-a-sk-fan-t-o-re-view-t-h-ese-qu-est-io-ns-du-rin-g-la-b" id="toc-fe-el-f-re-e-t-o-a-sk-fan-t-o-re-view-t-h-ese-qu-est-io-ns-du-rin-g-la-b" class="nav-link" data-scroll-target="#fe-el-f-re-e-t-o-a-sk-fan-t-o-re-view-t-h-ese-qu-est-io-ns-du-rin-g-la-b">Fe el f re e t o a sk Fan t o re view t h ese qu est io ns du rin g la b</a></li>
+  <li><a href="#l-ectu-re-scr-i-pt-s" id="toc-l-ectu-re-scr-i-pt-s" class="nav-link" data-scroll-target="#l-ectu-re-scr-i-pt-s">L ectu re Scr i pt s</a></li>
+  <li><a href="#i-po-st-a-ll-o-f-t-h-e-cod-e-u-sed-du-rin-g-le-ctu-re-as-an-r-scrip-t-o-n" id="toc-i-po-st-a-ll-o-f-t-h-e-cod-e-u-sed-du-rin-g-le-ctu-re-as-an-r-scrip-t-o-n" class="nav-link" data-scroll-target="#i-po-st-a-ll-o-f-t-h-e-cod-e-u-sed-du-rin-g-le-ctu-re-as-an-r-scrip-t-o-n">I po st a ll o f t h e cod e u sed du rin g le ctu re as an R scrip t o n</a></li>
+  <li><a href="#ru-nn-ing-t-he-co-de-du-rin-g-o-r-af-t-er-lect-u-re-wi-ll-he-lp-yo-u-g-ain" id="toc-ru-nn-ing-t-he-co-de-du-rin-g-o-r-af-t-er-lect-u-re-wi-ll-he-lp-yo-u-g-ain" class="nav-link" data-scroll-target="#ru-nn-ing-t-he-co-de-du-rin-g-o-r-af-t-er-lect-u-re-wi-ll-he-lp-yo-u-g-ain">Ru nn ing t he co de du rin g o r af t er lect u re wi ll he lp yo u g ain</a></li>
+  <li><a href="#thi-sw-ee-kin-tr-od-ucti-o-nt-or-b-asi-cs" id="toc-thi-sw-ee-kin-tr-od-ucti-o-nt-or-b-asi-cs" class="nav-link" data-scroll-target="#thi-sw-ee-kin-tr-od-ucti-o-nt-or-b-asi-cs">Thi sW ee k:In tr od ucti o nt oR B asi cs</a></li>
+  <li><a href="#b-ef-o-re-we-cove-r-mo-re-b-ro-ad-to-pi-csi-n-da-t-a-a-na-lysis-we" id="toc-b-ef-o-re-we-cove-r-mo-re-b-ro-ad-to-pi-csi-n-da-t-a-a-na-lysis-we" class="nav-link" data-scroll-target="#b-ef-o-re-we-cove-r-mo-re-b-ro-ad-to-pi-csi-n-da-t-a-a-na-lysis-we">B ef o re we cove r mo re b ro ad to pi csi n da t a a na lysis, we</a></li>
+  <li><a href="#w-e-ne-ed-t-he-se-bu-ild-ing-blo-cks-be-f-ore-mo-ving-on-to-da-t-a" id="toc-w-e-ne-ed-t-he-se-bu-ild-ing-blo-cks-be-f-ore-mo-ving-on-to-da-t-a" class="nav-link" data-scroll-target="#w-e-ne-ed-t-he-se-bu-ild-ing-blo-cks-be-f-ore-mo-ving-on-to-da-t-a">W e ne ed t he se bu ild ing blo cks be f ore mo ving on to da t a</a></li>
+  <li><a href="#c-od-i-ng-go-al-s" id="toc-c-od-i-ng-go-al-s" class="nav-link" data-scroll-target="#c-od-i-ng-go-al-s">C od i ng Go al s</a></li>
+  <li><a href="#ge-tti-ng-h-el-p" id="toc-ge-tti-ng-h-el-p" class="nav-link" data-scroll-target="#ge-tti-ng-h-el-p">Ge tti ng h el p</a></li>
+  <li><a href="#st-ack-ove-rfl-ow" id="toc-st-ack-ove-rfl-ow" class="nav-link" data-scroll-target="#st-ack-ove-rfl-ow">St ack Ove rfl ow</a></li>
+  <li><a href="#ch-at-gpt" id="toc-ch-at-gpt" class="nav-link" data-scroll-target="#ch-at-gpt">Ch at GPT</a></li>
+  <li><a href="#sla-ck" id="toc-sla-ck" class="nav-link" data-scroll-target="#sla-ck">Sla ck</a></li>
+  <li><a href="#ple-ase-rea-ch-out-to-myse-lf-o-ryo-ur-ta-f-an-bu" id="toc-ple-ase-rea-ch-out-to-myse-lf-o-ryo-ur-ta-f-an-bu" class="nav-link" data-scroll-target="#ple-ase-rea-ch-out-to-myse-lf-o-ryo-ur-ta-f-an-bu">Ple ase rea ch out to myse lf o ryo ur TA (F an Bu)</a></li>
+  <li><a href="#sha-re-your-cod-e-d-at-a-scre-ensh-ot-so-f-t-he-erro-rme-ssage-et-c." id="toc-sha-re-your-cod-e-d-at-a-scre-ensh-ot-so-f-t-he-erro-rme-ssage-et-c." class="nav-link" data-scroll-target="#sha-re-your-cod-e-d-at-a-scre-ensh-ot-so-f-t-he-erro-rme-ssage-et-c.">Sha re your cod e, d at a, scre ensh ot so f t he erro rme ssage , et c.</a></li>
+  <li><a href="#exa-m-pl-e-be-c-ar-efu-l-w-i-thtyp-os" id="toc-exa-m-pl-e-be-c-ar-efu-l-w-i-thtyp-os" class="nav-link" data-scroll-target="#exa-m-pl-e-be-c-ar-efu-l-w-i-thtyp-os">Exa m pl e: Be C ar efu l w i thTyp os</a></li>
+  <li><a href="#imp-l-ic-it-c-o-nt-r-ac-twi-th-t-he" id="toc-imp-l-ic-it-c-o-nt-r-ac-twi-th-t-he" class="nav-link" data-scroll-target="#imp-l-ic-it-c-o-nt-r-ac-twi-th-t-he">Imp l ic it c o nt r ac twi th t he</a></li>
+  <li><a href="#c-o-mpu-ter-wi-ll-d-o-ted-io-us" id="toc-c-o-mpu-ter-wi-ll-d-o-ted-io-us" class="nav-link" data-scroll-target="#c-o-mpu-ter-wi-ll-d-o-ted-io-us">C o mpu ter wi ll d o ted io us</a></li>
+  <li><a href="#in-r-etur-n-y-ou-w-il-l-be" id="toc-in-r-etur-n-y-ou-w-il-l-be" class="nav-link" data-scroll-target="#in-r-etur-n-y-ou-w-il-l-be">In r etur n, y ou w il l be</a></li>
+  <li><a href="#t-yp-o-sm-att-er.-casem-att-er-s." id="toc-t-yp-o-sm-att-er.-casem-att-er-s." class="nav-link" data-scroll-target="#t-yp-o-sm-att-er.-casem-att-er-s.">T yp o sm att er. Casem att er s.</a></li>
+  <li><a href="#d-at-ar-ocks" id="toc-d-at-ar-ocks" class="nav-link" data-scroll-target="#d-at-ar-ocks">d at ar ocks</a></li>
+  <li><a href="#da-t-a_-rocks" id="toc-da-t-a_-rocks" class="nav-link" data-scroll-target="#da-t-a_-rocks">Da t a_ rocks</a></li>
+  <li><a href="#w-ha-ti-sr-r-s-tud-i-o" id="toc-w-ha-ti-sr-r-s-tud-i-o" class="nav-link" data-scroll-target="#w-ha-ti-sr-r-s-tud-i-o">W ha ti sR ?R S tud i o?</a></li>
+  <li><a href="#r-1" id="toc-r-1" class="nav-link" data-scroll-target="#r-1">R</a></li>
+  <li><a href="#a-p-ro-g-r-am-m-in-g-l-an-g-u-a-g-e" id="toc-a-p-ro-g-r-am-m-in-g-l-an-g-u-a-g-e" class="nav-link" data-scroll-target="#a-p-ro-g-r-am-m-in-g-l-an-g-u-a-g-e">a p ro g r am m in g l an g u a g e +</a></li>
+  <li><a href="#rs-tu-di-o" id="toc-rs-tu-di-o" class="nav-link" data-scroll-target="#rs-tu-di-o">RS tu di o</a></li>
+  <li><a href="#p-o-p-ul-ar-so-f-tw-ar-e-t-o" id="toc-p-o-p-ul-ar-so-f-tw-ar-e-t-o" class="nav-link" data-scroll-target="#p-o-p-ul-ar-so-f-tw-ar-e-t-o">p o p ul ar so f tw ar e t o</a></li>
+  <li><a href="#w-e-will-b-e-u-sing" id="toc-w-e-will-b-e-u-sing" class="nav-link" data-scroll-target="#w-e-will-b-e-u-sing">W e will b e u sing</a></li>
+  <li><a href="#r-st-ud-io-in-ter-fa-ce" id="toc-r-st-ud-io-in-ter-fa-ce" class="nav-link" data-scroll-target="#r-st-ud-io-in-ter-fa-ce">R St ud io In ter fa ce</a></li>
+  <li><a href="#rs-tu-di-ocon-sole" id="toc-rs-tu-di-ocon-sole" class="nav-link" data-scroll-target="#rs-tu-di-ocon-sole">RS tu di oCon sole</a></li>
+  <li><a href="#yo-uc-an-input-a-nd" id="toc-yo-uc-an-input-a-nd" class="nav-link" data-scroll-target="#yo-uc-an-input-a-nd">Yo uc an input a nd</a></li>
+  <li><a href="#o-utputo-fc-erta-in" id="toc-o-utputo-fc-erta-in" class="nav-link" data-scroll-target="#o-utputo-fc-erta-in">O utputo fc erta in</a></li>
+  <li><a href="#r-stu-di-o" id="toc-r-stu-di-o" class="nav-link" data-scroll-target="#r-stu-di-o">R stu di o</a></li>
+  <li><a href="#most-d-at-a-anal-ysi-s-wi-ll-r-e-qu-i-re" id="toc-most-d-at-a-anal-ysi-s-wi-ll-r-e-qu-i-re" class="nav-link" data-scroll-target="#most-d-at-a-anal-ysi-s-wi-ll-r-e-qu-i-re">Most d at a anal ysi s wi ll r e qu i re</a></li>
+  <li><a href="#t-he-scri-pt-e-d-it-or-i-s-use-d-to" id="toc-t-he-scri-pt-e-d-it-or-i-s-use-d-to" class="nav-link" data-scroll-target="#t-he-scri-pt-e-d-it-or-i-s-use-d-to">T he scri pt e d it or i s use d to</a></li>
+  <li><a href="#r-stu-di-o-1" id="toc-r-stu-di-o-1" class="nav-link" data-scroll-target="#r-stu-di-o-1">R stu di o</a></li>
+  <li><a href="#onceyout-ypethem-in-the" id="toc-onceyout-ypethem-in-the" class="nav-link" data-scroll-target="#onceyout-ypethem-in-the">Onceyout ypethem in the</a></li>
+  <li><a href="#s-cri-pts-a-re-saved-wi-t-h-t-he-.r" id="toc-s-cri-pts-a-re-saved-wi-t-h-t-he-.r" class="nav-link" data-scroll-target="#s-cri-pts-a-re-saved-wi-t-h-t-he-.r">S cri pts a re saved wi t h t he .R</a></li>
+  <li><a href="#c-om-m-en-ti-ng-i-ns-cri-p-ts" id="toc-c-om-m-en-ti-ng-i-ns-cri-p-ts" class="nav-link" data-scroll-target="#c-om-m-en-ti-ng-i-ns-cri-p-ts">C om m en ti ng i nS cri p ts</a></li>
+  <li><a href="#r-ig-no-re-sth-e" id="toc-r-ig-no-re-sth-e" class="nav-link" data-scroll-target="#r-ig-no-re-sth-e">R ig no re sth e</a></li>
+  <li><a href="#wr-i-te-not-est-o" id="toc-wr-i-te-not-est-o" class="nav-link" data-scroll-target="#wr-i-te-not-est-o">wr i te not est o</a></li>
+  <li><a href="#co-mment-sar-e" id="toc-co-mment-sar-e" class="nav-link" data-scroll-target="#co-mment-sar-e">co mment sar e</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  <li><a href="#an-o-p-e-ra-to-r-is-a" id="toc-an-o-p-e-ra-to-r-is-a" class="nav-link" data-scroll-target="#an-o-p-e-ra-to-r-is-a">An o p e ra to r is a</a></li>
+  <li><a href="#t-yp-e-s-o-f-o-p-e-ra-t-or-s" id="toc-t-yp-e-s-o-f-o-p-e-ra-t-or-s" class="nav-link" data-scroll-target="#t-yp-e-s-o-f-o-p-e-ra-t-or-s">T yp e s o f O p e ra t or s</a></li>
+  <li><a href="#ma-t-h-a-rit-h-me-ti-c" id="toc-ma-t-h-a-rit-h-me-ti-c" class="nav-link" data-scroll-target="#ma-t-h-a-rit-h-me-ti-c">ma t h (a rit h me ti c)</a></li>
+  <li><a href="#lo-gica-l-co-mp-are-valu-es" id="toc-lo-gica-l-co-mp-are-valu-es" class="nav-link" data-scroll-target="#lo-gica-l-co-mp-are-valu-es">lo gica l (co mp are valu es)</a></li>
+  <li><a href="#a-ssign-me-nt-sa-ving-valu-es-t-o-o-bje-ct-s" id="toc-a-ssign-me-nt-sa-ving-valu-es-t-o-o-bje-ct-s" class="nav-link" data-scroll-target="#a-ssign-me-nt-sa-ving-valu-es-t-o-o-bje-ct-s">a ssign me nt (sa ving valu es t o o bje ct s)</a></li>
+  <li><a href="#e-xtr-act-io-n-t-a-ke-o-ut-re-pla-ce-p-art-s-o-f-o-bje-ct-s" id="toc-e-xtr-act-io-n-t-a-ke-o-ut-re-pla-ce-p-art-s-o-f-o-bje-ct-s" class="nav-link" data-scroll-target="#e-xtr-act-io-n-t-a-ke-o-ut-re-pla-ce-p-art-s-o-f-o-bje-ct-s">e xtr act io n (t a ke o ut / re pla ce p art s o f o bje ct s)</a></li>
+  <li><a href="#op-er-at-or-s" id="toc-op-er-at-or-s" class="nav-link" data-scroll-target="#op-er-at-or-s">Op er at or s</a></li>
+  <li><a href="#ar-i-th-me-ti-cop-er-a-tor-s" id="toc-ar-i-th-me-ti-cop-er-a-tor-s" class="nav-link" data-scroll-target="#ar-i-th-me-ti-cop-er-a-tor-s">Ar i th me ti cop er a tor s</a></li>
+  <li><a href="#do-e-s-ma-th" id="toc-do-e-s-ma-th" class="nav-link" data-scroll-target="#do-e-s-ma-th">Do e s ma th :</a></li>
+  <li><a href="#ad-d-2" id="toc-ad-d-2" class="nav-link" data-scroll-target="#ad-d-2">Ad d : 2</a></li>
+  <li><a href="#su-b-t-r-act-3" id="toc-su-b-t-r-act-3" class="nav-link" data-scroll-target="#su-b-t-r-act-3">Su b t r act : 3</a></li>
+  <li><a href="#m-u-lt-ip-ly-4" id="toc-m-u-lt-ip-ly-4" class="nav-link" data-scroll-target="#m-u-lt-ip-ly-4">M u lt ip ly: 4</a></li>
+  <li><a href="#divi-de-5" id="toc-divi-de-5" class="nav-link" data-scroll-target="#divi-de-5">Divi de : 5</a></li>
+  <li><a href="#exp-o-n-e-n-t-5" id="toc-exp-o-n-e-n-t-5" class="nav-link" data-scroll-target="#exp-o-n-e-n-t-5">Exp o n e n t: 5</a></li>
+  <li><a href="#ctr-l" id="toc-ctr-l" class="nav-link" data-scroll-target="#ctr-l">Ctr l/</a></li>
+  <li><a href="#re-su-lts-in-th-e-co-n-so-le" id="toc-re-su-lts-in-th-e-co-n-so-le" class="nav-link" data-scroll-target="#re-su-lts-in-th-e-co-n-so-le">Re su lts in th e Co n so le</a></li>
+  <li><a href="#exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip" id="toc-exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip" class="nav-link" data-scroll-target="#exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip">Exa m pl e: Wh ol e fta l ar ge r Tip ?</a></li>
+  <li><a href="#b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5" id="toc-b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5" class="nav-link" data-scroll-target="#b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5">b ill at S ha ke S ha ck came ou t t o $2 5</a></li>
+  <li><a href="#he-t-ip-s1-5" id="toc-he-t-ip-s1-5" class="nav-link" data-scroll-target="#he-t-ip-s1-5">He t ip s1 5%</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
+  <li><a href="#he-t-ip-s1-2" id="toc-he-t-ip-s1-2" class="nav-link" data-scroll-target="#he-t-ip-s1-2">He t ip s1 2%</a></li>
+  <li><a href="#use-op-era-t-or-st-o-calcu-lat-e-ho-w-much-lo-uie-an-d" id="toc-use-op-era-t-or-st-o-calcu-lat-e-ho-w-much-lo-uie-an-d" class="nav-link" data-scroll-target="#use-op-era-t-or-st-o-calcu-lat-e-ho-w-much-lo-uie-an-d">Use op era t or st o calcu lat e ho w much Lo uie an d</a></li>
+  <li><a href="#fun-cti-on-s" id="toc-fun-cti-on-s" class="nav-link" data-scroll-target="#fun-cti-on-s">Fun cti on s</a></li>
+  <li><a href="#form-orec-omplicatedtas-ks-r" id="toc-form-orec-omplicatedtas-ks-r" class="nav-link" data-scroll-target="#form-orec-omplicatedtas-ks-r">Form orec omplicatedtas ks, R</a></li>
+  <li><a href="#funct-ions-area" id="toc-funct-ions-area" class="nav-link" data-scroll-target="#funct-ions-area">Funct ions area</a></li>
+  <li><a href="#hav-e" id="toc-hav-e" class="nav-link" data-scroll-target="#hav-e">Hav e</a></li>
+  <li><a href="#acc-ept" id="toc-acc-ept" class="nav-link" data-scroll-target="#acc-ept">Acc ept</a></li>
+  <li><a href="#ret-urna" id="toc-ret-urna" class="nav-link" data-scroll-target="#ret-urna">Ret urna</a></li>
+  <li><a href="#ar-g-um-en-ts" id="toc-ar-g-um-en-ts" class="nav-link" data-scroll-target="#ar-g-um-en-ts">Ar g um en ts</a></li>
+  <li><a href="#to-fi-ndout-what" id="toc-to-fi-ndout-what" class="nav-link" data-scroll-target="#to-fi-ndout-what">To fi ndout what</a></li>
+  <li><a href="#som-earg-ument-sar-ereq-ui-red" id="toc-som-earg-ument-sar-ereq-ui-red" class="nav-link" data-scroll-target="#som-earg-ument-sar-ereq-ui-red">Som earg ument sar ereq ui red,</a></li>
+  <li><a href="#you-cans-eet-hat" id="toc-you-cans-eet-hat" class="nav-link" data-scroll-target="#you-cans-eet-hat">You cans eet hat</a></li>
+  <li><a href="#ar-g-um-en-ts-1" id="toc-ar-g-um-en-ts-1" class="nav-link" data-scroll-target="#ar-g-um-en-ts-1">Ar g um en ts</a></li>
+  <li><a href="#àë-tê-6½" id="toc-àë-tê-6½" class="nav-link" data-scroll-target="#àë-tê-6½">5 ‰¡… à%ë …TÊ” 6%¬‰¡½ ¡%</a></li>
+  <li><a href="#á-½m-lë-à-të-m" id="toc-á-½m-lë-à-të-m" class="nav-link" data-scroll-target="#á-½m-lë-à-të-m">6Á ¡½¡m lë ‰¬ }˜ €…à ¡T}ë ¡m‰</a></li>
+  <li><a href="#assi-g-nm-en-to-pe-ra-to-r" id="toc-assi-g-nm-en-to-pe-ra-to-r" class="nav-link" data-scroll-target="#assi-g-nm-en-to-pe-ra-to-r">Assi g nm en to pe ra to r</a></li>
+  <li><a href="#sa-ve-s" id="toc-sa-ve-s" class="nav-link" data-scroll-target="#sa-ve-s">Sa ve s</a></li>
+  <li><a href="#o-bj-e-c-t" id="toc-o-bj-e-c-t" class="nav-link" data-scroll-target="#o-bj-e-c-t">o bj e c t</a></li>
+  <li><a href="#we-i-gh-t_-k-g" id="toc-we-i-gh-t_-k-g" class="nav-link" data-scroll-target="#we-i-gh-t_-k-g">we i gh t_ k g</a></li>
+  <li><a href="#o-ve-rw-rite-s-p-re-vio-u-s-va-lu-e-s" id="toc-o-ve-rw-rite-s-p-re-vio-u-s-va-lu-e-s" class="nav-link" data-scroll-target="#o-ve-rw-rite-s-p-re-vio-u-s-va-lu-e-s">O ve rw rite s p re vio u s va lu e s</a></li>
+  <li><a href="#ca-n-b-e-co-m-b-in-ed-with-o-the-r" id="toc-ca-n-b-e-co-m-b-in-ed-with-o-the-r" class="nav-link" data-scroll-target="#ca-n-b-e-co-m-b-in-ed-with-o-the-r">Ca n b e co m b in ed with o the r</a></li>
+  <li><a href="#we-i-gh-t_-l-b" id="toc-we-i-gh-t_-l-b" class="nav-link" data-scroll-target="#we-i-gh-t_-l-b">we i gh t_ l b</a></li>
+  <li><a href="#n-am-i-ng-ob-j-ects" id="toc-n-am-i-ng-ob-j-ects" class="nav-link" data-scroll-target="#n-am-i-ng-ob-j-ects">N am i ng Ob j ects</a></li>
+  <li><a href="#o-bj-ec-tn-am-es" id="toc-o-bj-ec-tn-am-es" class="nav-link" data-scroll-target="#o-bj-ec-tn-am-es">O bj ec tn am es:</a></li>
+  <li><a href="#ca-nn-o-ts-tart-wi-th-a-di-gi-t" id="toc-ca-nn-o-ts-tart-wi-th-a-di-gi-t" class="nav-link" data-scroll-target="#ca-nn-o-ts-tart-wi-th-a-di-gi-t">ca nn o ts tart wi th a di gi t</a></li>
+  <li><a href="#ca-nn-o-tco-n-tai-n-certa-in-oth-er" id="toc-ca-nn-o-tco-n-tai-n-certa-in-oth-er" class="nav-link" data-scroll-target="#ca-nn-o-tco-n-tai-n-certa-in-oth-er">ca nn o tco n tai n certa in oth er</a></li>
+  <li><a href="#ti" id="toc-ti" class="nav-link" data-scroll-target="#ti">Ti</a></li>
+  <li><a href="#m-ak-ei-t" id="toc-m-ak-ei-t" class="nav-link" data-scroll-target="#m-ak-ei-t">M ak ei t</a></li>
+  <li><a href="#u" id="toc-u" class="nav-link" data-scroll-target="#u">U</a></li>
+  <li><a href="#w-he-re-ar-e-my-ob-je-cts" id="toc-w-he-re-ar-e-my-ob-je-cts" class="nav-link" data-scroll-target="#w-he-re-ar-e-my-ob-je-cts">W he re ar e my ob je cts?</a></li>
+  <li><a href="#y-ou-can-se-e-yo-ur-o-bj-ect-s-in" id="toc-y-ou-can-se-e-yo-ur-o-bj-ect-s-in" class="nav-link" data-scroll-target="#y-ou-can-se-e-yo-ur-o-bj-ect-s-in">Y ou can se e yo ur o bj ect s in</a></li>
+  <li><a href="#y-o-u-ca-n-al-so-get-al-ist-in-go-f" id="toc-y-o-u-ca-n-al-so-get-al-ist-in-go-f" class="nav-link" data-scroll-target="#y-o-u-ca-n-al-so-get-al-ist-in-go-f">Y o u ca n al so get al ist in go f</a></li>
+  <li><a href="#l-s" id="toc-l-s" class="nav-link" data-scroll-target="#l-s">l s()</a></li>
+  <li><a href="#o-bj-ects" id="toc-o-bj-ects" class="nav-link" data-scroll-target="#o-bj-ects">o bj ects ()</a></li>
+  <li><a href="#c-he-cki-ng-va-l-ue-sof-an-obj-e-ct" id="toc-c-he-cki-ng-va-l-ue-sof-an-obj-e-ct" class="nav-link" data-scroll-target="#c-he-cki-ng-va-l-ue-sof-an-obj-e-ct">C he cki ng Va l ue sof an Obj e ct</a></li>
+  <li><a href="#i-f-you-w-an-t-t-o-i-nsp-ect-t-he" id="toc-i-f-you-w-an-t-t-o-i-nsp-ect-t-he" class="nav-link" data-scroll-target="#i-f-you-w-an-t-t-o-i-nsp-ect-t-he">I f you w an t t o i nsp ect t he</a></li>
+  <li><a href="#exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip-1" id="toc-exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip-1" class="nav-link" data-scroll-target="#exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip-1">Exa m pl e: Wh ol e fta l ar ge r Tip ?</a></li>
+  <li><a href="#b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5-1" id="toc-b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5-1" class="nav-link" data-scroll-target="#b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5-1">b ill at S ha ke S ha ck came ou t t o $2 5</a></li>
+  <li><a href="#he-t-ip-s1-5-1" id="toc-he-t-ip-s1-5-1" class="nav-link" data-scroll-target="#he-t-ip-s1-5-1">He t ip s1 5%</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"></a></li>
+  <li><a href="#he-t-ip-s1-2-1" id="toc-he-t-ip-s1-2-1" class="nav-link" data-scroll-target="#he-t-ip-s1-2-1">He t ip s1 2%</a></li>
+  <li><a href="#use-th-e-a-ssign-me-nt-op-er-at-o-r-t-o-save-ho-w-mu-ch-lo-ui-e" id="toc-use-th-e-a-ssign-me-nt-op-er-at-o-r-t-o-save-ho-w-mu-ch-lo-ui-e" class="nav-link" data-scroll-target="#use-th-e-a-ssign-me-nt-op-er-at-o-r-t-o-save-ho-w-mu-ch-lo-ui-e">Use th e a ssign me nt op er at o r t o save ho w mu ch Lo ui e</a></li>
+  <li><a href="#r-em-o-vin-g-obj-e-cts" id="toc-r-em-o-vin-g-obj-e-cts" class="nav-link" data-scroll-target="#r-em-o-vin-g-obj-e-cts">R em o vin g Obj e cts</a></li>
+  <li><a href="#s-om-et-ime-s-whe-n-yo-u-h-ave" id="toc-s-om-et-ime-s-whe-n-yo-u-h-ave" class="nav-link" data-scroll-target="#s-om-et-ime-s-whe-n-yo-u-h-ave">S om et ime s whe n yo u h ave</a></li>
+  <li><a href="#y-ou-can-r-em-ove-o-bj-ect-s" id="toc-y-ou-can-r-em-ove-o-bj-ect-s" class="nav-link" data-scroll-target="#y-ou-can-r-em-ove-o-bj-ect-s">Y ou can r em ove o bj ect s</a></li>
+  <li><a href="#e-nvir-on-me-nt" id="toc-e-nvir-on-me-nt" class="nav-link" data-scroll-target="#e-nvir-on-me-nt">E nvir on me nt</a></li>
+  <li><a href="#ob-j-ects-no-tju-stfo-r-sto-ri-n-gn-u-mb-er-s" id="toc-ob-j-ects-no-tju-stfo-r-sto-ri-n-gn-u-mb-er-s" class="nav-link" data-scroll-target="#ob-j-ects-no-tju-stfo-r-sto-ri-n-gn-u-mb-er-s">Ob j ects: No tJu stfo r Sto ri n gN u mb er s</a></li>
+  <li><a href="#ba-sic-da-ta-t-ype-s" id="toc-ba-sic-da-ta-t-ype-s" class="nav-link" data-scroll-target="#ba-sic-da-ta-t-ype-s">Ba sic Da ta t ype s:</a></li>
+  <li><a href="#ch-a-r-acte-r" id="toc-ch-a-r-acte-r" class="nav-link" data-scroll-target="#ch-a-r-acte-r">Ch a r acte r</a></li>
+  <li><a href="#nu-m-e-ric" id="toc-nu-m-e-ric" class="nav-link" data-scroll-target="#nu-m-e-ric">Nu m e ric</a></li>
   </ul>
 </nav>
     </div>
@@ -190,30 +307,1393 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="learning-goals" class="level2">
-<h2 class="anchored" data-anchor-id="learning-goals">Learning Goals</h2>
+<p>📎 <a href="../lecture1.R">Download the R script for this lecture</a></p>
+<section id="econ-1-06" class="level2">
+<h2 class="anchored" data-anchor-id="econ-1-06">Econ 1 06</h2>
 <ul>
-<li>Understand what R is and how to use it</li>
-<li>Learn basic syntax, operators, and objects</li>
+<li>Da ta An alysi si n</li>
+<li>Econ omics</li>
+<li>Fal l 2024</li>
+<li>Ba sedo n:</li>
+<li>ht tps: //</li>
+<li>dat acar pent r y.or g</li>
+<li>/R</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>ecol ogy</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>l esson/ int ro ducti on</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>r</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>r stud io. htm l</li>
 </ul>
 </section>
-<section id="example-code" class="level2">
-<h2 class="anchored" data-anchor-id="example-code">Example Code</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>weight_kg <span class="ot">&lt;-</span> <span class="dv">55</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>weight_kg <span class="sc">*</span> <span class="fl">2.2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 121</code></pre>
-</div>
-</div>
+<section id="ou-tl-i-ne" class="level2">
+<h2 class="anchored" data-anchor-id="ou-tl-i-ne">Ou tl i ne</h2>
 </section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>Lecture 1 covers the foundations of working with R in RStudio.</p>
+<section id="cla-ss-o-ve-rvi-ew" class="level2">
+<h2 class="anchored" data-anchor-id="cla-ss-o-ve-rvi-ew">Cla ss O ve rvi ew</h2>
+</section>
+<section id="in-tro-t-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="in-tro-t-o-r">In tro t o R :</h2>
+</section>
+<section id="r" class="level2">
+<h2 class="anchored" data-anchor-id="r">R</h2>
+<ul>
+<li>s</li>
+<li>t ud io</li>
+<li>Co nso le</li>
+</ul>
+</section>
+<section id="o-pe-ra-t-ors" class="level2">
+<h2 class="anchored" data-anchor-id="o-pe-ra-t-ors">O pe ra t ors</h2>
+</section>
+<section id="fu-nct-io-ns" class="level2">
+<h2 class="anchored" data-anchor-id="fu-nct-io-ns">Fu nct io ns</h2>
+</section>
+<section id="o-bj-ect-s" class="level2">
+<h2 class="anchored" data-anchor-id="o-bj-ect-s">O bj ect s</h2>
+<ul>
+<li>2</li>
+</ul>
+</section>
+<section id="d-at-ai-se-ver-yw-he-re" class="level2">
+<h2 class="anchored" data-anchor-id="d-at-ai-se-ver-yw-he-re">D at ai se ver yw he re</h2>
+</section>
+<section id="in-20-15-t-h-e-he-a-lt-hca-re-i-nd-us-t-ry" class="level2">
+<h2 class="anchored" data-anchor-id="in-20-15-t-h-e-he-a-lt-hca-re-i-nd-us-t-ry">In 20 15 t h e he a lt hca re i nd us t ry</h2>
+<ul>
+<li>a lo ne p ro d uce d</li>
+<li>1.2 b i lli on c li n i c a l</li>
+<li>d oc um e n ts</li>
+<li>.</li>
+</ul>
+</section>
+<section id="t-h-e-a-mou-nt-of-t-ex-t-d-at-a-g-en-er-at-e-d" class="level2">
+<h2 class="anchored" data-anchor-id="t-h-e-a-mou-nt-of-t-ex-t-d-at-a-g-en-er-at-e-d">T h e a mou nt of t ex t d at a g en er at e d</h2>
+<ul>
+<li>a nn ua lly (d i g i t a l for ms , s oci a l</li>
+<li>me d i a ,o nl i ne po rt al s ,p d f re po rt s ,</li>
+<li>e ma i ls , t ex t me s s a g es ) i s ev er<br>
+</li>
+<li>i n cre as i n g</li>
+<li>H olmes , Da wn E., ‘T he dat a expl osi on’, B ig Data : A Very Short I nt roducti on, Ver y Short Int roducti ons</li>
+<li>(Oxford , 20 17; onl ine</li>
+<li>edn</li>
+<li>, Oxford Academi c, 23 Nov.<br>
+</li>
+<li>20 17),</li>
+<li>ht tp s: // doi. org /10 .1093 /act rad e/97 801987 7957 5.0 03. 00 01</li>
+<li>)</li>
+<li>3</li>
+</ul>
+</section>
+<section id="h-tt-p-s" class="level2">
+<h2 class="anchored" data-anchor-id="h-tt-p-s">h tt p s: //</h2>
+<ul>
+<li>wo l. iza. o rg</li>
+<li>/ ar t icles/ b ig</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>d at a</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>in</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>e con omi cs</li>
+<li>4</li>
+</ul>
+</section>
+<section id="n-ee-d-aj-o-b-le-ar-n-ho-w-tow-o-rk-wi-th-d-ata" class="level2">
+<h2 class="anchored" data-anchor-id="n-ee-d-aj-o-b-le-ar-n-ho-w-tow-o-rk-wi-th-d-ata">N ee d aj o b? Le ar n ho w tow o rk wi th d ata</h2>
+</section>
+<section id="da-t-a-an-al-yst-e-mph-asi-so-n" class="level2">
+<h2 class="anchored" data-anchor-id="da-t-a-an-al-yst-e-mph-asi-so-n">Da t a an al yst: e mph asi so n</h2>
+<ul>
+<li>b ein g a ble to int e rp ret a nd<br>
+</li>
+<li>co mmu nica t e f in din gs</li>
+<li>(i nsig ht , re po rt ing )</li>
+</ul>
+</section>
+<section id="data-li-te-ra-cy-i-s-the-ab-i-li-ty" class="level2">
+<h2 class="anchored" data-anchor-id="data-li-te-ra-cy-i-s-the-ab-i-li-ty">Data li te ra cy i s the ab i li ty</h2>
+<ul>
+<li>of an i nd i v i du alt or e ad,<br>
+</li>
+<li>un de r stand , an d</li>
+<li>w or k</li>
+<li>wi th</li>
+<li>d ata to cr eat eme ani ng fu l</li>
+<li>i nsi g hts</li>
+<li>5</li>
+<li>ht t ps :/ /</li>
+<li>w ww . r</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>bl o gge rs . co m</li>
+<li>/ 202 2/ 04/ t ex t</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>an al y si s</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>of</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>j ob</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>de sc r i pt i ons</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>f or</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>da ta</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>s ci e nt i st s</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>da ta</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>en gi ne er s</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>m a ch i ne</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>l ea rn i ng</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>en gi ne er s</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>an d</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>da ta</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>an al y st s /</li>
+</ul>
+</section>
+<section id="in-ten-de-d-aud-i-en-ce" class="level2">
+<h2 class="anchored" data-anchor-id="in-ten-de-d-aud-i-en-ce">In ten de d Aud i en ce</h2>
+</section>
+<section id="s" class="level2">
+<h2 class="anchored" data-anchor-id="s">S</h2>
+<ul>
+<li>tu de nts who want to:</li>
+</ul>
+</section>
+<section id="ser-ve-asr-esearc-hassi-st-ant-s" class="level2">
+<h2 class="anchored" data-anchor-id="ser-ve-asr-esearc-hassi-st-ant-s">ser ve asr esearc hassi st ant s</h2>
+</section>
+<section id="c-onduct-em-pi-ri-c-alanaly-ses" class="level2">
+<h2 class="anchored" data-anchor-id="c-onduct-em-pi-ri-c-alanaly-ses">c onduct em pi ri c alanaly ses</h2>
+</section>
+<section id="are-i-nter-ested-i-nd-ata-sci-enc-ecar-eers." class="level2">
+<h2 class="anchored" data-anchor-id="are-i-nter-ested-i-nd-ata-sci-enc-ecar-eers.">are i nter ested i nD ata Sci enc ecar eers.</h2>
+</section>
+<section id="p-re-req-ui-sit-es-eco-n-1-01-s-ta-t-ist-ics" class="level2">
+<h2 class="anchored" data-anchor-id="p-re-req-ui-sit-es-eco-n-1-01-s-ta-t-ist-ics">P re req ui sit es: Eco n 1 01 (S ta t ist ics)</h2>
+</section>
+<section id="no-pri-or-p-ro-gra-mm-ing-exp-eri-en-ce-is-ne-ed-ed" class="level2">
+<h2 class="anchored" data-anchor-id="no-pri-or-p-ro-gra-mm-ing-exp-eri-en-ce-is-ne-ed-ed">No pri or p ro gra mm ing exp eri en ce is ne ed ed</h2>
+<ul>
+<li>6</li>
+</ul>
+</section>
+<section id="c-ou-r-seob-j-ecti-ve-s" class="level2">
+<h2 class="anchored" data-anchor-id="c-ou-r-seob-j-ecti-ve-s">C ou r seOb j ecti ve s</h2>
+</section>
+<section id="m-aste-r-the-ab-i-li-ty-t-oc-olle-ct-p-r-oc-ess-i-nte-r-pr-et" class="level2">
+<h2 class="anchored" data-anchor-id="m-aste-r-the-ab-i-li-ty-t-oc-olle-ct-p-r-oc-ess-i-nte-r-pr-et">M aste r the ab i li ty t oc olle ct, p r oc ess, i nte r pr et ,</h2>
+<ul>
+<li>an aly ze</li>
+<li>r aw</li>
+<li>d ata usi ng R.</li>
+</ul>
+</section>
+<section id="dev-e-lop-v-i-sual-iz-ati-on-ski-lls-ne-cessar-y-to" class="level2">
+<h2 class="anchored" data-anchor-id="dev-e-lop-v-i-sual-iz-ati-on-ski-lls-ne-cessar-y-to">Dev e lop v i sual iz ati on ski lls ne cessar y to</h2>
+<ul>
+<li>summa ri ze d ata fi nd i ng s</li>
+</ul>
+</section>
+<section id="c-ommun-i-cate-fi-n-di-ng-st-ov-ar-i-ou-sau-di-e-nce-san-d" class="level2">
+<h2 class="anchored" data-anchor-id="c-ommun-i-cate-fi-n-di-ng-st-ov-ar-i-ou-sau-di-e-nce-san-d">C ommun i cate fi n di ng st ov ar i ou sau di e nce san d</h2>
+<ul>
+<li>i n v ar io us for mats.</li>
+<li>7</li>
+</ul>
+</section>
+<section id="w-hya-re-w-e-usi-ng-r-i-n-thi-sco-ur-se" class="level2">
+<h2 class="anchored" data-anchor-id="w-hya-re-w-e-usi-ng-r-i-n-thi-sco-ur-se">W hya re w e usi ng R i n thi sco ur se?</h2>
+<ul>
+<li>Ad v antag es of R:</li>
+</ul>
+</section>
+<section id="é-m-t6-b-6m" class="level2">
+<h2 class="anchored" data-anchor-id="é-m-t6-b-6m">‰ ¬}É m ¡¡ T%”6 b¡ % }6€m …¡</h2>
+</section>
+<section id="áë-ê-ë" class="level2">
+<h2 class="anchored" data-anchor-id="áë-ê-ë">‰ ¬}Áë ” ¡Ê €}¡” ë%</h2>
+<ul>
+<li>i nd ustr y</li>
+</ul>
+</section>
+<section id="it-ha-sa-lar-ge-an-d-act-iv-e" class="level2">
+<h2 class="anchored" data-anchor-id="it-ha-sa-lar-ge-an-d-act-iv-e">It ha sa lar ge an d act iv e</h2>
+<ul>
+<li>use r co mmuni ty</li>
+</ul>
+</section>
+<section id="m-or-e-of-a-tr-ue" class="level2">
+<h2 class="anchored" data-anchor-id="m-or-e-of-a-tr-ue">M or e of a tr ue</h2>
+<ul>
+<li>p r ogr ammin g lang uag e</li>
+<li>co mpa re d to Sta ta</li>
+<li>8</li>
+</ul>
+</section>
+<section id="r-vs.p-ytho-n" class="level2">
+<h2 class="anchored" data-anchor-id="r-vs.p-ytho-n">R vs.P ytho n</h2>
+<ul>
+<li>R:</li>
+</ul>
+</section>
+<section id="b-uil-t-fo-r-s-ta-t-is-tics-a-nd-d-at-a" class="level2">
+<h2 class="anchored" data-anchor-id="b-uil-t-fo-r-s-ta-t-is-tics-a-nd-d-at-a">B uil t fo r s ta t is tics a nd d at a</h2>
+<ul>
+<li>a na ly s i s</li>
+</ul>
+</section>
+<section id="b-e-tt-e-r-at-eco-no-me-t-ri-cs-an-d-d-a-ta" class="level2">
+<h2 class="anchored" data-anchor-id="b-e-tt-e-r-at-eco-no-me-t-ri-cs-an-d-d-a-ta">B e tt e r at eco no me t ri cs an d d a ta</h2>
+<ul>
+<li>v i s ua li za t i on</li>
+<li>Py t ho n:</li>
+</ul>
+</section>
+<section id="b-uil-t-fo-r-gen-e-ral" class="level2">
+<h2 class="anchored" data-anchor-id="b-uil-t-fo-r-gen-e-ral">B uil t fo r gen e ral</h2>
+<ul>
+<li><ul>
+<li></li>
+</ul></li>
+<li>p urp os e<br>
+</li>
+<li>p rog ram min ga n d s o ftw ar e</li>
+<li>d e ve lo pm en t</li>
+</ul>
+</section>
+<section id="b-e-tt-e-r-at-ma-chi-n-e-le-a-rni-n-g" class="level2">
+<h2 class="anchored" data-anchor-id="b-e-tt-e-r-at-ma-chi-n-e-le-a-rni-n-g">B e tt e r at ma chi n e le a rni n g</h2>
+<ul>
+<li>9</li>
+</ul>
+</section>
+<section id="r-i-sa-me-an-sn-ot-an-en-d" class="level2">
+<h2 class="anchored" data-anchor-id="r-i-sa-me-an-sn-ot-an-en-d">R i sa me an s,n ot an en d</h2>
+</section>
+<section id="t-he-go-also-f-thi-sc-our-se-ar-e" class="level2">
+<h2 class="anchored" data-anchor-id="t-he-go-also-f-thi-sc-our-se-ar-e">T he go also f thi sc our se ar e</h2>
+<ul>
+<li>p lat fo rm</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>ag nos t i c</li>
+</ul>
+</section>
+<section id="ty6-àê-té-6éb-ë-éë-bt-tì" class="level2">
+<h2 class="anchored" data-anchor-id="ty6-àê-té-6éb-ë-éë-bt-tì">‰ ¬} %6‰ Ty6€‰‰ à¡}Ê %‰ TÉ 6É}b ¡…ë Éë … bT… TÌ¡}</h2>
+</section>
+<section id="ty6-à-6b-l6ì-ë-lt-à6ìàb-m6" class="level2">
+<h2 class="anchored" data-anchor-id="ty6-à-6b-l6ì-ë-lt-à6ìàb-m6">‰ ¬} Ty6€‰‰ à¡… 6%…¡b‰ }l6Ì ë …lT%”‰ à6€Ìà‰b m6…¡} }¡}</h2>
+<ul>
+<li>under ly ing what w e’re doi ng andwhy</li>
+</ul>
+</section>
+<section id="yo-ur-e-v-entu-al-goa-l" class="level2">
+<h2 class="anchored" data-anchor-id="yo-ur-e-v-entu-al-goa-l">Yo ur e v entu al goa l:</h2>
+<ul>
+<li>Us e t he ri g ht t oo l for t he j ob</li>
+</ul>
+</section>
+<section id="yo-u-wil-lli-k-ely-l-ear-n-all-the-set-ools-at-some-p-oi-nt." class="level2">
+<h2 class="anchored" data-anchor-id="yo-u-wil-lli-k-ely-l-ear-n-all-the-set-ools-at-some-p-oi-nt.">Yo u wil lli k ely l ear n all the set ools at some p oi nt.</h2>
+<ul>
+<li>10</li>
+</ul>
+</section>
+<section id="gr-ad-i-ng" class="level2">
+<h2 class="anchored" data-anchor-id="gr-ad-i-ng">Gr ad i ng</h2>
+<ul>
+<li>11</li>
+<li>A ss i g nm en t</li>
+<li>P o in ts</li>
+<li>L a b A ssig n me n ts</li>
+<li>40</li>
+<li>P o ll E ve rywh e re<br>
+</li>
+<li>10</li>
+<li>P ro je ct M il est o n es</li>
+<li>30</li>
+<li>F in a l P ro je ct<br>
+</li>
+<li>20</li>
+<li>T OTAL</li>
+<li>100</li>
+</ul>
+</section>
+<section id="l-ab-assi-gn-m-en-ts" class="level2">
+<h2 class="anchored" data-anchor-id="l-ab-assi-gn-m-en-ts">L ab Assi gn m en ts</h2>
+</section>
+<section id="l-ab-a-ssig-nme-nt-s-gi-ves-you-t-he-o-pp-or-t-un-it-yt-o-pra-ct-ice-t-h-e" class="level2">
+<h2 class="anchored" data-anchor-id="l-ab-a-ssig-nme-nt-s-gi-ves-you-t-he-o-pp-or-t-un-it-yt-o-pra-ct-ice-t-h-e">L ab a ssig nme nt s: gi ves you t he o pp or t un it yt o pra ct ice t h e</h2>
+<ul>
+<li>d at a skil ls cove red du rin g le ct ure</li>
+</ul>
+</section>
+<section id="two-com-po-ne-nt-s-writ-e-up-a-nd-r-scrip-t" class="level2">
+<h2 class="anchored" data-anchor-id="two-com-po-ne-nt-s-writ-e-up-a-nd-r-scrip-t">Two com po ne nt s: writ e up a nd R scrip t</h2>
+</section>
+<section id="du-e-o-n-s-un-da-ysa-t-11-5-9p-m" class="level2">
+<h2 class="anchored" data-anchor-id="du-e-o-n-s-un-da-ysa-t-11-5-9p-m">Du e o n S un da ysa t 11 :5 9p m</h2>
+</section>
+<section id="i-will-d-ro-p-t-he-lowe-st-lab-score-at-t-he-en-d-of-t-he-qu-ar-te-r" class="level2">
+<h2 class="anchored" data-anchor-id="i-will-d-ro-p-t-he-lowe-st-lab-score-at-t-he-en-d-of-t-he-qu-ar-te-r">I will d ro p t he lowe st lab score at t he en d of t he qu ar te r</h2>
+<ul>
+<li>12</li>
+</ul>
+</section>
+<section id="r-ese-ar-ch-pr-oj-e-ct" class="level2">
+<h2 class="anchored" data-anchor-id="r-ese-ar-ch-pr-oj-e-ct">R ese ar ch Pr oj e ct</h2>
+</section>
+<section id="t-he-go-alo-f-thi-sc-lass-is-to-gi-v-e-y-ou-the-sk-il-lsto-c-ond-uc-t" class="level2">
+<h2 class="anchored" data-anchor-id="t-he-go-alo-f-thi-sc-lass-is-to-gi-v-e-y-ou-the-sk-il-lsto-c-ond-uc-t">T he go alo f thi sc lass is to gi v e y ou the sk il lsto c ond uc t</h2>
+<ul>
+<li>y ou r own</li>
+<li>sm all</li>
+<li>r ese ar ch pr o je ct.</li>
+</ul>
+</section>
+<section id="t-hr-ee-p-ro-j-ect-mi-lesto-nes-wi-ll-walk-y-ou-thr-ou-gh-th-e" class="level2">
+<h2 class="anchored" data-anchor-id="t-hr-ee-p-ro-j-ect-mi-lesto-nes-wi-ll-walk-y-ou-thr-ou-gh-th-e">T hr ee p ro j ect mi lesto nes wi ll walk y ou thr ou gh th e</h2>
+<ul>
+<li>r ese ar ch pr o cess</li>
+</ul>
+</section>
+<section id="all-thr-e-ewi-ll-co-unt" class="level2">
+<h2 class="anchored" data-anchor-id="all-thr-e-ewi-ll-co-unt">All thr e ewi ll co unt</h2>
+<ul>
+<li>to war d y our fi nal gr ad e (no d r op s)</li>
+</ul>
+</section>
+<section id="f-i-nal-pr-o-du-ct" class="level2">
+<h2 class="anchored" data-anchor-id="f-i-nal-pr-o-du-ct">F i nal pr o du ct:</h2>
+</section>
+<section id="w-ri-t-eup-150-0wor-ds" class="level2">
+<h2 class="anchored" data-anchor-id="w-ri-t-eup-150-0wor-ds">W ri t eup( ~ 150 0wor ds)</h2>
+</section>
+<section id="doc-ument-at-i-on-rs-cri-p-ts" class="level2">
+<h2 class="anchored" data-anchor-id="doc-ument-at-i-on-rs-cri-p-ts">doc ument at i on( rs cri p ts)</h2>
+<ul>
+<li>13</li>
+</ul>
+</section>
+<section id="e-xamples-ofs-tuden-t" class="level2">
+<h2 class="anchored" data-anchor-id="e-xamples-ofs-tuden-t">E xamples ofS tuden t</h2>
+<ul>
+<li>W ork</li>
+</ul>
+</section>
+<section id="c-ha-tgp-t-gen-er-at-ive-ai" class="level2">
+<h2 class="anchored" data-anchor-id="c-ha-tgp-t-gen-er-at-ive-ai">C ha tGP T/ Gen er at ive AI</h2>
+</section>
+<section id="i-t-is-up-t-o-you-w-he-th-er-you-w-an-t-t-o-u-se-g-en-er-at-ive-a-i-t-o-he-lp" class="level2">
+<h2 class="anchored" data-anchor-id="i-t-is-up-t-o-you-w-he-th-er-you-w-an-t-t-o-u-se-g-en-er-at-ive-a-i-t-o-he-lp">I t is up t o you w he th er you w an t t o u se g en er at ive A I t o he lp</h2>
+<ul>
+<li>yo u wit h yo ur cod e</li>
+</ul>
+</section>
+<section id="g-ui-de-line-s" class="level2">
+<h2 class="anchored" data-anchor-id="g-ui-de-line-s">G ui de line s:</h2>
+</section>
+<section id="t-he-cod-e-has-t-o-use-t-he-t-ool-sco-vered-i-n-lect-ure" class="level2">
+<h2 class="anchored" data-anchor-id="t-he-cod-e-has-t-o-use-t-he-t-ool-sco-vered-i-n-lect-ure">T he cod e has t o use t he t ool sco vered i n lect ure</h2>
+</section>
+<section id="you-ca-nno-t-use-i-t-f-or-th-e-writ-t-en-po-rti-on-of-lab-a-ssign-ment-s-or" class="level2">
+<h2 class="anchored" data-anchor-id="you-ca-nno-t-use-i-t-f-or-th-e-writ-t-en-po-rti-on-of-lab-a-ssign-ment-s-or">You ca nno t use i t f or th e writ t en po rti on of lab a ssign ment s or</h2>
+<ul>
+<li>rese arch mil est one s</li>
+</ul>
+</section>
+<section id="you-n-eed-t-o-st-at-e-whe-th-er-you-use-d-it-f-or-you-rco-de-an-d-how-." class="level2">
+<h2 class="anchored" data-anchor-id="you-n-eed-t-o-st-at-e-whe-th-er-you-use-d-it-f-or-you-rco-de-an-d-how-.">You n eed t o st at e whe th er you use d it f or you rco de an d how .</h2>
+<ul>
+<li>15</li>
+</ul>
+</section>
+<section id="po-l-l-eve-ryw-h-er-e" class="level2">
+<h2 class="anchored" data-anchor-id="po-l-l-eve-ryw-h-er-e">Po l l Eve ryw h er e</h2>
+</section>
+<section id="i-u-se-poll-eve-rywhe-re-to" class="level2">
+<h2 class="anchored" data-anchor-id="i-u-se-poll-eve-rywhe-re-to">I u se Poll Eve rywhe re to</h2>
+<ul>
+<li>en coura ge act ive l earn ing d urin g</li>
+<li>le ctu re</li>
+</ul>
+</section>
+<section id="my-pol-ls-wil-l-be-ava-ila-ble-h-ere" class="level2">
+<h2 class="anchored" data-anchor-id="my-pol-ls-wil-l-be-ava-ila-ble-h-ere">My pol ls wil l be ava ila ble h ere</h2>
+<ul>
+<li>wh en t hey go l ive:<br>
+</li>
+<li>Po l lE v.co m/v s ove ro</li>
+</ul>
+</section>
+<section id="po-l-l-eve-ryw-h-er-e-1" class="level2">
+<h2 class="anchored" data-anchor-id="po-l-l-eve-ryw-h-er-e-1">Po l l Eve ryw h er e</h2>
+</section>
+<section id="ple-ase-use-yo-ur" class="level2">
+<h2 class="anchored" data-anchor-id="ple-ase-use-yo-ur">Ple ase use yo ur</h2>
+<ul>
+<li>ucr</li>
+<li>ema il ad dress t o sign i n (do no t sig n up f or an acco unt )</li>
+</ul>
+</section>
+<section id="you-w-ill-b-e-redi-rect-ed-t-o-th-e-ucr-sso" class="level2">
+<h2 class="anchored" data-anchor-id="you-w-ill-b-e-redi-rect-ed-t-o-th-e-ucr-sso">You w ill b e redi rect ed t o th e UCR SSO</h2>
+</section>
+<section id="l-ectu-re-qu-i-zzes-un-gr-a-de-d" class="level2">
+<h2 class="anchored" data-anchor-id="l-ectu-re-qu-i-zzes-un-gr-a-de-d">L ectu re Qu i zzes( un gr a de d)</h2>
+</section>
+<section id="p-ost-e-d-on-can-vas-f-o-r-you-to-pr-act-ice-a-f-t-er-le-ct-ur-e" class="level2">
+<h2 class="anchored" data-anchor-id="p-ost-e-d-on-can-vas-f-o-r-you-to-pr-act-ice-a-f-t-er-le-ct-ur-e">P ost e d on Can vas f o r you to pr act ice a f t er le ct ur e</h2>
+</section>
+<section id="do-es-n-ot-cou-nt-t-owa-rd-s-you-r-gr-ad-e" class="level2">
+<h2 class="anchored" data-anchor-id="do-es-n-ot-cou-nt-t-owa-rd-s-you-r-gr-ad-e">Do es n ot cou nt t owa rd s you r gr ad e</h2>
+</section>
+<section id="fe-el-f-re-e-t-o-a-sk-fan-t-o-re-view-t-h-ese-qu-est-io-ns-du-rin-g-la-b" class="level2">
+<h2 class="anchored" data-anchor-id="fe-el-f-re-e-t-o-a-sk-fan-t-o-re-view-t-h-ese-qu-est-io-ns-du-rin-g-la-b">Fe el f re e t o a sk Fan t o re view t h ese qu est io ns du rin g la b</h2>
+<ul>
+<li>se cti on</li>
+<li>18</li>
+</ul>
+</section>
+<section id="l-ectu-re-scr-i-pt-s" class="level2">
+<h2 class="anchored" data-anchor-id="l-ectu-re-scr-i-pt-s">L ectu re Scr i pt s</h2>
+</section>
+<section id="i-po-st-a-ll-o-f-t-h-e-cod-e-u-sed-du-rin-g-le-ctu-re-as-an-r-scrip-t-o-n" class="level2">
+<h2 class="anchored" data-anchor-id="i-po-st-a-ll-o-f-t-h-e-cod-e-u-sed-du-rin-g-le-ctu-re-as-an-r-scrip-t-o-n">I po st a ll o f t h e cod e u sed du rin g le ctu re as an R scrip t o n</h2>
+<ul>
+<li>Ca nva s</li>
+</ul>
+</section>
+<section id="ru-nn-ing-t-he-co-de-du-rin-g-o-r-af-t-er-lect-u-re-wi-ll-he-lp-yo-u-g-ain" class="level2">
+<h2 class="anchored" data-anchor-id="ru-nn-ing-t-he-co-de-du-rin-g-o-r-af-t-er-lect-u-re-wi-ll-he-lp-yo-u-g-ain">Ru nn ing t he co de du rin g o r af t er lect u re wi ll he lp yo u g ain</h2>
+<ul>
+<li>mo re fa mil iar it yw it h</li>
+<li>Rst u dio</li>
+<li>19</li>
+</ul>
+</section>
+<section id="thi-sw-ee-kin-tr-od-ucti-o-nt-or-b-asi-cs" class="level2">
+<h2 class="anchored" data-anchor-id="thi-sw-ee-kin-tr-od-ucti-o-nt-or-b-asi-cs">Thi sW ee k:In tr od ucti o nt oR B asi cs</h2>
+</section>
+<section id="b-ef-o-re-we-cove-r-mo-re-b-ro-ad-to-pi-csi-n-da-t-a-a-na-lysis-we" class="level2">
+<h2 class="anchored" data-anchor-id="b-ef-o-re-we-cove-r-mo-re-b-ro-ad-to-pi-csi-n-da-t-a-a-na-lysis-we">B ef o re we cove r mo re b ro ad to pi csi n da t a a na lysis, we</h2>
+<ul>
+<li>n ee d t o u nd erst a nd some R ba sics</li>
+</ul>
+</section>
+<section id="w-e-ne-ed-t-he-se-bu-ild-ing-blo-cks-be-f-ore-mo-ving-on-to-da-t-a" class="level2">
+<h2 class="anchored" data-anchor-id="w-e-ne-ed-t-he-se-bu-ild-ing-blo-cks-be-f-ore-mo-ving-on-to-da-t-a">W e ne ed t he se bu ild ing blo cks be f ore mo ving on to da t a</h2>
+<ul>
+<li>wr an glin g, visu ali zat io n, et c.</li>
+<li>20</li>
+</ul>
+</section>
+<section id="c-od-i-ng-go-al-s" class="level2">
+<h2 class="anchored" data-anchor-id="c-od-i-ng-go-al-s">C od i ng Go al s</h2>
+<ul>
+<li><ol type="1">
+<li></li>
+</ol></li>
+<li>Run c od ewith out er r or s (pr e tty d oab le with</li>
+<li>C hatG PT</li>
+<li>)</li>
+<li><ol start="2" type="1">
+<li></li>
+</ol></li>
+<li>Ru n co de t h at pr od uce s wha t yo u we re exp ect in g</li>
+<li><ol start="3" type="1">
+<li></li>
+</ol></li>
+<li>Ru n co de t h at pr od uce s wha t yo u we re exp ect in g an d yo u</li>
+<li>u nd erst a nd</li>
+<li>21</li>
+</ul>
+</section>
+<section id="ge-tti-ng-h-el-p" class="level2">
+<h2 class="anchored" data-anchor-id="ge-tti-ng-h-el-p">Ge tti ng h el p</h2>
+<ul>
+<li><ol type="1">
+<li></li>
+</ol></li>
+<li>Re ad th e e rro r me ssag e.</li>
+<li><ol start="2" type="1">
+<li></li>
+</ol></li>
+<li>Tr yso me on line re sou rces:</li>
+</ul>
+</section>
+<section id="st-ack-ove-rfl-ow" class="level2">
+<h2 class="anchored" data-anchor-id="st-ack-ove-rfl-ow">St ack Ove rfl ow</h2>
+</section>
+<section id="ch-at-gpt" class="level2">
+<h2 class="anchored" data-anchor-id="ch-at-gpt">Ch at GPT</h2>
+<ul>
+<li>(t ype in yo ur code a nd t he erro rme ssage )</li>
+</ul>
+</section>
+<section id="sla-ck" class="level2">
+<h2 class="anchored" data-anchor-id="sla-ck">Sla ck</h2>
+<ul>
+<li><ol start="3" type="1">
+<li></li>
+</ol></li>
+<li>S t ill st uck?</li>
+</ul>
+</section>
+<section id="ple-ase-rea-ch-out-to-myse-lf-o-ryo-ur-ta-f-an-bu" class="level2">
+<h2 class="anchored" data-anchor-id="ple-ase-rea-ch-out-to-myse-lf-o-ryo-ur-ta-f-an-bu">Ple ase rea ch out to myse lf o ryo ur TA (F an Bu)</h2>
+</section>
+<section id="sha-re-your-cod-e-d-at-a-scre-ensh-ot-so-f-t-he-erro-rme-ssage-et-c." class="level2">
+<h2 class="anchored" data-anchor-id="sha-re-your-cod-e-d-at-a-scre-ensh-ot-so-f-t-he-erro-rme-ssage-et-c.">Sha re your cod e, d at a, scre ensh ot so f t he erro rme ssage , et c.</h2>
+<ul>
+<li>22</li>
+</ul>
+</section>
+<section id="exa-m-pl-e-be-c-ar-efu-l-w-i-thtyp-os" class="level2">
+<h2 class="anchored" data-anchor-id="exa-m-pl-e-be-c-ar-efu-l-w-i-thtyp-os">Exa m pl e: Be C ar efu l w i thTyp os</h2>
+</section>
+<section id="imp-l-ic-it-c-o-nt-r-ac-twi-th-t-he" class="level2">
+<h2 class="anchored" data-anchor-id="imp-l-ic-it-c-o-nt-r-ac-twi-th-t-he">Imp l ic it c o nt r ac twi th t he</h2>
+<ul>
+<li>c o mp ut er / sc r ip ti ng<br>
+</li>
+<li>l an gua ge:</li>
+</ul>
+</section>
+<section id="c-o-mpu-ter-wi-ll-d-o-ted-io-us" class="level2">
+<h2 class="anchored" data-anchor-id="c-o-mpu-ter-wi-ll-d-o-ted-io-us">C o mpu ter wi ll d o ted io us</h2>
+<ul>
+<li>co mp uta tio n f or y o u.</li>
+</ul>
+</section>
+<section id="in-r-etur-n-y-ou-w-il-l-be" class="level2">
+<h2 class="anchored" data-anchor-id="in-r-etur-n-y-ou-w-il-l-be">In r etur n, y ou w il l be</h2>
+<ul>
+<li>co mp lete l y p reci se in y o ur<br>
+</li>
+<li>i ns tru ctio n s</li>
+</ul>
+</section>
+<section id="t-yp-o-sm-att-er.-casem-att-er-s." class="level2">
+<h2 class="anchored" data-anchor-id="t-yp-o-sm-att-er.-casem-att-er-s.">T yp o sm att er. Casem att er s.</h2>
+<ul>
+<li>d at a_ ro cks</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>2</li>
+<li>^</li>
+<li>3</li>
+<li>d at ar ocks</li>
+<li><h1 id="er-ro-r-in-e-val-exp-r">&gt; Er ro r in e val( exp r,</h1></li>
+<li>e nvir</li>
+<li>,</li>
+<li>e nclo s</li>
+</ul>
+</section>
+<section id="d-at-ar-ocks" class="level2">
+<h2 class="anchored" data-anchor-id="d-at-ar-ocks">d at ar ocks</h2>
+<ul>
+<li>’ n ot<br>
+</li>
+<li>f ou nd</li>
+<li>Da t a_ rocks</li>
+<li><h1 id="er-ro-r-in-e-val-exp-r-1">&gt; Er ro r in e val( exp r,</h1></li>
+<li>e nvir</li>
+<li>,</li>
+<li>e nclo s</li>
+</ul>
+</section>
+<section id="da-t-a_-rocks" class="level2">
+<h2 class="anchored" data-anchor-id="da-t-a_-rocks">Da t a_ rocks</h2>
+<ul>
+<li>’</li>
+<li>n ot f ou nd</li>
+<li>23</li>
+</ul>
+</section>
+<section id="w-ha-ti-sr-r-s-tud-i-o" class="level2">
+<h2 class="anchored" data-anchor-id="w-ha-ti-sr-r-s-tud-i-o">W ha ti sR ?R S tud i o?</h2>
+</section>
+<section id="r-1" class="level2">
+<h2 class="anchored" data-anchor-id="r-1">R</h2>
+</section>
+<section id="a-p-ro-g-r-am-m-in-g-l-an-g-u-a-g-e" class="level2">
+<h2 class="anchored" data-anchor-id="a-p-ro-g-r-am-m-in-g-l-an-g-u-a-g-e">a p ro g r am m in g l an g u a g e +</h2>
+<ul>
+<li>so ft wa re t h at in te rp r e tsi t</li>
+</ul>
+</section>
+<section id="rs-tu-di-o" class="level2">
+<h2 class="anchored" data-anchor-id="rs-tu-di-o">RS tu di o</h2>
+</section>
+<section id="p-o-p-ul-ar-so-f-tw-ar-e-t-o" class="level2">
+<h2 class="anchored" data-anchor-id="p-o-p-ul-ar-so-f-tw-ar-e-t-o">p o p ul ar so f tw ar e t o</h2>
+<ul>
+<li>wr ite R scrip ts a n d in te r act with<br>
+</li>
+<li>th e R so ft wa r e</li>
+</ul>
+</section>
+<section id="w-e-will-b-e-u-sing" class="level2">
+<h2 class="anchored" data-anchor-id="w-e-will-b-e-u-sing">W e will b e u sing</h2>
+<ul>
+<li>Rst u dio</li>
+<li>in th is cou rse<br>
+</li>
+<li>(h ow eve r you ne ed t o inst a ll R in o rd er</li>
+<li>f or it t o run cor rect ly)</li>
+<li>24</li>
+</ul>
+</section>
+<section id="r-st-ud-io-in-ter-fa-ce" class="level2">
+<h2 class="anchored" data-anchor-id="r-st-ud-io-in-ter-fa-ce">R St ud io In ter fa ce</h2>
+<ul>
+<li>Sc r ipt</li>
+<li>Co ns o le</li>
+<li>En v iro nm en t</li>
+<li>F il e s</li>
+<li>25</li>
+</ul>
+</section>
+<section id="rs-tu-di-ocon-sole" class="level2">
+<h2 class="anchored" data-anchor-id="rs-tu-di-ocon-sole">RS tu di oCon sole</h2>
+</section>
+<section id="yo-uc-an-input-a-nd" class="level2">
+<h2 class="anchored" data-anchor-id="yo-uc-an-input-a-nd">Yo uc an input a nd</h2>
+<ul>
+<li>ex ec utec omma nds<br>
+</li>
+<li>di rec tlyinthe co ns o le.</li>
+</ul>
+</section>
+<section id="o-utputo-fc-erta-in" class="level2">
+<h2 class="anchored" data-anchor-id="o-utputo-fc-erta-in">O utputo fc erta in</h2>
+<ul>
+<li>c omma nd sw ill be</li>
+<li>di sp la yed i n the</li>
+<li>c on so le .</li>
+<li>26</li>
+<li>Co ns o le</li>
+</ul>
+</section>
+<section id="r-stu-di-o" class="level2">
+<h2 class="anchored" data-anchor-id="r-stu-di-o">R stu di o</h2>
+<ul>
+<li>Scr i pt Ed it or</li>
+</ul>
+</section>
+<section id="most-d-at-a-anal-ysi-s-wi-ll-r-e-qu-i-re" class="level2">
+<h2 class="anchored" data-anchor-id="most-d-at-a-anal-ysi-s-wi-ll-r-e-qu-i-re">Most d at a anal ysi s wi ll r e qu i re</h2>
+<ul>
+<li>se ver al st eps</li>
+</ul>
+</section>
+<section id="t-he-scri-pt-e-d-it-or-i-s-use-d-to" class="level2">
+<h2 class="anchored" data-anchor-id="t-he-scri-pt-e-d-it-or-i-s-use-d-to">T he scri pt e d it or i s use d to</h2>
+<ul>
+<li>r ecor d t he ste ps (command s)</li>
+<li>w e t ake t oa naly ze ou r d ata</li>
+<li>WR IT E</li>
+<li>27</li>
+</ul>
+</section>
+<section id="r-stu-di-o-1" class="level2">
+<h2 class="anchored" data-anchor-id="r-stu-di-o-1">R stu di o</h2>
+<ul>
+<li>Scr i pt Ed it or</li>
+</ul>
+</section>
+<section id="onceyout-ypethem-in-the" class="level2">
+<h2 class="anchored" data-anchor-id="onceyout-ypethem-in-the">Onceyout ypethem in the</h2>
+<ul>
+<li>sc ript ,y ou still needt osend</li>
+<li>them tothec ons ole toberun.</li>
+</ul>
+</section>
+<section id="s-cri-pts-a-re-saved-wi-t-h-t-he-.r" class="level2">
+<h2 class="anchored" data-anchor-id="s-cri-pts-a-re-saved-wi-t-h-t-he-.r">S cri pts a re saved wi t h t he .R</h2>
+<ul>
+<li>ò Uäó</li>
+<li>WR IT E</li>
+<li>R UN</li>
+<li>Ctr l</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>En ter</li>
+<li>28</li>
+</ul>
+</section>
+<section id="c-om-m-en-ti-ng-i-ns-cri-p-ts" class="level2">
+<h2 class="anchored" data-anchor-id="c-om-m-en-ti-ng-i-ns-cri-p-ts">C om m en ti ng i nS cri p ts</h2>
+</section>
+<section id="r-ig-no-re-sth-e" class="level2">
+<h2 class="anchored" data-anchor-id="r-ig-no-re-sth-e">R ig no re sth e</h2>
+<ul>
+<li>r est of a li ne</li>
+<li>af ter a</li>
+<li><h1 id="section"></h1></li>
+</ul>
+</section>
+<section id="wr-i-te-not-est-o" class="level2">
+<h2 class="anchored" data-anchor-id="wr-i-te-not-est-o">wr i te not est o</h2>
+<ul>
+<li>y ou rse lf ab out</li>
+<li>wha ty ou r<br>
+</li>
+<li>co de i s do in g</li>
+</ul>
+</section>
+<section id="co-mment-sar-e" class="level2">
+<h2 class="anchored" data-anchor-id="co-mment-sar-e">co mment sar e</h2>
+<ul>
+<li>au tomati c ally<br>
+</li>
+<li>i n gr ee n</li>
+<li>29</li>
+</ul>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1"></h2>
+</section>
+<section id="an-o-p-e-ra-to-r-is-a" class="level2">
+<h2 class="anchored" data-anchor-id="an-o-p-e-ra-to-r-is-a">An o p e ra to r is a</h2>
+<ul>
+<li>s y mb ol</li>
+<li>th a t t e lls R t o pe r fo rm so me<br>
+</li>
+<li>so r t o f o pe r a tio n.</li>
+</ul>
+</section>
+<section id="t-yp-e-s-o-f-o-p-e-ra-t-or-s" class="level2">
+<h2 class="anchored" data-anchor-id="t-yp-e-s-o-f-o-p-e-ra-t-or-s">T yp e s o f O p e ra t or s</h2>
+<ul>
+<li>:</li>
+</ul>
+</section>
+<section id="ma-t-h-a-rit-h-me-ti-c" class="level2">
+<h2 class="anchored" data-anchor-id="ma-t-h-a-rit-h-me-ti-c">ma t h (a rit h me ti c)</h2>
+</section>
+<section id="lo-gica-l-co-mp-are-valu-es" class="level2">
+<h2 class="anchored" data-anchor-id="lo-gica-l-co-mp-are-valu-es">lo gica l (co mp are valu es)</h2>
+</section>
+<section id="a-ssign-me-nt-sa-ving-valu-es-t-o-o-bje-ct-s" class="level2">
+<h2 class="anchored" data-anchor-id="a-ssign-me-nt-sa-ving-valu-es-t-o-o-bje-ct-s">a ssign me nt (sa ving valu es t o o bje ct s)</h2>
+</section>
+<section id="e-xtr-act-io-n-t-a-ke-o-ut-re-pla-ce-p-art-s-o-f-o-bje-ct-s" class="level2">
+<h2 class="anchored" data-anchor-id="e-xtr-act-io-n-t-a-ke-o-ut-re-pla-ce-p-art-s-o-f-o-bje-ct-s">e xtr act io n (t a ke o ut / re pla ce p art s o f o bje ct s)</h2>
+<ul>
+<li>30</li>
+</ul>
+</section>
+<section id="op-er-at-or-s" class="level2">
+<h2 class="anchored" data-anchor-id="op-er-at-or-s">Op er at or s</h2>
+<ul>
+<li>ht t ps: // ww w. sta tme th ods. ne t/ man age ment / ope rat ors. ht ml</li>
+<li>Typ e</li>
+<li>Wh at itdo es</li>
+<li>Symb ol(s)</li>
+<li>Arithmetic</li>
+<li>Math on numbers</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li><ul>
+<li></li>
+</ul></li>
+<li><ul>
+<li>/^</li>
+</ul></li>
+<li>Logical</li>
+<li>Comparesv alues</li>
+<li><blockquote class="blockquote">
+<p>&lt; = = != &amp; |</p>
+</blockquote></li>
+<li>Ass ignment</li>
+<li>Ass igns valuest oobjec ts</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>Ext rac tion</li>
+<li>Tak e out orreplac epart of an</li>
+<li>object</li>
+<li>[]$</li>
+<li>31</li>
+</ul>
+</section>
+<section id="ar-i-th-me-ti-cop-er-a-tor-s" class="level2">
+<h2 class="anchored" data-anchor-id="ar-i-th-me-ti-cop-er-a-tor-s">Ar i th me ti cop er a tor s</h2>
+</section>
+<section id="do-e-s-ma-th" class="level2">
+<h2 class="anchored" data-anchor-id="do-e-s-ma-th">Do e s ma th :</h2>
+</section>
+<section id="ad-d-2" class="level2">
+<h2 class="anchored" data-anchor-id="ad-d-2">Ad d : 2</h2>
+<ul>
+<li><ul>
+<li></li>
+</ul></li>
+<li>2</li>
+</ul>
+</section>
+<section id="su-b-t-r-act-3" class="level2">
+<h2 class="anchored" data-anchor-id="su-b-t-r-act-3">Su b t r act : 3</h2>
+<ul>
+<li><ul>
+<li></li>
+</ul></li>
+<li>1</li>
+</ul>
+</section>
+<section id="m-u-lt-ip-ly-4" class="level2">
+<h2 class="anchored" data-anchor-id="m-u-lt-ip-ly-4">M u lt ip ly: 4</h2>
+<ul>
+<li><ul>
+<li></li>
+</ul></li>
+<li>4</li>
+</ul>
+</section>
+<section id="divi-de-5" class="level2">
+<h2 class="anchored" data-anchor-id="divi-de-5">Divi de : 5</h2>
+<ul>
+<li>/</li>
+<li>2</li>
+</ul>
+</section>
+<section id="exp-o-n-e-n-t-5" class="level2">
+<h2 class="anchored" data-anchor-id="exp-o-n-e-n-t-5">Exp o n e n t: 5</h2>
+<ul>
+<li>^</li>
+<li>2</li>
+</ul>
+</section>
+<section id="ctr-l" class="level2">
+<h2 class="anchored" data-anchor-id="ctr-l">Ctr l/</h2>
+<ul>
+<li>Cm d +E n te r</li>
+<li>to ru n</li>
+</ul>
+</section>
+<section id="re-su-lts-in-th-e-co-n-so-le" class="level2">
+<h2 class="anchored" data-anchor-id="re-su-lts-in-th-e-co-n-so-le">Re su lts in th e Co n so le</h2>
+<ul>
+<li>32</li>
+</ul>
+</section>
+<section id="exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip" class="level2">
+<h2 class="anchored" data-anchor-id="exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip">Exa m pl e: Wh ol e fta l ar ge r Tip ?</h2>
+</section>
+<section id="b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5" class="level2">
+<h2 class="anchored" data-anchor-id="b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5">b ill at S ha ke S ha ck came ou t t o $2 5</h2>
+</section>
+<section id="he-t-ip-s1-5" class="level2">
+<h2 class="anchored" data-anchor-id="he-t-ip-s1-5">He t ip s1 5%</h2>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2"></h2>
+</section>
+<section id="he-t-ip-s1-2" class="level2">
+<h2 class="anchored" data-anchor-id="he-t-ip-s1-2">He t ip s1 2%</h2>
+</section>
+<section id="use-op-era-t-or-st-o-calcu-lat-e-ho-w-much-lo-uie-an-d" class="level2">
+<h2 class="anchored" data-anchor-id="use-op-era-t-or-st-o-calcu-lat-e-ho-w-much-lo-uie-an-d">Use op era t or st o calcu lat e ho w much Lo uie an d</h2>
+<ul>
+<li>L ou be rt o</li>
+<li>t ip pe d</li>
+<li>33</li>
+</ul>
+</section>
+<section id="fun-cti-on-s" class="level2">
+<h2 class="anchored" data-anchor-id="fun-cti-on-s">Fun cti on s</h2>
+</section>
+<section id="form-orec-omplicatedtas-ks-r" class="level2">
+<h2 class="anchored" data-anchor-id="form-orec-omplicatedtas-ks-r">Form orec omplicatedtas ks, R</h2>
+<ul>
+<li>alsoc omespre</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>inst alledw itha</li>
+<li>variety off unc tions.</li>
+</ul>
+</section>
+<section id="funct-ions-area" class="level2">
+<h2 class="anchored" data-anchor-id="funct-ions-area">Funct ions area</h2>
+<ul>
+<li>sequenceof</li>
+<li>inst ruc tionst hat perf orm atas k</li>
+</ul>
+</section>
+<section id="hav-e" class="level2">
+<h2 class="anchored" data-anchor-id="hav-e">Hav e</h2>
+<ul>
+<li>names</li>
+</ul>
+</section>
+<section id="acc-ept" class="level2">
+<h2 class="anchored" data-anchor-id="acc-ept">Acc ept</h2>
+<ul>
+<li>arg umen ts</li>
+<li>(input )</li>
+</ul>
+</section>
+<section id="ret-urna" class="level2">
+<h2 class="anchored" data-anchor-id="ret-urna">Ret urna</h2>
+<ul>
+<li>value</li>
+<li>(output)</li>
+<li>I n p u t</li>
+<li>O u tp u t</li>
+<li>ro u n d</li>
+<li>(</li>
+<li>x</li>
+<li>= 3. 1 4 1 5 9 ,<br>
+</li>
+<li>d i g i ts<br>
+</li>
+<li>= 0)</li>
+<li>3</li>
+<li>34</li>
+</ul>
+</section>
+<section id="ar-g-um-en-ts" class="level2">
+<h2 class="anchored" data-anchor-id="ar-g-um-en-ts">Ar g um en ts</h2>
+</section>
+<section id="to-fi-ndout-what" class="level2">
+<h2 class="anchored" data-anchor-id="to-fi-ndout-what">To fi ndout what</h2>
+<ul>
+<li>ar gu men ts</li>
+<li>a</li>
+<li>func ti ont akes , lookup i t shelp</li>
+<li>fi le( t y pe</li>
+<li>?r oun d)</li>
+</ul>
+</section>
+<section id="som-earg-ument-sar-ereq-ui-red" class="level2">
+<h2 class="anchored" data-anchor-id="som-earg-ument-sar-ereq-ui-red">Som earg ument sar ereq ui red,</h2>
+<ul>
+<li>som eare opt i onal.</li>
+</ul>
+</section>
+<section id="you-cans-eet-hat" class="level2">
+<h2 class="anchored" data-anchor-id="you-cans-eet-hat">You cans eet hat</h2>
+<ul>
+<li>di git s</li>
+<li>i s</li>
+<li>6b‰ ë 6%Ty ¡…T€}¡ Ê ”6%¬ ‰</li>
+<li>need to i nclude i t andy ouw ill</li>
+<li>g et the same outp ut</li>
+<li>35</li>
+<li>In put</li>
+<li>Outpu t</li>
+<li>ro u nd</li>
+<li>(</li>
+<li>x</li>
+<li>= 3. 141 59,<br>
+</li>
+<li>d ig i ts</li>
+<li>= 0</li>
+<li>)</li>
+<li>3</li>
+<li>ro u nd</li>
+<li>(</li>
+<li><ol start="3" type="1">
+<li>14 159</li>
+</ol></li>
+<li>)</li>
+<li>3</li>
+</ul>
+</section>
+<section id="ar-g-um-en-ts-1" class="level2">
+<h2 class="anchored" data-anchor-id="ar-g-um-en-ts-1">Ar g um en ts</h2>
+</section>
+<section id="àë-tê-6½" class="level2">
+<h2 class="anchored" data-anchor-id="àë-tê-6½">5 ‰¡… à%ë …TÊ” 6%¬‰¡½ ¡%</h2>
+<ul>
+<li>need to wri t eout t henam esof</li>
+<li>t hearg ument s (</li>
+<li>x</li>
+<li>,</li>
+<li>di g i ts</li>
+<li>) i f</li>
+<li>v aluesar ei nt hec orrec t ord er</li>
+</ul>
+</section>
+<section id="á-½m-lë-à-të-m" class="level2">
+<h2 class="anchored" data-anchor-id="á-½m-lë-à-të-m">6Á ¡½¡m lë ‰¬ }˜ €…à ¡T}ë ¡m‰</h2>
+<ul>
+<li>under st andy our cod ewhen</li>
+<li>y ouwr i te out the nameof the</li>
+<li>arg ument</li>
+<li>36</li>
+<li>In put</li>
+<li>Outpu t</li>
+<li>ro u nd</li>
+<li>(</li>
+<li>x</li>
+<li>= 3. 141 59,<br>
+</li>
+<li>d ig i ts</li>
+<li>= 2)</li>
+<li><ol start="3" type="1">
+<li>14</li>
+</ol></li>
+<li>ro u nd</li>
+<li>(</li>
+<li><ol start="3" type="1">
+<li>14 159</li>
+</ol></li>
+<li>,<br>
+</li>
+<li>2</li>
+<li>)</li>
+<li><ol start="3" type="1">
+<li>14</li>
+</ol></li>
+</ul>
+</section>
+<section id="assi-g-nm-en-to-pe-ra-to-r" class="level2">
+<h2 class="anchored" data-anchor-id="assi-g-nm-en-to-pe-ra-to-r">Assi g nm en to pe ra to r</h2>
+</section>
+<section id="sa-ve-s" class="level2">
+<h2 class="anchored" data-anchor-id="sa-ve-s">Sa ve s</h2>
+<ul>
+<li>v a lue s</li>
+<li>in to<br>
+</li>
+<li>o bje c ts</li>
+</ul>
+</section>
+<section id="o-bj-e-c-t" class="level2">
+<h2 class="anchored" data-anchor-id="o-bj-e-c-t">o bj e c t</h2>
+<ul>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>v a lue</li>
+</ul>
+</section>
+<section id="we-i-gh-t_-k-g" class="level2">
+<h2 class="anchored" data-anchor-id="we-i-gh-t_-k-g">we i gh t_ k g</h2>
+<ul>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>55</li>
+</ul>
+</section>
+<section id="o-ve-rw-rite-s-p-re-vio-u-s-va-lu-e-s" class="level2">
+<h2 class="anchored" data-anchor-id="o-ve-rw-rite-s-p-re-vio-u-s-va-lu-e-s">O ve rw rite s p re vio u s va lu e s</h2>
+</section>
+<section id="ca-n-b-e-co-m-b-in-ed-with-o-the-r" class="level2">
+<h2 class="anchored" data-anchor-id="ca-n-b-e-co-m-b-in-ed-with-o-the-r">Ca n b e co m b in ed with o the r</h2>
+<ul>
+<li>o p e ra to rs</li>
+</ul>
+</section>
+<section id="we-i-gh-t_-l-b" class="level2">
+<h2 class="anchored" data-anchor-id="we-i-gh-t_-l-b">we i gh t_ l b</h2>
+<ul>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>2 . 2</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>we igh t_ k g</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>(</li>
+<li>a l t/ o pt i on<br>
+</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>d as h )</li>
+<li>37</li>
+</ul>
+</section>
+<section id="n-am-i-ng-ob-j-ects" class="level2">
+<h2 class="anchored" data-anchor-id="n-am-i-ng-ob-j-ects">N am i ng Ob j ects</h2>
+</section>
+<section id="o-bj-ec-tn-am-es" class="level2">
+<h2 class="anchored" data-anchor-id="o-bj-ec-tn-am-es">O bj ec tn am es:</h2>
+</section>
+<section id="ca-nn-o-ts-tart-wi-th-a-di-gi-t" class="level2">
+<h2 class="anchored" data-anchor-id="ca-nn-o-ts-tart-wi-th-a-di-gi-t">ca nn o ts tart wi th a di gi t</h2>
+</section>
+<section id="ca-nn-o-tco-n-tai-n-certa-in-oth-er" class="level2">
+<h2 class="anchored" data-anchor-id="ca-nn-o-tco-n-tai-n-certa-in-oth-er">ca nn o tco n tai n certa in oth er</h2>
+<ul>
+<li>ch ar acter s su ch as a co mma<br>
+</li>
+<li>o r a sp ace.</li>
+</ul>
+</section>
+<section id="ti" class="level2">
+<h2 class="anchored" data-anchor-id="ti">Ti</h2>
+<ul>
+<li>p s:</li>
+</ul>
+</section>
+<section id="m-ak-ei-t" class="level2">
+<h2 class="anchored" data-anchor-id="m-ak-ei-t">M ak ei t</h2>
+<ul>
+<li>a sd esc rip ti ve as<br>
+</li>
+<li>p os si bl e</li>
+</ul>
+</section>
+<section id="u" class="level2">
+<h2 class="anchored" data-anchor-id="u">U</h2>
+<ul>
+<li>se u nd ers cor es to mar k</li>
+<li>sp a ces</li>
+<li>#t hi si sg ood</li>
+<li>w ei gh t_k g</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>55</li>
+<li>#n ot t he se</li>
+<li>w ei gh tkg</li>
+<li>!</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>55</li>
+<li>w ei gh t in kg</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>55</li>
+<li>b la h</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>55</li>
+<li>38</li>
+</ul>
+</section>
+<section id="w-he-re-ar-e-my-ob-je-cts" class="level2">
+<h2 class="anchored" data-anchor-id="w-he-re-ar-e-my-ob-je-cts">W he re ar e my ob je cts?</h2>
+</section>
+<section id="y-ou-can-se-e-yo-ur-o-bj-ect-s-in" class="level2">
+<h2 class="anchored" data-anchor-id="y-ou-can-se-e-yo-ur-o-bj-ect-s-in">Y ou can se e yo ur o bj ect s in</h2>
+<ul>
+<li>t he wor kspa ce (t o p ri gh t</li>
+<li>p an e of<br>
+</li>
+<li>Rst u dio</li>
+<li>)</li>
+</ul>
+</section>
+<section id="y-o-u-ca-n-al-so-get-al-ist-in-go-f" class="level2">
+<h2 class="anchored" data-anchor-id="y-o-u-ca-n-al-so-get-al-ist-in-go-f">Y o u ca n al so get al ist in go f</h2>
+<ul>
+<li>th eseo b j ect swi th<br>
+</li>
+<li>c o mma nd s:</li>
+</ul>
+</section>
+<section id="l-s" class="level2">
+<h2 class="anchored" data-anchor-id="l-s">l s()</h2>
+</section>
+<section id="o-bj-ects" class="level2">
+<h2 class="anchored" data-anchor-id="o-bj-ects">o bj ects ()</h2>
+<ul>
+<li>39</li>
+</ul>
+</section>
+<section id="c-he-cki-ng-va-l-ue-sof-an-obj-e-ct" class="level2">
+<h2 class="anchored" data-anchor-id="c-he-cki-ng-va-l-ue-sof-an-obj-e-ct">C he cki ng Va l ue sof an Obj e ct</h2>
+</section>
+<section id="i-f-you-w-an-t-t-o-i-nsp-ect-t-he" class="level2">
+<h2 class="anchored" data-anchor-id="i-f-you-w-an-t-t-o-i-nsp-ect-t-he">I f you w an t t o i nsp ect t he</h2>
+<ul>
+<li>va lue s of an ob ject , t ype<br>
+</li>
+<li>t he na me o f th e o bje ct in</li>
+<li>t he con sole</li>
+<li>weigh t_kg</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>55</li>
+<li>we igh t_ k g</li>
+<li>40</li>
+</ul>
+</section>
+<section id="exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip-1" class="level2">
+<h2 class="anchored" data-anchor-id="exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip-1">Exa m pl e: Wh ol e fta l ar ge r Tip ?</h2>
+</section>
+<section id="b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5-1" class="level2">
+<h2 class="anchored" data-anchor-id="b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5-1">b ill at S ha ke S ha ck came ou t t o $2 5</h2>
+</section>
+<section id="he-t-ip-s1-5-1" class="level2">
+<h2 class="anchored" data-anchor-id="he-t-ip-s1-5-1">He t ip s1 5%</h2>
+</section>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3"></h2>
+</section>
+<section id="he-t-ip-s1-2-1" class="level2">
+<h2 class="anchored" data-anchor-id="he-t-ip-s1-2-1">He t ip s1 2%</h2>
+</section>
+<section id="use-th-e-a-ssign-me-nt-op-er-at-o-r-t-o-save-ho-w-mu-ch-lo-ui-e" class="level2">
+<h2 class="anchored" data-anchor-id="use-th-e-a-ssign-me-nt-op-er-at-o-r-t-o-save-ho-w-mu-ch-lo-ui-e">Use th e a ssign me nt op er at o r t o save ho w mu ch Lo ui e</h2>
+<ul>
+<li>a nd<br>
+</li>
+<li>L ou be rt o</li>
+<li>t ip pe d (cr ea te 6 o bje ct s)</li>
+<li>41</li>
+</ul>
+</section>
+<section id="r-em-o-vin-g-obj-e-cts" class="level2">
+<h2 class="anchored" data-anchor-id="r-em-o-vin-g-obj-e-cts">R em o vin g Obj e cts</h2>
+</section>
+<section id="s-om-et-ime-s-whe-n-yo-u-h-ave" class="level2">
+<h2 class="anchored" data-anchor-id="s-om-et-ime-s-whe-n-yo-u-h-ave">S om et ime s whe n yo u h ave</h2>
+<ul>
+<li>Rst u dio</li>
+<li>o pe n f or a whi le,<br>
+</li>
+<li>yo ur wo rksp ace ge ts</li>
+<li>clu t te re d u p wit h o bj ect s</li>
+</ul>
+</section>
+<section id="y-ou-can-r-em-ove-o-bj-ect-s" class="level2">
+<h2 class="anchored" data-anchor-id="y-ou-can-r-em-ove-o-bj-ect-s">Y ou can r em ove o bj ect s</h2>
+<ul>
+<li>wit h comm an ds (r igh t ) or by</li>
+<li>clicki ng t h e b roo m ico n in</li>
+</ul>
+</section>
+<section id="e-nvir-on-me-nt" class="level2">
+<h2 class="anchored" data-anchor-id="e-nvir-on-me-nt">E nvir on me nt</h2>
+<ul>
+<li>p an e</li>
+<li><h1 id="rem-ove-ob-ject-cal-led-y">rem ove ob ject cal led y</h1></li>
+<li>rm</li>
+<li>(</li>
+<li>y</li>
+<li>)</li>
+<li><h1 id="rem-ove-eve-ryt-hin-g-in-you-r">rem ove eve ryt hin g in you r</h1></li>
+<li>wo rksp ace</li>
+<li>rm</li>
+<li>(</li>
+<li>list<br>
+</li>
+<li>=</li>
+<li>ls</li>
+<li>() )</li>
+<li>42</li>
+</ul>
+</section>
+<section id="ob-j-ects-no-tju-stfo-r-sto-ri-n-gn-u-mb-er-s" class="level2">
+<h2 class="anchored" data-anchor-id="ob-j-ects-no-tju-stfo-r-sto-ri-n-gn-u-mb-er-s">Ob j ects: No tJu stfo r Sto ri n gN u mb er s</h2>
+<ul>
+<li>43</li>
+<li>t y pe</li>
+<li>x</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>32</li>
+<li>n u me r ic</li>
+<li>y</li>
+<li>&lt;</li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>“h i”</li>
+<li>ch a ra cte r</li>
+</ul>
+</section>
+<section id="ba-sic-da-ta-t-ype-s" class="level2">
+<h2 class="anchored" data-anchor-id="ba-sic-da-ta-t-ype-s">Ba sic Da ta t ype s:</h2>
+</section>
+<section id="ch-a-r-acte-r" class="level2">
+<h2 class="anchored" data-anchor-id="ch-a-r-acte-r">Ch a r acte r</h2>
+</section>
+<section id="nu-m-e-ric" class="level2">
+<h2 class="anchored" data-anchor-id="nu-m-e-ric">Nu m e ric</h2>
 
 
 </section>
