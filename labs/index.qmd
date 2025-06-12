@@ -1,9 +1,0 @@
-
----
-title: "Labs"
-format: html
----
-
-## Lab Assignments
-
-Each lab includes an R script and a brief writeup. Submit both via Canvas.
