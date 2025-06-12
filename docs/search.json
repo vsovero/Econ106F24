@@ -14,1263 +14,227 @@
     "text": "📎 Download the R script for this lecture"
   },
   {
-    "objectID": "lectures/lecture1.html#econ-1-06",
-    "href": "lectures/lecture1.html#econ-1-06",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Econ 1 06",
-    "text": "Econ 1 06\n\nDa ta An alysi si n\nEcon omics\nFal l 2024\nBa sedo n:\nht tps: //\ndat acar pent r y.or g\n/R\n\n\n\necol ogy\n\n\n\nl esson/ int ro ducti on\n\n\n\nr\n\n\n\nr stud io. htm l"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ou-tl-i-ne",
-    "href": "lectures/lecture1.html#ou-tl-i-ne",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ou tl i ne",
-    "text": "Ou tl i ne"
-  },
-  {
-    "objectID": "lectures/lecture1.html#cla-ss-o-ve-rvi-ew",
-    "href": "lectures/lecture1.html#cla-ss-o-ve-rvi-ew",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Cla ss O ve rvi ew",
-    "text": "Cla ss O ve rvi ew"
-  },
-  {
-    "objectID": "lectures/lecture1.html#in-tro-t-o-r",
-    "href": "lectures/lecture1.html#in-tro-t-o-r",
-    "title": "Lecture 1: Introduction to R",
-    "section": "In tro t o R :",
-    "text": "In tro t o R :"
-  },
-  {
-    "objectID": "lectures/lecture1.html#r",
-    "href": "lectures/lecture1.html#r",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R",
-    "text": "R\n\ns\nt ud io\nCo nso le"
-  },
-  {
-    "objectID": "lectures/lecture1.html#o-pe-ra-t-ors",
-    "href": "lectures/lecture1.html#o-pe-ra-t-ors",
-    "title": "Lecture 1: Introduction to R",
-    "section": "O pe ra t ors",
-    "text": "O pe ra t ors"
-  },
-  {
-    "objectID": "lectures/lecture1.html#fu-nct-io-ns",
-    "href": "lectures/lecture1.html#fu-nct-io-ns",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Fu nct io ns",
-    "text": "Fu nct io ns"
-  },
-  {
-    "objectID": "lectures/lecture1.html#o-bj-ect-s",
-    "href": "lectures/lecture1.html#o-bj-ect-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "O bj ect s",
-    "text": "O bj ect s\n\n2"
-  },
-  {
-    "objectID": "lectures/lecture1.html#d-at-ai-se-ver-yw-he-re",
-    "href": "lectures/lecture1.html#d-at-ai-se-ver-yw-he-re",
-    "title": "Lecture 1: Introduction to R",
-    "section": "D at ai se ver yw he re",
-    "text": "D at ai se ver yw he re"
-  },
-  {
-    "objectID": "lectures/lecture1.html#in-20-15-t-h-e-he-a-lt-hca-re-i-nd-us-t-ry",
-    "href": "lectures/lecture1.html#in-20-15-t-h-e-he-a-lt-hca-re-i-nd-us-t-ry",
-    "title": "Lecture 1: Introduction to R",
-    "section": "In 20 15 t h e he a lt hca re i nd us t ry",
-    "text": "In 20 15 t h e he a lt hca re i nd us t ry\n\na lo ne p ro d uce d\n1.2 b i lli on c li n i c a l\nd oc um e n ts\n."
-  },
-  {
-    "objectID": "lectures/lecture1.html#t-h-e-a-mou-nt-of-t-ex-t-d-at-a-g-en-er-at-e-d",
-    "href": "lectures/lecture1.html#t-h-e-a-mou-nt-of-t-ex-t-d-at-a-g-en-er-at-e-d",
-    "title": "Lecture 1: Introduction to R",
-    "section": "T h e a mou nt of t ex t d at a g en er at e d",
-    "text": "T h e a mou nt of t ex t d at a g en er at e d\n\na nn ua lly (d i g i t a l for ms , s oci a l\nme d i a ,o nl i ne po rt al s ,p d f re po rt s ,\ne ma i ls , t ex t me s s a g es ) i s ev er\n\ni n cre as i n g\nH olmes , Da wn E., ‘T he dat a expl osi on’, B ig Data : A Very Short I nt roducti on, Ver y Short Int roducti ons\n(Oxford , 20 17; onl ine\nedn\n, Oxford Academi c, 23 Nov.\n\n20 17),\nht tp s: // doi. org /10 .1093 /act rad e/97 801987 7957 5.0 03. 00 01\n)\n3"
-  },
-  {
-    "objectID": "lectures/lecture1.html#h-tt-p-s",
-    "href": "lectures/lecture1.html#h-tt-p-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "h tt p s: //",
-    "text": "h tt p s: //\n\nwo l. iza. o rg\n/ ar t icles/ b ig\n\n\n\nd at a\n\n\n\nin\n\n\n\ne con omi cs\n4"
-  },
-  {
-    "objectID": "lectures/lecture1.html#n-ee-d-aj-o-b-le-ar-n-ho-w-tow-o-rk-wi-th-d-ata",
-    "href": "lectures/lecture1.html#n-ee-d-aj-o-b-le-ar-n-ho-w-tow-o-rk-wi-th-d-ata",
-    "title": "Lecture 1: Introduction to R",
-    "section": "N ee d aj o b? Le ar n ho w tow o rk wi th d ata",
-    "text": "N ee d aj o b? Le ar n ho w tow o rk wi th d ata"
-  },
-  {
-    "objectID": "lectures/lecture1.html#da-t-a-an-al-yst-e-mph-asi-so-n",
-    "href": "lectures/lecture1.html#da-t-a-an-al-yst-e-mph-asi-so-n",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Da t a an al yst: e mph asi so n",
-    "text": "Da t a an al yst: e mph asi so n\n\nb ein g a ble to int e rp ret a nd\n\nco mmu nica t e f in din gs\n(i nsig ht , re po rt ing )"
-  },
-  {
-    "objectID": "lectures/lecture1.html#data-li-te-ra-cy-i-s-the-ab-i-li-ty",
-    "href": "lectures/lecture1.html#data-li-te-ra-cy-i-s-the-ab-i-li-ty",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Data li te ra cy i s the ab i li ty",
-    "text": "Data li te ra cy i s the ab i li ty\n\nof an i nd i v i du alt or e ad,\n\nun de r stand , an d\nw or k\nwi th\nd ata to cr eat eme ani ng fu l\ni nsi g hts\n5\nht t ps :/ /\nw ww . r\n\n\n\nbl o gge rs . co m\n/ 202 2/ 04/ t ex t\n\n\n\nan al y si s\n\n\n\nof\n\n\n\nj ob\n\n\n\nde sc r i pt i ons\n\n\n\nf or\n\n\n\nda ta\n\n\n\ns ci e nt i st s\n\n\n\nda ta\n\n\n\nen gi ne er s\n\n\n\nm a ch i ne\n\n\n\nl ea rn i ng\n\n\n\nen gi ne er s\n\n\n\nan d\n\n\n\nda ta\n\n\n\nan al y st s /"
-  },
-  {
-    "objectID": "lectures/lecture1.html#in-ten-de-d-aud-i-en-ce",
-    "href": "lectures/lecture1.html#in-ten-de-d-aud-i-en-ce",
-    "title": "Lecture 1: Introduction to R",
-    "section": "In ten de d Aud i en ce",
-    "text": "In ten de d Aud i en ce"
-  },
-  {
-    "objectID": "lectures/lecture1.html#s",
-    "href": "lectures/lecture1.html#s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "S",
-    "text": "S\n\ntu de nts who want to:"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ser-ve-asr-esearc-hassi-st-ant-s",
-    "href": "lectures/lecture1.html#ser-ve-asr-esearc-hassi-st-ant-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "ser ve asr esearc hassi st ant s",
-    "text": "ser ve asr esearc hassi st ant s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#c-onduct-em-pi-ri-c-alanaly-ses",
-    "href": "lectures/lecture1.html#c-onduct-em-pi-ri-c-alanaly-ses",
-    "title": "Lecture 1: Introduction to R",
-    "section": "c onduct em pi ri c alanaly ses",
-    "text": "c onduct em pi ri c alanaly ses"
-  },
-  {
-    "objectID": "lectures/lecture1.html#are-i-nter-ested-i-nd-ata-sci-enc-ecar-eers.",
-    "href": "lectures/lecture1.html#are-i-nter-ested-i-nd-ata-sci-enc-ecar-eers.",
-    "title": "Lecture 1: Introduction to R",
-    "section": "are i nter ested i nD ata Sci enc ecar eers.",
-    "text": "are i nter ested i nD ata Sci enc ecar eers."
-  },
-  {
-    "objectID": "lectures/lecture1.html#p-re-req-ui-sit-es-eco-n-1-01-s-ta-t-ist-ics",
-    "href": "lectures/lecture1.html#p-re-req-ui-sit-es-eco-n-1-01-s-ta-t-ist-ics",
-    "title": "Lecture 1: Introduction to R",
-    "section": "P re req ui sit es: Eco n 1 01 (S ta t ist ics)",
-    "text": "P re req ui sit es: Eco n 1 01 (S ta t ist ics)"
-  },
-  {
-    "objectID": "lectures/lecture1.html#no-pri-or-p-ro-gra-mm-ing-exp-eri-en-ce-is-ne-ed-ed",
-    "href": "lectures/lecture1.html#no-pri-or-p-ro-gra-mm-ing-exp-eri-en-ce-is-ne-ed-ed",
-    "title": "Lecture 1: Introduction to R",
-    "section": "No pri or p ro gra mm ing exp eri en ce is ne ed ed",
-    "text": "No pri or p ro gra mm ing exp eri en ce is ne ed ed\n\n6"
-  },
-  {
-    "objectID": "lectures/lecture1.html#c-ou-r-seob-j-ecti-ve-s",
-    "href": "lectures/lecture1.html#c-ou-r-seob-j-ecti-ve-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "C ou r seOb j ecti ve s",
-    "text": "C ou r seOb j ecti ve s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#m-aste-r-the-ab-i-li-ty-t-oc-olle-ct-p-r-oc-ess-i-nte-r-pr-et",
-    "href": "lectures/lecture1.html#m-aste-r-the-ab-i-li-ty-t-oc-olle-ct-p-r-oc-ess-i-nte-r-pr-et",
-    "title": "Lecture 1: Introduction to R",
-    "section": "M aste r the ab i li ty t oc olle ct, p r oc ess, i nte r pr et ,",
-    "text": "M aste r the ab i li ty t oc olle ct, p r oc ess, i nte r pr et ,\n\nan aly ze\nr aw\nd ata usi ng R."
-  },
-  {
-    "objectID": "lectures/lecture1.html#dev-e-lop-v-i-sual-iz-ati-on-ski-lls-ne-cessar-y-to",
-    "href": "lectures/lecture1.html#dev-e-lop-v-i-sual-iz-ati-on-ski-lls-ne-cessar-y-to",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Dev e lop v i sual iz ati on ski lls ne cessar y to",
-    "text": "Dev e lop v i sual iz ati on ski lls ne cessar y to\n\nsumma ri ze d ata fi nd i ng s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#c-ommun-i-cate-fi-n-di-ng-st-ov-ar-i-ou-sau-di-e-nce-san-d",
-    "href": "lectures/lecture1.html#c-ommun-i-cate-fi-n-di-ng-st-ov-ar-i-ou-sau-di-e-nce-san-d",
-    "title": "Lecture 1: Introduction to R",
-    "section": "C ommun i cate fi n di ng st ov ar i ou sau di e nce san d",
-    "text": "C ommun i cate fi n di ng st ov ar i ou sau di e nce san d\n\ni n v ar io us for mats.\n7"
-  },
-  {
-    "objectID": "lectures/lecture1.html#w-hya-re-w-e-usi-ng-r-i-n-thi-sco-ur-se",
-    "href": "lectures/lecture1.html#w-hya-re-w-e-usi-ng-r-i-n-thi-sco-ur-se",
-    "title": "Lecture 1: Introduction to R",
-    "section": "W hya re w e usi ng R i n thi sco ur se?",
-    "text": "W hya re w e usi ng R i n thi sco ur se?\n\nAd v antag es of R:"
-  },
-  {
-    "objectID": "lectures/lecture1.html#é-m-t6-b-6m",
-    "href": "lectures/lecture1.html#é-m-t6-b-6m",
-    "title": "Lecture 1: Introduction to R",
-    "section": "\u0002‰ \b¬\u0002}\u0001É \u0002m \u0001¡\u0001¡ \u0001T\u0002%\u0001”\u00026 \u0002b\u0001¡ \u0002% \u0002}\u00026\u0002€\u0002m \u0001…\u0001¡",
-    "text": "\u0002‰ \b¬\u0002}\u0001É \u0002m \u0001¡\u0001¡ \u0001T\u0002%\u0001”\u00026 \u0002b\u0001¡ \u0002% \u0002}\u00026\u0002€\u0002m \u0001…\u0001¡"
-  },
-  {
-    "objectID": "lectures/lecture1.html#áë-ê-ë",
-    "href": "lectures/lecture1.html#áë-ê-ë",
-    "title": "Lecture 1: Introduction to R",
-    "section": "\u0002‰ \b¬\u0002}\u0002Á\u0001ë \u0001” \u0001¡\u0002\u0002Ê \u0002€\u0002}\u0001¡\u0001” \u0001ë\u0002%",
-    "text": "\u0002‰ \b¬\u0002}\u0002Á\u0001ë \u0001” \u0001¡\u0002\u0002Ê \u0002€\u0002}\u0001¡\u0001” \u0001ë\u0002%\n\ni nd ustr y"
-  },
-  {
-    "objectID": "lectures/lecture1.html#it-ha-sa-lar-ge-an-d-act-iv-e",
-    "href": "lectures/lecture1.html#it-ha-sa-lar-ge-an-d-act-iv-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "It ha sa lar ge an d act iv e",
-    "text": "It ha sa lar ge an d act iv e\n\nuse r co mmuni ty"
-  },
-  {
-    "objectID": "lectures/lecture1.html#m-or-e-of-a-tr-ue",
-    "href": "lectures/lecture1.html#m-or-e-of-a-tr-ue",
-    "title": "Lecture 1: Introduction to R",
-    "section": "M or e of a tr ue",
-    "text": "M or e of a tr ue\n\np r ogr ammin g lang uag e\nco mpa re d to Sta ta\n8"
-  },
-  {
-    "objectID": "lectures/lecture1.html#r-vs.p-ytho-n",
-    "href": "lectures/lecture1.html#r-vs.p-ytho-n",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R vs.P ytho n",
-    "text": "R vs.P ytho n\n\nR:"
-  },
-  {
-    "objectID": "lectures/lecture1.html#b-uil-t-fo-r-s-ta-t-is-tics-a-nd-d-at-a",
-    "href": "lectures/lecture1.html#b-uil-t-fo-r-s-ta-t-is-tics-a-nd-d-at-a",
-    "title": "Lecture 1: Introduction to R",
-    "section": "B uil t fo r s ta t is tics a nd d at a",
-    "text": "B uil t fo r s ta t is tics a nd d at a\n\na na ly s i s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#b-e-tt-e-r-at-eco-no-me-t-ri-cs-an-d-d-a-ta",
-    "href": "lectures/lecture1.html#b-e-tt-e-r-at-eco-no-me-t-ri-cs-an-d-d-a-ta",
-    "title": "Lecture 1: Introduction to R",
-    "section": "B e tt e r at eco no me t ri cs an d d a ta",
-    "text": "B e tt e r at eco no me t ri cs an d d a ta\n\nv i s ua li za t i on\nPy t ho n:"
-  },
-  {
-    "objectID": "lectures/lecture1.html#b-uil-t-fo-r-gen-e-ral",
-    "href": "lectures/lecture1.html#b-uil-t-fo-r-gen-e-ral",
-    "title": "Lecture 1: Introduction to R",
-    "section": "B uil t fo r gen e ral",
-    "text": "B uil t fo r gen e ral\n\n\n\n\np urp os e\n\np rog ram min ga n d s o ftw ar e\nd e ve lo pm en t"
-  },
-  {
-    "objectID": "lectures/lecture1.html#b-e-tt-e-r-at-ma-chi-n-e-le-a-rni-n-g",
-    "href": "lectures/lecture1.html#b-e-tt-e-r-at-ma-chi-n-e-le-a-rni-n-g",
-    "title": "Lecture 1: Introduction to R",
-    "section": "B e tt e r at ma chi n e le a rni n g",
-    "text": "B e tt e r at ma chi n e le a rni n g\n\n9"
-  },
-  {
-    "objectID": "lectures/lecture1.html#r-i-sa-me-an-sn-ot-an-en-d",
-    "href": "lectures/lecture1.html#r-i-sa-me-an-sn-ot-an-en-d",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R i sa me an s,n ot an en d",
-    "text": "R i sa me an s,n ot an en d"
-  },
-  {
-    "objectID": "lectures/lecture1.html#t-he-go-also-f-thi-sc-our-se-ar-e",
-    "href": "lectures/lecture1.html#t-he-go-also-f-thi-sc-our-se-ar-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "T he go also f thi sc our se ar e",
-    "text": "T he go also f thi sc our se ar e\n\np lat fo rm\n\n\n\nag nos t i c"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ty6-àê-té-6éb-ë-éë-bt-tì",
-    "href": "lectures/lecture1.html#ty6-àê-té-6éb-ë-éë-bt-tì",
-    "title": "Lecture 1: Introduction to R",
-    "section": "\u0002‰ \b¬\u0002} \u0002%\u00026\u0002‰ \u0001T\u0001y\u00026\u0002€\u0002‰\u0002‰ \u0001à\u0001¡\u0002}\u0002Ê \u0002%\u0002‰ \u0001T\u0002É \u00026\u0001É\u0002}\u0002b \u0001¡\u0001…\u0001ë \u0001É\u0001ë \u0001… \u0002b\u0001T\u0001…\u0002\u0007 \u0001T\u0001Ì\u0001¡\u0002}",
-    "text": "\u0002‰ \b¬\u0002} \u0002%\u00026\u0002‰ \u0001T\u0001y\u00026\u0002€\u0002‰\u0002‰ \u0001à\u0001¡\u0002}\u0002Ê \u0002%\u0002‰ \u0001T\u0002É \u00026\u0001É\u0002}\u0002b \u0001¡\u0001…\u0001ë \u0001É\u0001ë \u0001… \u0002b\u0001T\u0001…\u0002\u0007 \u0001T\u0001Ì\u0001¡\u0002}"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ty6-à-6b-l6ì-ë-lt-à6ìàb-m6",
-    "href": "lectures/lecture1.html#ty6-à-6b-l6ì-ë-lt-à6ìàb-m6",
-    "title": "Lecture 1: Introduction to R",
-    "section": "\u0002‰ \b¬\u0002} \u0001T\u0001y\u00026\u0002€\u0002‰\u0002‰ \u0001à\u0001¡\u0001… \u00026\u0002%\u0001…\u0001¡\u0002b\u0002‰ \u0002}\bl\u0002\u00026\u0001Ì \u0001ë \u0001…\bl\u0001T\u0002%\u0001”\u0002‰ \u0001à\u00026\u0002€\u0001Ì\u0001à\u0002‰\u0002b \u0002m\u00026\u0001…\u0001¡\u0002} \u0002}\u0001¡\u0002}",
-    "text": "\u0002‰ \b¬\u0002} \u0001T\u0001y\u00026\u0002€\u0002‰\u0002‰ \u0001à\u0001¡\u0001… \u00026\u0002%\u0001…\u0001¡\u0002b\u0002‰ \u0002}\bl\u0002\u00026\u0001Ì \u0001ë \u0001…\bl\u0001T\u0002%\u0001”\u0002‰ \u0001à\u00026\u0002€\u0001Ì\u0001à\u0002‰\u0002b \u0002m\u00026\u0001…\u0001¡\u0002} \u0002}\u0001¡\u0002}\n\nunder ly ing what w e’re doi ng andwhy"
-  },
-  {
-    "objectID": "lectures/lecture1.html#yo-ur-e-v-entu-al-goa-l",
-    "href": "lectures/lecture1.html#yo-ur-e-v-entu-al-goa-l",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Yo ur e v entu al goa l:",
-    "text": "Yo ur e v entu al goa l:\n\nUs e t he ri g ht t oo l for t he j ob"
-  },
-  {
-    "objectID": "lectures/lecture1.html#yo-u-wil-lli-k-ely-l-ear-n-all-the-set-ools-at-some-p-oi-nt.",
-    "href": "lectures/lecture1.html#yo-u-wil-lli-k-ely-l-ear-n-all-the-set-ools-at-some-p-oi-nt.",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Yo u wil lli k ely l ear n all the set ools at some p oi nt.",
-    "text": "Yo u wil lli k ely l ear n all the set ools at some p oi nt.\n\n10"
-  },
-  {
-    "objectID": "lectures/lecture1.html#gr-ad-i-ng",
-    "href": "lectures/lecture1.html#gr-ad-i-ng",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Gr ad i ng",
-    "text": "Gr ad i ng\n\n11\nA ss i g nm en t\nP o in ts\nL a b A ssig n me n ts\n40\nP o ll E ve rywh e re\n\n10\nP ro je ct M il est o n es\n30\nF in a l P ro je ct\n\n20\nT OTAL\n100"
-  },
-  {
-    "objectID": "lectures/lecture1.html#l-ab-assi-gn-m-en-ts",
-    "href": "lectures/lecture1.html#l-ab-assi-gn-m-en-ts",
-    "title": "Lecture 1: Introduction to R",
-    "section": "L ab Assi gn m en ts",
-    "text": "L ab Assi gn m en ts"
-  },
-  {
-    "objectID": "lectures/lecture1.html#l-ab-a-ssig-nme-nt-s-gi-ves-you-t-he-o-pp-or-t-un-it-yt-o-pra-ct-ice-t-h-e",
-    "href": "lectures/lecture1.html#l-ab-a-ssig-nme-nt-s-gi-ves-you-t-he-o-pp-or-t-un-it-yt-o-pra-ct-ice-t-h-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "L ab a ssig nme nt s: gi ves you t he o pp or t un it yt o pra ct ice t h e",
-    "text": "L ab a ssig nme nt s: gi ves you t he o pp or t un it yt o pra ct ice t h e\n\nd at a skil ls cove red du rin g le ct ure"
-  },
-  {
-    "objectID": "lectures/lecture1.html#two-com-po-ne-nt-s-writ-e-up-a-nd-r-scrip-t",
-    "href": "lectures/lecture1.html#two-com-po-ne-nt-s-writ-e-up-a-nd-r-scrip-t",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Two com po ne nt s: writ e up a nd R scrip t",
-    "text": "Two com po ne nt s: writ e up a nd R scrip t"
-  },
-  {
-    "objectID": "lectures/lecture1.html#du-e-o-n-s-un-da-ysa-t-11-5-9p-m",
-    "href": "lectures/lecture1.html#du-e-o-n-s-un-da-ysa-t-11-5-9p-m",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Du e o n S un da ysa t 11 :5 9p m",
-    "text": "Du e o n S un da ysa t 11 :5 9p m"
-  },
-  {
-    "objectID": "lectures/lecture1.html#i-will-d-ro-p-t-he-lowe-st-lab-score-at-t-he-en-d-of-t-he-qu-ar-te-r",
-    "href": "lectures/lecture1.html#i-will-d-ro-p-t-he-lowe-st-lab-score-at-t-he-en-d-of-t-he-qu-ar-te-r",
-    "title": "Lecture 1: Introduction to R",
-    "section": "I will d ro p t he lowe st lab score at t he en d of t he qu ar te r",
-    "text": "I will d ro p t he lowe st lab score at t he en d of t he qu ar te r\n\n12"
-  },
-  {
-    "objectID": "lectures/lecture1.html#r-ese-ar-ch-pr-oj-e-ct",
-    "href": "lectures/lecture1.html#r-ese-ar-ch-pr-oj-e-ct",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R ese ar ch Pr oj e ct",
-    "text": "R ese ar ch Pr oj e ct"
-  },
-  {
-    "objectID": "lectures/lecture1.html#t-he-go-alo-f-thi-sc-lass-is-to-gi-v-e-y-ou-the-sk-il-lsto-c-ond-uc-t",
-    "href": "lectures/lecture1.html#t-he-go-alo-f-thi-sc-lass-is-to-gi-v-e-y-ou-the-sk-il-lsto-c-ond-uc-t",
-    "title": "Lecture 1: Introduction to R",
-    "section": "T he go alo f thi sc lass is to gi v e y ou the sk il lsto c ond uc t",
-    "text": "T he go alo f thi sc lass is to gi v e y ou the sk il lsto c ond uc t\n\ny ou r own\nsm all\nr ese ar ch pr o je ct."
-  },
-  {
-    "objectID": "lectures/lecture1.html#t-hr-ee-p-ro-j-ect-mi-lesto-nes-wi-ll-walk-y-ou-thr-ou-gh-th-e",
-    "href": "lectures/lecture1.html#t-hr-ee-p-ro-j-ect-mi-lesto-nes-wi-ll-walk-y-ou-thr-ou-gh-th-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "T hr ee p ro j ect mi lesto nes wi ll walk y ou thr ou gh th e",
-    "text": "T hr ee p ro j ect mi lesto nes wi ll walk y ou thr ou gh th e\n\nr ese ar ch pr o cess"
-  },
-  {
-    "objectID": "lectures/lecture1.html#all-thr-e-ewi-ll-co-unt",
-    "href": "lectures/lecture1.html#all-thr-e-ewi-ll-co-unt",
-    "title": "Lecture 1: Introduction to R",
-    "section": "All thr e ewi ll co unt",
-    "text": "All thr e ewi ll co unt\n\nto war d y our fi nal gr ad e (no d r op s)"
-  },
-  {
-    "objectID": "lectures/lecture1.html#f-i-nal-pr-o-du-ct",
-    "href": "lectures/lecture1.html#f-i-nal-pr-o-du-ct",
-    "title": "Lecture 1: Introduction to R",
-    "section": "F i nal pr o du ct:",
-    "text": "F i nal pr o du ct:"
-  },
-  {
-    "objectID": "lectures/lecture1.html#w-ri-t-eup-150-0wor-ds",
-    "href": "lectures/lecture1.html#w-ri-t-eup-150-0wor-ds",
-    "title": "Lecture 1: Introduction to R",
-    "section": "W ri t eup( ~ 150 0wor ds)",
-    "text": "W ri t eup( ~ 150 0wor ds)"
-  },
-  {
-    "objectID": "lectures/lecture1.html#doc-ument-at-i-on-rs-cri-p-ts",
-    "href": "lectures/lecture1.html#doc-ument-at-i-on-rs-cri-p-ts",
-    "title": "Lecture 1: Introduction to R",
-    "section": "doc ument at i on( rs cri p ts)",
-    "text": "doc ument at i on( rs cri p ts)\n\n13"
-  },
-  {
-    "objectID": "lectures/lecture1.html#e-xamples-ofs-tuden-t",
-    "href": "lectures/lecture1.html#e-xamples-ofs-tuden-t",
-    "title": "Lecture 1: Introduction to R",
-    "section": "E xamples ofS tuden t",
-    "text": "E xamples ofS tuden t\n\nW ork"
-  },
-  {
-    "objectID": "lectures/lecture1.html#c-ha-tgp-t-gen-er-at-ive-ai",
-    "href": "lectures/lecture1.html#c-ha-tgp-t-gen-er-at-ive-ai",
-    "title": "Lecture 1: Introduction to R",
-    "section": "C ha tGP T/ Gen er at ive AI",
-    "text": "C ha tGP T/ Gen er at ive AI"
-  },
-  {
-    "objectID": "lectures/lecture1.html#i-t-is-up-t-o-you-w-he-th-er-you-w-an-t-t-o-u-se-g-en-er-at-ive-a-i-t-o-he-lp",
-    "href": "lectures/lecture1.html#i-t-is-up-t-o-you-w-he-th-er-you-w-an-t-t-o-u-se-g-en-er-at-ive-a-i-t-o-he-lp",
-    "title": "Lecture 1: Introduction to R",
-    "section": "I t is up t o you w he th er you w an t t o u se g en er at ive A I t o he lp",
-    "text": "I t is up t o you w he th er you w an t t o u se g en er at ive A I t o he lp\n\nyo u wit h yo ur cod e"
-  },
-  {
-    "objectID": "lectures/lecture1.html#g-ui-de-line-s",
-    "href": "lectures/lecture1.html#g-ui-de-line-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "G ui de line s:",
-    "text": "G ui de line s:"
-  },
-  {
-    "objectID": "lectures/lecture1.html#t-he-cod-e-has-t-o-use-t-he-t-ool-sco-vered-i-n-lect-ure",
-    "href": "lectures/lecture1.html#t-he-cod-e-has-t-o-use-t-he-t-ool-sco-vered-i-n-lect-ure",
-    "title": "Lecture 1: Introduction to R",
-    "section": "T he cod e has t o use t he t ool sco vered i n lect ure",
-    "text": "T he cod e has t o use t he t ool sco vered i n lect ure"
-  },
-  {
-    "objectID": "lectures/lecture1.html#you-ca-nno-t-use-i-t-f-or-th-e-writ-t-en-po-rti-on-of-lab-a-ssign-ment-s-or",
-    "href": "lectures/lecture1.html#you-ca-nno-t-use-i-t-f-or-th-e-writ-t-en-po-rti-on-of-lab-a-ssign-ment-s-or",
-    "title": "Lecture 1: Introduction to R",
-    "section": "You ca nno t use i t f or th e writ t en po rti on of lab a ssign ment s or",
-    "text": "You ca nno t use i t f or th e writ t en po rti on of lab a ssign ment s or\n\nrese arch mil est one s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#you-n-eed-t-o-st-at-e-whe-th-er-you-use-d-it-f-or-you-rco-de-an-d-how-.",
-    "href": "lectures/lecture1.html#you-n-eed-t-o-st-at-e-whe-th-er-you-use-d-it-f-or-you-rco-de-an-d-how-.",
-    "title": "Lecture 1: Introduction to R",
-    "section": "You n eed t o st at e whe th er you use d it f or you rco de an d how .",
-    "text": "You n eed t o st at e whe th er you use d it f or you rco de an d how .\n\n15"
-  },
-  {
-    "objectID": "lectures/lecture1.html#po-l-l-eve-ryw-h-er-e",
-    "href": "lectures/lecture1.html#po-l-l-eve-ryw-h-er-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Po l l Eve ryw h er e",
-    "text": "Po l l Eve ryw h er e"
-  },
-  {
-    "objectID": "lectures/lecture1.html#i-u-se-poll-eve-rywhe-re-to",
-    "href": "lectures/lecture1.html#i-u-se-poll-eve-rywhe-re-to",
-    "title": "Lecture 1: Introduction to R",
-    "section": "I u se Poll Eve rywhe re to",
-    "text": "I u se Poll Eve rywhe re to\n\nen coura ge act ive l earn ing d urin g\nle ctu re"
-  },
-  {
-    "objectID": "lectures/lecture1.html#my-pol-ls-wil-l-be-ava-ila-ble-h-ere",
-    "href": "lectures/lecture1.html#my-pol-ls-wil-l-be-ava-ila-ble-h-ere",
-    "title": "Lecture 1: Introduction to R",
-    "section": "My pol ls wil l be ava ila ble h ere",
-    "text": "My pol ls wil l be ava ila ble h ere\n\nwh en t hey go l ive:\n\nPo l lE v.co m/v s ove ro"
-  },
-  {
-    "objectID": "lectures/lecture1.html#po-l-l-eve-ryw-h-er-e-1",
-    "href": "lectures/lecture1.html#po-l-l-eve-ryw-h-er-e-1",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Po l l Eve ryw h er e",
-    "text": "Po l l Eve ryw h er e"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ple-ase-use-yo-ur",
-    "href": "lectures/lecture1.html#ple-ase-use-yo-ur",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ple ase use yo ur",
-    "text": "Ple ase use yo ur\n\nucr\nema il ad dress t o sign i n (do no t sig n up f or an acco unt )"
-  },
-  {
-    "objectID": "lectures/lecture1.html#you-w-ill-b-e-redi-rect-ed-t-o-th-e-ucr-sso",
-    "href": "lectures/lecture1.html#you-w-ill-b-e-redi-rect-ed-t-o-th-e-ucr-sso",
-    "title": "Lecture 1: Introduction to R",
-    "section": "You w ill b e redi rect ed t o th e UCR SSO",
-    "text": "You w ill b e redi rect ed t o th e UCR SSO"
-  },
-  {
-    "objectID": "lectures/lecture1.html#l-ectu-re-qu-i-zzes-un-gr-a-de-d",
-    "href": "lectures/lecture1.html#l-ectu-re-qu-i-zzes-un-gr-a-de-d",
-    "title": "Lecture 1: Introduction to R",
-    "section": "L ectu re Qu i zzes( un gr a de d)",
-    "text": "L ectu re Qu i zzes( un gr a de d)"
-  },
-  {
-    "objectID": "lectures/lecture1.html#p-ost-e-d-on-can-vas-f-o-r-you-to-pr-act-ice-a-f-t-er-le-ct-ur-e",
-    "href": "lectures/lecture1.html#p-ost-e-d-on-can-vas-f-o-r-you-to-pr-act-ice-a-f-t-er-le-ct-ur-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "P ost e d on Can vas f o r you to pr act ice a f t er le ct ur e",
-    "text": "P ost e d on Can vas f o r you to pr act ice a f t er le ct ur e"
-  },
-  {
-    "objectID": "lectures/lecture1.html#do-es-n-ot-cou-nt-t-owa-rd-s-you-r-gr-ad-e",
-    "href": "lectures/lecture1.html#do-es-n-ot-cou-nt-t-owa-rd-s-you-r-gr-ad-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Do es n ot cou nt t owa rd s you r gr ad e",
-    "text": "Do es n ot cou nt t owa rd s you r gr ad e"
-  },
-  {
-    "objectID": "lectures/lecture1.html#fe-el-f-re-e-t-o-a-sk-fan-t-o-re-view-t-h-ese-qu-est-io-ns-du-rin-g-la-b",
-    "href": "lectures/lecture1.html#fe-el-f-re-e-t-o-a-sk-fan-t-o-re-view-t-h-ese-qu-est-io-ns-du-rin-g-la-b",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Fe el f re e t o a sk Fan t o re view t h ese qu est io ns du rin g la b",
-    "text": "Fe el f re e t o a sk Fan t o re view t h ese qu est io ns du rin g la b\n\nse cti on\n18"
-  },
-  {
-    "objectID": "lectures/lecture1.html#l-ectu-re-scr-i-pt-s",
-    "href": "lectures/lecture1.html#l-ectu-re-scr-i-pt-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "L ectu re Scr i pt s",
-    "text": "L ectu re Scr i pt s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#i-po-st-a-ll-o-f-t-h-e-cod-e-u-sed-du-rin-g-le-ctu-re-as-an-r-scrip-t-o-n",
-    "href": "lectures/lecture1.html#i-po-st-a-ll-o-f-t-h-e-cod-e-u-sed-du-rin-g-le-ctu-re-as-an-r-scrip-t-o-n",
-    "title": "Lecture 1: Introduction to R",
-    "section": "I po st a ll o f t h e cod e u sed du rin g le ctu re as an R scrip t o n",
-    "text": "I po st a ll o f t h e cod e u sed du rin g le ctu re as an R scrip t o n\n\nCa nva s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ru-nn-ing-t-he-co-de-du-rin-g-o-r-af-t-er-lect-u-re-wi-ll-he-lp-yo-u-g-ain",
-    "href": "lectures/lecture1.html#ru-nn-ing-t-he-co-de-du-rin-g-o-r-af-t-er-lect-u-re-wi-ll-he-lp-yo-u-g-ain",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ru nn ing t he co de du rin g o r af t er lect u re wi ll he lp yo u g ain",
-    "text": "Ru nn ing t he co de du rin g o r af t er lect u re wi ll he lp yo u g ain\n\nmo re fa mil iar it yw it h\nRst u dio\n19"
-  },
-  {
-    "objectID": "lectures/lecture1.html#thi-sw-ee-kin-tr-od-ucti-o-nt-or-b-asi-cs",
-    "href": "lectures/lecture1.html#thi-sw-ee-kin-tr-od-ucti-o-nt-or-b-asi-cs",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Thi sW ee k:In tr od ucti o nt oR B asi cs",
-    "text": "Thi sW ee k:In tr od ucti o nt oR B asi cs"
-  },
-  {
-    "objectID": "lectures/lecture1.html#b-ef-o-re-we-cove-r-mo-re-b-ro-ad-to-pi-csi-n-da-t-a-a-na-lysis-we",
-    "href": "lectures/lecture1.html#b-ef-o-re-we-cove-r-mo-re-b-ro-ad-to-pi-csi-n-da-t-a-a-na-lysis-we",
-    "title": "Lecture 1: Introduction to R",
-    "section": "B ef o re we cove r mo re b ro ad to pi csi n da t a a na lysis, we",
-    "text": "B ef o re we cove r mo re b ro ad to pi csi n da t a a na lysis, we\n\nn ee d t o u nd erst a nd some R ba sics"
-  },
-  {
-    "objectID": "lectures/lecture1.html#w-e-ne-ed-t-he-se-bu-ild-ing-blo-cks-be-f-ore-mo-ving-on-to-da-t-a",
-    "href": "lectures/lecture1.html#w-e-ne-ed-t-he-se-bu-ild-ing-blo-cks-be-f-ore-mo-ving-on-to-da-t-a",
-    "title": "Lecture 1: Introduction to R",
-    "section": "W e ne ed t he se bu ild ing blo cks be f ore mo ving on to da t a",
-    "text": "W e ne ed t he se bu ild ing blo cks be f ore mo ving on to da t a\n\nwr an glin g, visu ali zat io n, et c.\n20"
-  },
-  {
-    "objectID": "lectures/lecture1.html#c-od-i-ng-go-al-s",
-    "href": "lectures/lecture1.html#c-od-i-ng-go-al-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "C od i ng Go al s",
-    "text": "C od i ng Go al s\n\n\n\n\nRun c od ewith out er r or s (pr e tty d oab le with\nC hatG PT\n)\n\n\n\nRu n co de t h at pr od uce s wha t yo u we re exp ect in g\n\n\n\nRu n co de t h at pr od uce s wha t yo u we re exp ect in g an d yo u\nu nd erst a nd\n21"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ge-tti-ng-h-el-p",
-    "href": "lectures/lecture1.html#ge-tti-ng-h-el-p",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ge tti ng h el p",
-    "text": "Ge tti ng h el p\n\n\n\n\nRe ad th e e rro r me ssag e.\n\n\n\nTr yso me on line re sou rces:"
-  },
-  {
-    "objectID": "lectures/lecture1.html#st-ack-ove-rfl-ow",
-    "href": "lectures/lecture1.html#st-ack-ove-rfl-ow",
-    "title": "Lecture 1: Introduction to R",
-    "section": "St ack Ove rfl ow",
-    "text": "St ack Ove rfl ow"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ch-at-gpt",
-    "href": "lectures/lecture1.html#ch-at-gpt",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ch at GPT",
-    "text": "Ch at GPT\n\n(t ype in yo ur code a nd t he erro rme ssage )"
-  },
-  {
-    "objectID": "lectures/lecture1.html#sla-ck",
-    "href": "lectures/lecture1.html#sla-ck",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Sla ck",
-    "text": "Sla ck\n\n\n\n\nS t ill st uck?"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ple-ase-rea-ch-out-to-myse-lf-o-ryo-ur-ta-f-an-bu",
-    "href": "lectures/lecture1.html#ple-ase-rea-ch-out-to-myse-lf-o-ryo-ur-ta-f-an-bu",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ple ase rea ch out to myse lf o ryo ur TA (F an Bu)",
-    "text": "Ple ase rea ch out to myse lf o ryo ur TA (F an Bu)"
-  },
-  {
-    "objectID": "lectures/lecture1.html#sha-re-your-cod-e-d-at-a-scre-ensh-ot-so-f-t-he-erro-rme-ssage-et-c.",
-    "href": "lectures/lecture1.html#sha-re-your-cod-e-d-at-a-scre-ensh-ot-so-f-t-he-erro-rme-ssage-et-c.",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Sha re your cod e, d at a, scre ensh ot so f t he erro rme ssage , et c.",
-    "text": "Sha re your cod e, d at a, scre ensh ot so f t he erro rme ssage , et c.\n\n22"
-  },
-  {
-    "objectID": "lectures/lecture1.html#exa-m-pl-e-be-c-ar-efu-l-w-i-thtyp-os",
-    "href": "lectures/lecture1.html#exa-m-pl-e-be-c-ar-efu-l-w-i-thtyp-os",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Exa m pl e: Be C ar efu l w i thTyp os",
-    "text": "Exa m pl e: Be C ar efu l w i thTyp os"
-  },
-  {
-    "objectID": "lectures/lecture1.html#imp-l-ic-it-c-o-nt-r-ac-twi-th-t-he",
-    "href": "lectures/lecture1.html#imp-l-ic-it-c-o-nt-r-ac-twi-th-t-he",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Imp l ic it c o nt r ac twi th t he",
-    "text": "Imp l ic it c o nt r ac twi th t he\n\nc o mp ut er / sc r ip ti ng\n\nl an gua ge:"
-  },
-  {
-    "objectID": "lectures/lecture1.html#c-o-mpu-ter-wi-ll-d-o-ted-io-us",
-    "href": "lectures/lecture1.html#c-o-mpu-ter-wi-ll-d-o-ted-io-us",
-    "title": "Lecture 1: Introduction to R",
-    "section": "C o mpu ter wi ll d o ted io us",
-    "text": "C o mpu ter wi ll d o ted io us\n\nco mp uta tio n f or y o u."
-  },
-  {
-    "objectID": "lectures/lecture1.html#in-r-etur-n-y-ou-w-il-l-be",
-    "href": "lectures/lecture1.html#in-r-etur-n-y-ou-w-il-l-be",
-    "title": "Lecture 1: Introduction to R",
-    "section": "In r etur n, y ou w il l be",
-    "text": "In r etur n, y ou w il l be\n\nco mp lete l y p reci se in y o ur\n\ni ns tru ctio n s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#t-yp-o-sm-att-er.-casem-att-er-s.",
-    "href": "lectures/lecture1.html#t-yp-o-sm-att-er.-casem-att-er-s.",
-    "title": "Lecture 1: Introduction to R",
-    "section": "T yp o sm att er. Casem att er s.",
-    "text": "T yp o sm att er. Casem att er s.\n\nd at a_ ro cks\n<\n\n\n\n2\n^\n3\nd at ar ocks\n> Er ro r in e val( exp r,\ne nvir\n,\ne nclo s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#d-at-ar-ocks",
-    "href": "lectures/lecture1.html#d-at-ar-ocks",
-    "title": "Lecture 1: Introduction to R",
-    "section": "d at ar ocks",
-    "text": "d at ar ocks\n\n’ n ot\n\nf ou nd\nDa t a_ rocks\n> Er ro r in e val( exp r,\ne nvir\n,\ne nclo s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#da-t-a_-rocks",
-    "href": "lectures/lecture1.html#da-t-a_-rocks",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Da t a_ rocks",
-    "text": "Da t a_ rocks\n\n’\nn ot f ou nd\n23"
-  },
-  {
-    "objectID": "lectures/lecture1.html#w-ha-ti-sr-r-s-tud-i-o",
-    "href": "lectures/lecture1.html#w-ha-ti-sr-r-s-tud-i-o",
-    "title": "Lecture 1: Introduction to R",
-    "section": "W ha ti sR ?R S tud i o?",
-    "text": "W ha ti sR ?R S tud i o?"
-  },
-  {
-    "objectID": "lectures/lecture1.html#r-1",
-    "href": "lectures/lecture1.html#r-1",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R",
-    "text": "R"
-  },
-  {
-    "objectID": "lectures/lecture1.html#a-p-ro-g-r-am-m-in-g-l-an-g-u-a-g-e",
-    "href": "lectures/lecture1.html#a-p-ro-g-r-am-m-in-g-l-an-g-u-a-g-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "a p ro g r am m in g l an g u a g e +",
-    "text": "a p ro g r am m in g l an g u a g e +\n\nso ft wa re t h at in te rp r e tsi t"
-  },
-  {
-    "objectID": "lectures/lecture1.html#rs-tu-di-o",
-    "href": "lectures/lecture1.html#rs-tu-di-o",
-    "title": "Lecture 1: Introduction to R",
-    "section": "RS tu di o",
-    "text": "RS tu di o"
-  },
-  {
-    "objectID": "lectures/lecture1.html#p-o-p-ul-ar-so-f-tw-ar-e-t-o",
-    "href": "lectures/lecture1.html#p-o-p-ul-ar-so-f-tw-ar-e-t-o",
-    "title": "Lecture 1: Introduction to R",
-    "section": "p o p ul ar so f tw ar e t o",
-    "text": "p o p ul ar so f tw ar e t o\n\nwr ite R scrip ts a n d in te r act with\n\nth e R so ft wa r e"
-  },
-  {
-    "objectID": "lectures/lecture1.html#w-e-will-b-e-u-sing",
-    "href": "lectures/lecture1.html#w-e-will-b-e-u-sing",
-    "title": "Lecture 1: Introduction to R",
-    "section": "W e will b e u sing",
-    "text": "W e will b e u sing\n\nRst u dio\nin th is cou rse\n\n(h ow eve r you ne ed t o inst a ll R in o rd er\nf or it t o run cor rect ly)\n24"
-  },
-  {
-    "objectID": "lectures/lecture1.html#r-st-ud-io-in-ter-fa-ce",
-    "href": "lectures/lecture1.html#r-st-ud-io-in-ter-fa-ce",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R St ud io In ter fa ce",
-    "text": "R St ud io In ter fa ce\n\nSc r ipt\nCo ns o le\nEn v iro nm en t\nF il e s\n25"
-  },
-  {
-    "objectID": "lectures/lecture1.html#rs-tu-di-ocon-sole",
-    "href": "lectures/lecture1.html#rs-tu-di-ocon-sole",
-    "title": "Lecture 1: Introduction to R",
-    "section": "RS tu di oCon sole",
-    "text": "RS tu di oCon sole"
-  },
-  {
-    "objectID": "lectures/lecture1.html#yo-uc-an-input-a-nd",
-    "href": "lectures/lecture1.html#yo-uc-an-input-a-nd",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Yo uc an input a nd",
-    "text": "Yo uc an input a nd\n\nex ec utec omma nds\n\ndi rec tlyinthe co ns o le."
-  },
-  {
-    "objectID": "lectures/lecture1.html#o-utputo-fc-erta-in",
-    "href": "lectures/lecture1.html#o-utputo-fc-erta-in",
-    "title": "Lecture 1: Introduction to R",
-    "section": "O utputo fc erta in",
-    "text": "O utputo fc erta in\n\nc omma nd sw ill be\ndi sp la yed i n the\nc on so le .\n26\nCo ns o le"
-  },
-  {
-    "objectID": "lectures/lecture1.html#r-stu-di-o",
-    "href": "lectures/lecture1.html#r-stu-di-o",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R stu di o",
-    "text": "R stu di o\n\nScr i pt Ed it or"
-  },
-  {
-    "objectID": "lectures/lecture1.html#most-d-at-a-anal-ysi-s-wi-ll-r-e-qu-i-re",
-    "href": "lectures/lecture1.html#most-d-at-a-anal-ysi-s-wi-ll-r-e-qu-i-re",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Most d at a anal ysi s wi ll r e qu i re",
-    "text": "Most d at a anal ysi s wi ll r e qu i re\n\nse ver al st eps"
-  },
-  {
-    "objectID": "lectures/lecture1.html#t-he-scri-pt-e-d-it-or-i-s-use-d-to",
-    "href": "lectures/lecture1.html#t-he-scri-pt-e-d-it-or-i-s-use-d-to",
-    "title": "Lecture 1: Introduction to R",
-    "section": "T he scri pt e d it or i s use d to",
-    "text": "T he scri pt e d it or i s use d to\n\nr ecor d t he ste ps (command s)\nw e t ake t oa naly ze ou r d ata\nWR IT E\n27"
-  },
-  {
-    "objectID": "lectures/lecture1.html#r-stu-di-o-1",
-    "href": "lectures/lecture1.html#r-stu-di-o-1",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R stu di o",
-    "text": "R stu di o\n\nScr i pt Ed it or"
-  },
-  {
-    "objectID": "lectures/lecture1.html#onceyout-ypethem-in-the",
-    "href": "lectures/lecture1.html#onceyout-ypethem-in-the",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Onceyout ypethem in the",
-    "text": "Onceyout ypethem in the\n\nsc ript ,y ou still needt osend\nthem tothec ons ole toberun."
-  },
-  {
-    "objectID": "lectures/lecture1.html#s-cri-pts-a-re-saved-wi-t-h-t-he-.r",
-    "href": "lectures/lecture1.html#s-cri-pts-a-re-saved-wi-t-h-t-he-.r",
-    "title": "Lecture 1: Introduction to R",
-    "section": "S cri pts a re saved wi t h t he .R",
-    "text": "S cri pts a re saved wi t h t he .R\n\n\u0002\u000b\u0001ò \u0003U\u0001ä\u0001ó\u0002\f\nWR IT E\nR UN\nCtr l\n\n\n\nEn ter\n28"
-  },
-  {
-    "objectID": "lectures/lecture1.html#c-om-m-en-ti-ng-i-ns-cri-p-ts",
-    "href": "lectures/lecture1.html#c-om-m-en-ti-ng-i-ns-cri-p-ts",
-    "title": "Lecture 1: Introduction to R",
-    "section": "C om m en ti ng i nS cri p ts",
-    "text": "C om m en ti ng i nS cri p ts"
-  },
-  {
-    "objectID": "lectures/lecture1.html#r-ig-no-re-sth-e",
-    "href": "lectures/lecture1.html#r-ig-no-re-sth-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R ig no re sth e",
-    "text": "R ig no re sth e\n\nr est of a li ne\naf ter a"
-  },
-  {
-    "objectID": "lectures/lecture1.html#wr-i-te-not-est-o",
-    "href": "lectures/lecture1.html#wr-i-te-not-est-o",
-    "title": "Lecture 1: Introduction to R",
-    "section": "wr i te not est o",
-    "text": "wr i te not est o\n\ny ou rse lf ab out\nwha ty ou r\n\nco de i s do in g"
-  },
-  {
-    "objectID": "lectures/lecture1.html#co-mment-sar-e",
-    "href": "lectures/lecture1.html#co-mment-sar-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "co mment sar e",
-    "text": "co mment sar e\n\nau tomati c ally\n\ni n gr ee n\n29"
-  },
-  {
-    "objectID": "lectures/lecture1.html#an-o-p-e-ra-to-r-is-a",
-    "href": "lectures/lecture1.html#an-o-p-e-ra-to-r-is-a",
-    "title": "Lecture 1: Introduction to R",
-    "section": "An o p e ra to r is a",
-    "text": "An o p e ra to r is a\n\ns y mb ol\nth a t t e lls R t o pe r fo rm so me\n\nso r t o f o pe r a tio n."
-  },
-  {
-    "objectID": "lectures/lecture1.html#t-yp-e-s-o-f-o-p-e-ra-t-or-s",
-    "href": "lectures/lecture1.html#t-yp-e-s-o-f-o-p-e-ra-t-or-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "T yp e s o f O p e ra t or s",
-    "text": "T yp e s o f O p e ra t or s\n\n:"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ma-t-h-a-rit-h-me-ti-c",
-    "href": "lectures/lecture1.html#ma-t-h-a-rit-h-me-ti-c",
-    "title": "Lecture 1: Introduction to R",
-    "section": "ma t h (a rit h me ti c)",
-    "text": "ma t h (a rit h me ti c)"
-  },
-  {
-    "objectID": "lectures/lecture1.html#lo-gica-l-co-mp-are-valu-es",
-    "href": "lectures/lecture1.html#lo-gica-l-co-mp-are-valu-es",
-    "title": "Lecture 1: Introduction to R",
-    "section": "lo gica l (co mp are valu es)",
-    "text": "lo gica l (co mp are valu es)"
-  },
-  {
-    "objectID": "lectures/lecture1.html#a-ssign-me-nt-sa-ving-valu-es-t-o-o-bje-ct-s",
-    "href": "lectures/lecture1.html#a-ssign-me-nt-sa-ving-valu-es-t-o-o-bje-ct-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "a ssign me nt (sa ving valu es t o o bje ct s)",
-    "text": "a ssign me nt (sa ving valu es t o o bje ct s)"
-  },
-  {
-    "objectID": "lectures/lecture1.html#e-xtr-act-io-n-t-a-ke-o-ut-re-pla-ce-p-art-s-o-f-o-bje-ct-s",
-    "href": "lectures/lecture1.html#e-xtr-act-io-n-t-a-ke-o-ut-re-pla-ce-p-art-s-o-f-o-bje-ct-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "e xtr act io n (t a ke o ut / re pla ce p art s o f o bje ct s)",
-    "text": "e xtr act io n (t a ke o ut / re pla ce p art s o f o bje ct s)\n\n30"
-  },
-  {
-    "objectID": "lectures/lecture1.html#op-er-at-or-s",
-    "href": "lectures/lecture1.html#op-er-at-or-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Op er at or s",
-    "text": "Op er at or s\n\nht t ps: // ww w. sta tme th ods. ne t/ man age ment / ope rat ors. ht ml\nTyp e\nWh at itdo es\nSymb ol(s)\nArithmetic\nMath on numbers\n\n\n\n\n\n\n\n/^\n\nLogical\nComparesv alues\n\n< = = != & |\n\nAss ignment\nAss igns valuest oobjec ts\n<\n\n\n\nExt rac tion\nTak e out orreplac epart of an\nobject\n[]$\n31"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ar-i-th-me-ti-cop-er-a-tor-s",
-    "href": "lectures/lecture1.html#ar-i-th-me-ti-cop-er-a-tor-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ar i th me ti cop er a tor s",
-    "text": "Ar i th me ti cop er a tor s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#do-e-s-ma-th",
-    "href": "lectures/lecture1.html#do-e-s-ma-th",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Do e s ma th :",
-    "text": "Do e s ma th :"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ad-d-2",
-    "href": "lectures/lecture1.html#ad-d-2",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ad d : 2",
-    "text": "Ad d : 2\n\n\n\n\n2"
-  },
-  {
-    "objectID": "lectures/lecture1.html#su-b-t-r-act-3",
-    "href": "lectures/lecture1.html#su-b-t-r-act-3",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Su b t r act : 3",
-    "text": "Su b t r act : 3\n\n\n\n\n1"
-  },
-  {
-    "objectID": "lectures/lecture1.html#m-u-lt-ip-ly-4",
-    "href": "lectures/lecture1.html#m-u-lt-ip-ly-4",
-    "title": "Lecture 1: Introduction to R",
-    "section": "M u lt ip ly: 4",
-    "text": "M u lt ip ly: 4\n\n\n\n\n4"
-  },
-  {
-    "objectID": "lectures/lecture1.html#divi-de-5",
-    "href": "lectures/lecture1.html#divi-de-5",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Divi de : 5",
-    "text": "Divi de : 5\n\n/\n2"
-  },
-  {
-    "objectID": "lectures/lecture1.html#exp-o-n-e-n-t-5",
-    "href": "lectures/lecture1.html#exp-o-n-e-n-t-5",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Exp o n e n t: 5",
-    "text": "Exp o n e n t: 5\n\n^\n2"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ctr-l",
-    "href": "lectures/lecture1.html#ctr-l",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ctr l/",
-    "text": "Ctr l/\n\nCm d +E n te r\nto ru n"
-  },
-  {
-    "objectID": "lectures/lecture1.html#re-su-lts-in-th-e-co-n-so-le",
-    "href": "lectures/lecture1.html#re-su-lts-in-th-e-co-n-so-le",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Re su lts in th e Co n so le",
-    "text": "Re su lts in th e Co n so le\n\n32"
-  },
-  {
-    "objectID": "lectures/lecture1.html#exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip",
-    "href": "lectures/lecture1.html#exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Exa m pl e: Wh ol e fta l ar ge r Tip ?",
-    "text": "Exa m pl e: Wh ol e fta l ar ge r Tip ?"
-  },
-  {
-    "objectID": "lectures/lecture1.html#b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5",
-    "href": "lectures/lecture1.html#b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5",
-    "title": "Lecture 1: Introduction to R",
-    "section": "b ill at S ha ke S ha ck came ou t t o $2 5",
-    "text": "b ill at S ha ke S ha ck came ou t t o $2 5"
-  },
-  {
-    "objectID": "lectures/lecture1.html#he-t-ip-s1-5",
-    "href": "lectures/lecture1.html#he-t-ip-s1-5",
-    "title": "Lecture 1: Introduction to R",
-    "section": "He t ip s1 5%",
-    "text": "He t ip s1 5%"
-  },
-  {
-    "objectID": "lectures/lecture1.html#he-t-ip-s1-2",
-    "href": "lectures/lecture1.html#he-t-ip-s1-2",
-    "title": "Lecture 1: Introduction to R",
-    "section": "He t ip s1 2%",
-    "text": "He t ip s1 2%"
-  },
-  {
-    "objectID": "lectures/lecture1.html#use-op-era-t-or-st-o-calcu-lat-e-ho-w-much-lo-uie-an-d",
-    "href": "lectures/lecture1.html#use-op-era-t-or-st-o-calcu-lat-e-ho-w-much-lo-uie-an-d",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Use op era t or st o calcu lat e ho w much Lo uie an d",
-    "text": "Use op era t or st o calcu lat e ho w much Lo uie an d\n\nL ou be rt o\nt ip pe d\n33"
-  },
-  {
-    "objectID": "lectures/lecture1.html#fun-cti-on-s",
-    "href": "lectures/lecture1.html#fun-cti-on-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Fun cti on s",
-    "text": "Fun cti on s"
-  },
-  {
-    "objectID": "lectures/lecture1.html#form-orec-omplicatedtas-ks-r",
-    "href": "lectures/lecture1.html#form-orec-omplicatedtas-ks-r",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Form orec omplicatedtas ks, R",
-    "text": "Form orec omplicatedtas ks, R\n\nalsoc omespre\n\n\n\ninst alledw itha\nvariety off unc tions."
-  },
-  {
-    "objectID": "lectures/lecture1.html#funct-ions-area",
-    "href": "lectures/lecture1.html#funct-ions-area",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Funct ions area",
-    "text": "Funct ions area\n\nsequenceof\ninst ruc tionst hat perf orm atas k"
-  },
-  {
-    "objectID": "lectures/lecture1.html#hav-e",
-    "href": "lectures/lecture1.html#hav-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Hav e",
-    "text": "Hav e\n\nnames"
-  },
-  {
-    "objectID": "lectures/lecture1.html#acc-ept",
-    "href": "lectures/lecture1.html#acc-ept",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Acc ept",
-    "text": "Acc ept\n\narg umen ts\n(input )"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ret-urna",
-    "href": "lectures/lecture1.html#ret-urna",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ret urna",
-    "text": "Ret urna\n\nvalue\n(output)\nI n p u t\nO u tp u t\nro u n d\n(\nx\n= 3. 1 4 1 5 9 ,\n\nd i g i ts\n\n= 0)\n3\n34"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ar-g-um-en-ts",
-    "href": "lectures/lecture1.html#ar-g-um-en-ts",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ar g um en ts",
-    "text": "Ar g um en ts"
-  },
-  {
-    "objectID": "lectures/lecture1.html#to-fi-ndout-what",
-    "href": "lectures/lecture1.html#to-fi-ndout-what",
-    "title": "Lecture 1: Introduction to R",
-    "section": "To fi ndout what",
-    "text": "To fi ndout what\n\nar gu men ts\na\nfunc ti ont akes , lookup i t shelp\nfi le( t y pe\n?r oun d)"
-  },
-  {
-    "objectID": "lectures/lecture1.html#som-earg-ument-sar-ereq-ui-red",
-    "href": "lectures/lecture1.html#som-earg-ument-sar-ereq-ui-red",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Som earg ument sar ereq ui red,",
-    "text": "Som earg ument sar ereq ui red,\n\nsom eare opt i onal."
-  },
-  {
-    "objectID": "lectures/lecture1.html#you-cans-eet-hat",
-    "href": "lectures/lecture1.html#you-cans-eet-hat",
-    "title": "Lecture 1: Introduction to R",
-    "section": "You cans eet hat",
-    "text": "You cans eet hat\n\ndi git s\ni s\n\u00026\u0002b\u0002‰ \u0001ë \u00026\u0002%\u0001T\u0001y \u0001¡\u0001…\u0001T\u0002€\u0002}\u0001¡ \u0002Ê \u0001”\u00026\u0002%\b¬ \u0002‰\nneed to i nclude i t andy ouw ill\ng et the same outp ut\n35\nIn put\nOutpu t\nro u nd\n(\nx\n= 3. 141 59,\n\nd ig i ts\n= 0\n)\n3\nro u nd\n(\n\n14 159\n\n)\n3"
-  },
-  {
-    "objectID": "lectures/lecture1.html#ar-g-um-en-ts-1",
-    "href": "lectures/lecture1.html#ar-g-um-en-ts-1",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ar g um en ts",
-    "text": "Ar g um en ts"
-  },
-  {
-    "objectID": "lectures/lecture1.html#àë-tê-6½",
-    "href": "lectures/lecture1.html#àë-tê-6½",
-    "title": "Lecture 1: Introduction to R",
-    "section": "\u00015 \u0002‰\u0001¡\u0001… \u0001à\u0002%\u0001ë \u0001…\u0001T\u0002\u0002\u0002Ê\u0001” \u00026\u0002%\b¬\u0002‰\u0001¡\u0002½ \u0001¡\u0002%",
-    "text": "\u00015 \u0002‰\u0001¡\u0001… \u0001à\u0002%\u0001ë \u0001…\u0001T\u0002\u0002\u0002Ê\u0001” \u00026\u0002%\b¬\u0002‰\u0001¡\u0002½ \u0001¡\u0002%\n\nneed to wri t eout t henam esof\nt hearg ument s (\nx\n,\ndi g i ts\n) i f\nv aluesar ei nt hec orrec t ord er"
-  },
-  {
-    "objectID": "lectures/lecture1.html#á-½m-lë-à-të-m",
-    "href": "lectures/lecture1.html#á-½m-lë-à-të-m",
-    "title": "Lecture 1: Introduction to R",
-    "section": "\u00026\u0002Á \u0001¡\u0002½\u0001¡\u0002m \bl\u0001ë \u0002‰\b¬ \u0002}\u0002˜ \u0002€\u0001…\u0001à \u0001¡\u0001T\u0002}\u0001ë \u0001¡\u0002m\u0002‰",
-    "text": "\u00026\u0002Á \u0001¡\u0002½\u0001¡\u0002m \bl\u0001ë \u0002‰\b¬ \u0002}\u0002˜ \u0002€\u0001…\u0001à \u0001¡\u0001T\u0002}\u0001ë \u0001¡\u0002m\u0002‰\n\nunder st andy our cod ewhen\ny ouwr i te out the nameof the\narg ument\n36\nIn put\nOutpu t\nro u nd\n(\nx\n= 3. 141 59,\n\nd ig i ts\n= 2)\n\n14\n\nro u nd\n(\n\n14 159\n\n,\n\n2\n)\n\n14"
-  },
-  {
-    "objectID": "lectures/lecture1.html#assi-g-nm-en-to-pe-ra-to-r",
-    "href": "lectures/lecture1.html#assi-g-nm-en-to-pe-ra-to-r",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Assi g nm en to pe ra to r",
-    "text": "Assi g nm en to pe ra to r"
-  },
-  {
-    "objectID": "lectures/lecture1.html#sa-ve-s",
-    "href": "lectures/lecture1.html#sa-ve-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Sa ve s",
-    "text": "Sa ve s\n\nv a lue s\nin to\n\no bje c ts"
-  },
-  {
-    "objectID": "lectures/lecture1.html#o-bj-e-c-t",
-    "href": "lectures/lecture1.html#o-bj-e-c-t",
-    "title": "Lecture 1: Introduction to R",
-    "section": "o bj e c t",
-    "text": "o bj e c t\n\n<\n\n\n\nv a lue"
+    "objectID": "lectures/lecture1.html#welcome-to-econ-106",
+    "href": "lectures/lecture1.html#welcome-to-econ-106",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Welcome to Econ 106",
+    "text": "Welcome to Econ 106\nData Analysis in Economics – Fall 2024\nBased on: R Ecology Lesson"
   },
   {
-    "objectID": "lectures/lecture1.html#we-i-gh-t_-k-g",
-    "href": "lectures/lecture1.html#we-i-gh-t_-k-g",
-    "title": "Lecture 1: Introduction to R",
-    "section": "we i gh t_ k g",
-    "text": "we i gh t_ k g\n\n<\n\n\n\n55"
+    "objectID": "lectures/lecture1.html#outline",
+    "href": "lectures/lecture1.html#outline",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Outline",
+    "text": "Outline\n\nClass Overview\nIntro to R\nRStudio Console\nOperators\nFunctions\nObjects"
   },
   {
-    "objectID": "lectures/lecture1.html#o-ve-rw-rite-s-p-re-vio-u-s-va-lu-e-s",
-    "href": "lectures/lecture1.html#o-ve-rw-rite-s-p-re-vio-u-s-va-lu-e-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "O ve rw rite s p re vio u s va lu e s",
-    "text": "O ve rw rite s p re vio u s va lu e s"
+    "objectID": "lectures/lecture1.html#data-is-everywhere",
+    "href": "lectures/lecture1.html#data-is-everywhere",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Data Is Everywhere",
+    "text": "Data Is Everywhere\n\nIn 2015, healthcare alone produced 1.2 billion clinical documents.\nDigital forms, social media, online portals, reports, emails, messages = data explosion.\nSource: Holmes (2017), Big Data: A Very Short Introduction"
   },
   {
-    "objectID": "lectures/lecture1.html#ca-n-b-e-co-m-b-in-ed-with-o-the-r",
-    "href": "lectures/lecture1.html#ca-n-b-e-co-m-b-in-ed-with-o-the-r",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ca n b e co m b in ed with o the r",
-    "text": "Ca n b e co m b in ed with o the r\n\no p e ra to rs"
+    "objectID": "lectures/lecture1.html#why-work-with-data",
+    "href": "lectures/lecture1.html#why-work-with-data",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Why Work With Data?",
+    "text": "Why Work With Data?\n\nJobs: Data analysts are in demand\nEmphasize interpretation and communication\nData literacy = understanding + working with data to generate insight"
   },
   {
-    "objectID": "lectures/lecture1.html#we-i-gh-t_-l-b",
-    "href": "lectures/lecture1.html#we-i-gh-t_-l-b",
-    "title": "Lecture 1: Introduction to R",
-    "section": "we i gh t_ l b",
-    "text": "we i gh t_ l b\n\n<\n\n\n\n2 . 2\n\n\n\nwe igh t_ k g\n<\n\n\n\n(\na l t/ o pt i on\n\n\n\n\nd as h )\n37"
+    "objectID": "lectures/lecture1.html#who-is-this-class-for",
+    "href": "lectures/lecture1.html#who-is-this-class-for",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Who Is This Class For?",
+    "text": "Who Is This Class For?\n\nStudents interested in:\n\nResearch assistant work\nConducting empirical analyses\nData Science careers\n\nPrerequisite: Econ 101\nNo programming experience required"
   },
   {
-    "objectID": "lectures/lecture1.html#n-am-i-ng-ob-j-ects",
-    "href": "lectures/lecture1.html#n-am-i-ng-ob-j-ects",
-    "title": "Lecture 1: Introduction to R",
-    "section": "N am i ng Ob j ects",
-    "text": "N am i ng Ob j ects"
+    "objectID": "lectures/lecture1.html#course-objectives",
+    "href": "lectures/lecture1.html#course-objectives",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Course Objectives",
+    "text": "Course Objectives\n\nCollect, process, and analyze data using R\nVisualize and communicate findings\nPresent results clearly to diverse audiences"
   },
   {
-    "objectID": "lectures/lecture1.html#o-bj-ec-tn-am-es",
-    "href": "lectures/lecture1.html#o-bj-ec-tn-am-es",
-    "title": "Lecture 1: Introduction to R",
-    "section": "O bj ec tn am es:",
-    "text": "O bj ec tn am es:"
+    "objectID": "lectures/lecture1.html#why-use-r",
+    "href": "lectures/lecture1.html#why-use-r",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Why Use R?",
+    "text": "Why Use R?\n\nFree, open source\nWidely used in academia and industry\nBuilt for statistics and visualization"
   },
   {
-    "objectID": "lectures/lecture1.html#ca-nn-o-ts-tart-wi-th-a-di-gi-t",
-    "href": "lectures/lecture1.html#ca-nn-o-ts-tart-wi-th-a-di-gi-t",
-    "title": "Lecture 1: Introduction to R",
-    "section": "ca nn o ts tart wi th a di gi t",
-    "text": "ca nn o ts tart wi th a di gi t"
+    "objectID": "lectures/lecture1.html#r-vs.-python",
+    "href": "lectures/lecture1.html#r-vs.-python",
+    "title": "Lecture 1: Introduction to R",
+    "section": "R vs. Python",
+    "text": "R vs. Python\n\nR: Better at econometrics and graphics\nPython: Better at machine learning and software development"
   },
   {
-    "objectID": "lectures/lecture1.html#ca-nn-o-tco-n-tai-n-certa-in-oth-er",
-    "href": "lectures/lecture1.html#ca-nn-o-tco-n-tai-n-certa-in-oth-er",
-    "title": "Lecture 1: Introduction to R",
-    "section": "ca nn o tco n tai n certa in oth er",
-    "text": "ca nn o tco n tai n certa in oth er\n\nch ar acter s su ch as a co mma\n\no r a sp ace."
+    "objectID": "lectures/lecture1.html#philosophy",
+    "href": "lectures/lecture1.html#philosophy",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Philosophy",
+    "text": "Philosophy\n\nIt’s not about syntax — it’s about thinking with data\nChoose the best tool for the job\nYou’ll eventually learn both R and Python"
   },
   {
-    "objectID": "lectures/lecture1.html#ti",
-    "href": "lectures/lecture1.html#ti",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ti",
-    "text": "Ti\n\np s:"
+    "objectID": "lectures/lecture1.html#course-grading",
+    "href": "lectures/lecture1.html#course-grading",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Course Grading",
+    "text": "Course Grading\n\nLabs: 40%\nProject Milestones: 30%\nFinal Project: 20%\nPoll Everywhere: 10%"
   },
   {
-    "objectID": "lectures/lecture1.html#m-ak-ei-t",
-    "href": "lectures/lecture1.html#m-ak-ei-t",
-    "title": "Lecture 1: Introduction to R",
-    "section": "M ak ei t",
-    "text": "M ak ei t\n\na sd esc rip ti ve as\n\np os si bl e"
+    "objectID": "lectures/lecture1.html#labs",
+    "href": "lectures/lecture1.html#labs",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Labs",
+    "text": "Labs\n\nPractice skills from lecture\nComponents: write-up + R script\nDue: Sundays @ 11:59 PM\nLowest lab dropped"
   },
   {
-    "objectID": "lectures/lecture1.html#u",
-    "href": "lectures/lecture1.html#u",
-    "title": "Lecture 1: Introduction to R",
-    "section": "U",
-    "text": "U\n\nse u nd ers cor es to mar k\nsp a ces\n#t hi si sg ood\nw ei gh t_k g\n<\n\n\n\n55\n#n ot t he se\nw ei gh tkg\n!\n<\n\n\n\n55\nw ei gh t in kg\n<\n\n\n\n55\nb la h\n<\n\n\n\n55\n38"
+    "objectID": "lectures/lecture1.html#research-project",
+    "href": "lectures/lecture1.html#research-project",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Research Project",
+    "text": "Research Project\n\nDesign and execute your own small research project\nIncludes 3 milestones\nFinal product:\n\n1500-word write-up\nDocumentation (R scripts)"
   },
   {
-    "objectID": "lectures/lecture1.html#w-he-re-ar-e-my-ob-je-cts",
-    "href": "lectures/lecture1.html#w-he-re-ar-e-my-ob-je-cts",
-    "title": "Lecture 1: Introduction to R",
-    "section": "W he re ar e my ob je cts?",
-    "text": "W he re ar e my ob je cts?"
+    "objectID": "lectures/lecture1.html#lecture-logistics",
+    "href": "lectures/lecture1.html#lecture-logistics",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Lecture Logistics",
+    "text": "Lecture Logistics\n\nChatGPT is OK for code (must document use)\nNot allowed for write-up or milestones"
   },
   {
-    "objectID": "lectures/lecture1.html#y-ou-can-se-e-yo-ur-o-bj-ect-s-in",
-    "href": "lectures/lecture1.html#y-ou-can-se-e-yo-ur-o-bj-ect-s-in",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Y ou can se e yo ur o bj ect s in",
-    "text": "Y ou can se e yo ur o bj ect s in\n\nt he wor kspa ce (t o p ri gh t\np an e of\n\nRst u dio\n)"
+    "objectID": "lectures/lecture1.html#lecture-quizzes",
+    "href": "lectures/lecture1.html#lecture-quizzes",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Lecture Quizzes",
+    "text": "Lecture Quizzes\n\nPosted on Canvas (ungraded)\nUseful for practice\nCan ask questions during lab"
   },
   {
-    "objectID": "lectures/lecture1.html#y-o-u-ca-n-al-so-get-al-ist-in-go-f",
-    "href": "lectures/lecture1.html#y-o-u-ca-n-al-so-get-al-ist-in-go-f",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Y o u ca n al so get al ist in go f",
-    "text": "Y o u ca n al so get al ist in go f\n\nth eseo b j ect swi th\n\nc o mma nd s:"
+    "objectID": "lectures/lecture1.html#lecture-scripts",
+    "href": "lectures/lecture1.html#lecture-scripts",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Lecture Scripts",
+    "text": "Lecture Scripts\n\nAll lecture code posted to Canvas\nUse it during and after lecture"
   },
   {
-    "objectID": "lectures/lecture1.html#l-s",
-    "href": "lectures/lecture1.html#l-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "l s()",
-    "text": "l s()"
+    "objectID": "lectures/lecture1.html#this-week-r-basics",
+    "href": "lectures/lecture1.html#this-week-r-basics",
+    "title": "Lecture 1: Introduction to R",
+    "section": "This Week: R Basics",
+    "text": "This Week: R Basics\n\nLearn the foundations before moving to data wrangling and visualization"
   },
   {
-    "objectID": "lectures/lecture1.html#o-bj-ects",
-    "href": "lectures/lecture1.html#o-bj-ects",
-    "title": "Lecture 1: Introduction to R",
-    "section": "o bj ects ()",
-    "text": "o bj ects ()\n\n39"
+    "objectID": "lectures/lecture1.html#coding-goals",
+    "href": "lectures/lecture1.html#coding-goals",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Coding Goals",
+    "text": "Coding Goals\n\nCode runs without errors\nCode does what you expect\nYou understand how it works"
   },
   {
-    "objectID": "lectures/lecture1.html#c-he-cki-ng-va-l-ue-sof-an-obj-e-ct",
-    "href": "lectures/lecture1.html#c-he-cki-ng-va-l-ue-sof-an-obj-e-ct",
-    "title": "Lecture 1: Introduction to R",
-    "section": "C he cki ng Va l ue sof an Obj e ct",
-    "text": "C he cki ng Va l ue sof an Obj e ct"
+    "objectID": "lectures/lecture1.html#getting-help",
+    "href": "lectures/lecture1.html#getting-help",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nRead error messages\nUse Stack Overflow, ChatGPT, or Slack\nAsk the instructor or TA"
   },
   {
-    "objectID": "lectures/lecture1.html#i-f-you-w-an-t-t-o-i-nsp-ect-t-he",
-    "href": "lectures/lecture1.html#i-f-you-w-an-t-t-o-i-nsp-ect-t-he",
-    "title": "Lecture 1: Introduction to R",
-    "section": "I f you w an t t o i nsp ect t he",
-    "text": "I f you w an t t o i nsp ect t he\n\nva lue s of an ob ject , t ype\n\nt he na me o f th e o bje ct in\nt he con sole\nweigh t_kg\n<\n\n\n\n55\nwe igh t_ k g\n40"
+    "objectID": "lectures/lecture1.html#be-precise",
+    "href": "lectures/lecture1.html#be-precise",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Be Precise",
+    "text": "Be Precise\ndata_rocks <- 2^3\ndatarocks     # Error: object not found\nData_rocks    # Error: object not found"
   },
   {
-    "objectID": "lectures/lecture1.html#exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip-1",
-    "href": "lectures/lecture1.html#exa-m-pl-e-wh-ol-e-fta-l-ar-ge-r-tip-1",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Exa m pl e: Wh ol e fta l ar ge r Tip ?",
-    "text": "Exa m pl e: Wh ol e fta l ar ge r Tip ?"
+    "objectID": "lectures/lecture1.html#what-is-r-and-rstudio",
+    "href": "lectures/lecture1.html#what-is-r-and-rstudio",
+    "title": "Lecture 1: Introduction to R",
+    "section": "What is R and RStudio?",
+    "text": "What is R and RStudio?\n\nR: A programming language\nRStudio: An interface to write and run R code"
   },
   {
-    "objectID": "lectures/lecture1.html#b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5-1",
-    "href": "lectures/lecture1.html#b-ill-at-s-ha-ke-s-ha-ck-came-ou-t-t-o-2-5-1",
-    "title": "Lecture 1: Introduction to R",
-    "section": "b ill at S ha ke S ha ck came ou t t o $2 5",
-    "text": "b ill at S ha ke S ha ck came ou t t o $2 5"
+    "objectID": "lectures/lecture1.html#rstudio-interface",
+    "href": "lectures/lecture1.html#rstudio-interface",
+    "title": "Lecture 1: Introduction to R",
+    "section": "RStudio Interface",
+    "text": "RStudio Interface\n\nConsole, script editor, environment, file pane"
   },
   {
-    "objectID": "lectures/lecture1.html#he-t-ip-s1-5-1",
-    "href": "lectures/lecture1.html#he-t-ip-s1-5-1",
-    "title": "Lecture 1: Introduction to R",
-    "section": "He t ip s1 5%",
-    "text": "He t ip s1 5%"
+    "objectID": "lectures/lecture1.html#writing-code-in-scripts",
+    "href": "lectures/lecture1.html#writing-code-in-scripts",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Writing Code in Scripts",
+    "text": "Writing Code in Scripts\n\nSave with .R extension\nRun line-by-line with Cmd/Ctrl + Enter"
   },
   {
-    "objectID": "lectures/lecture1.html#he-t-ip-s1-2-1",
-    "href": "lectures/lecture1.html#he-t-ip-s1-2-1",
-    "title": "Lecture 1: Introduction to R",
-    "section": "He t ip s1 2%",
-    "text": "He t ip s1 2%"
+    "objectID": "lectures/lecture1.html#comments",
+    "href": "lectures/lecture1.html#comments",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Comments",
+    "text": "Comments\n# This is a comment\n# R ignores anything after the #"
   },
   {
-    "objectID": "lectures/lecture1.html#use-th-e-a-ssign-me-nt-op-er-at-o-r-t-o-save-ho-w-mu-ch-lo-ui-e",
-    "href": "lectures/lecture1.html#use-th-e-a-ssign-me-nt-op-er-at-o-r-t-o-save-ho-w-mu-ch-lo-ui-e",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Use th e a ssign me nt op er at o r t o save ho w mu ch Lo ui e",
-    "text": "Use th e a ssign me nt op er at o r t o save ho w mu ch Lo ui e\n\na nd\n\nL ou be rt o\nt ip pe d (cr ea te 6 o bje ct s)\n41"
+    "objectID": "lectures/lecture1.html#lets-start-coding",
+    "href": "lectures/lecture1.html#lets-start-coding",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Let’s Start Coding!",
+    "text": "Let’s Start Coding!\n\nOperators tell R what to do"
   },
   {
-    "objectID": "lectures/lecture1.html#r-em-o-vin-g-obj-e-cts",
-    "href": "lectures/lecture1.html#r-em-o-vin-g-obj-e-cts",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R em o vin g Obj e cts",
-    "text": "R em o vin g Obj e cts"
+    "objectID": "lectures/lecture1.html#arithmetic-operators",
+    "href": "lectures/lecture1.html#arithmetic-operators",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Arithmetic Operators",
+    "text": "Arithmetic Operators\n2 + 2      # add\n3 - 1      # subtract\n4 * 4      # multiply\n5 / 2      # divide\n5 ^ 2      # exponent"
   },
   {
-    "objectID": "lectures/lecture1.html#s-om-et-ime-s-whe-n-yo-u-h-ave",
-    "href": "lectures/lecture1.html#s-om-et-ime-s-whe-n-yo-u-h-ave",
-    "title": "Lecture 1: Introduction to R",
-    "section": "S om et ime s whe n yo u h ave",
-    "text": "S om et ime s whe n yo u h ave\n\nRst u dio\no pe n f or a whi le,\n\nyo ur wo rksp ace ge ts\nclu t te re d u p wit h o bj ect s"
+    "objectID": "lectures/lecture1.html#tip-example",
+    "href": "lectures/lecture1.html#tip-example",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Tip Example",
+    "text": "Tip Example\n# Louberto’s tip\nbill_louberto <- 25\ntip_louberto <- 0.15 * bill_louberto\n\n# Louie’s tip\nbill_louie <- 32\ntip_louie <- 0.12 * bill_louie"
   },
   {
-    "objectID": "lectures/lecture1.html#y-ou-can-r-em-ove-o-bj-ect-s",
-    "href": "lectures/lecture1.html#y-ou-can-r-em-ove-o-bj-ect-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Y ou can r em ove o bj ect s",
-    "text": "Y ou can r em ove o bj ect s\n\nwit h comm an ds (r igh t ) or by\nclicki ng t h e b roo m ico n in"
+    "objectID": "lectures/lecture1.html#functions",
+    "href": "lectures/lecture1.html#functions",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Functions",
+    "text": "Functions\nround(x = 3.14159, digits = 0)\nround(3.14159)  # digits is optional"
   },
   {
-    "objectID": "lectures/lecture1.html#e-nvir-on-me-nt",
-    "href": "lectures/lecture1.html#e-nvir-on-me-nt",
-    "title": "Lecture 1: Introduction to R",
-    "section": "E nvir on me nt",
-    "text": "E nvir on me nt\n\np an e\nrem ove ob ject cal led y\nrm\n(\ny\n)\nrem ove eve ryt hin g in you r\nwo rksp ace\nrm\n(\nlist\n\n=\nls\n() )\n42"
+    "objectID": "lectures/lecture1.html#assignment-operator",
+    "href": "lectures/lecture1.html#assignment-operator",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Assignment Operator",
+    "text": "Assignment Operator\nweight_kg <- 55\nweight_lb <- weight_kg * 2.2"
   },
   {
-    "objectID": "lectures/lecture1.html#ob-j-ects-no-tju-stfo-r-sto-ri-n-gn-u-mb-er-s",
-    "href": "lectures/lecture1.html#ob-j-ects-no-tju-stfo-r-sto-ri-n-gn-u-mb-er-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ob j ects: No tJu stfo r Sto ri n gN u mb er s",
-    "text": "Ob j ects: No tJu stfo r Sto ri n gN u mb er s\n\n43\nt y pe\nx\n<\n\n\n\n32\nn u me r ic\ny\n<\n\n\n\n“h i”\nch a ra cte r"
+    "objectID": "lectures/lecture1.html#naming-objects",
+    "href": "lectures/lecture1.html#naming-objects",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Naming Objects",
+    "text": "Naming Objects\n# Good\nweight_kg <- 55\n\n# Not good\nweightkg! <- 55\nweight in kg <- 55"
   },
   {
-    "objectID": "lectures/lecture1.html#ba-sic-da-ta-t-ype-s",
-    "href": "lectures/lecture1.html#ba-sic-da-ta-t-ype-s",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ba sic Da ta t ype s:",
-    "text": "Ba sic Da ta t ype s:"
+    "objectID": "lectures/lecture1.html#viewing-objects",
+    "href": "lectures/lecture1.html#viewing-objects",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Viewing Objects",
+    "text": "Viewing Objects\nls()\nobjects()\nweight_kg"
   },
   {
-    "objectID": "lectures/lecture1.html#ch-a-r-acte-r",
-    "href": "lectures/lecture1.html#ch-a-r-acte-r",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Ch a r acte r",
-    "text": "Ch a r acte r"
+    "objectID": "lectures/lecture1.html#removing-objects",
+    "href": "lectures/lecture1.html#removing-objects",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Removing Objects",
+    "text": "Removing Objects\nrm(y)             # remove y\nrm(list = ls())   # clear all"
   },
   {
-    "objectID": "lectures/lecture1.html#nu-m-e-ric",
-    "href": "lectures/lecture1.html#nu-m-e-ric",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Nu m e ric",
-    "text": "Nu m e ric"
+    "objectID": "lectures/lecture1.html#data-types",
+    "href": "lectures/lecture1.html#data-types",
+    "title": "Lecture 1: Introduction to R",
+    "section": "Data Types",
+    "text": "Data Types\n\nNumeric (e.g. 55)\nCharacter (e.g. “hello”)"
   }
 ]
