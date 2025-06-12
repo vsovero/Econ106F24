@@ -1,0 +1,22 @@
+
+---
+title: "Lecture 1: Introduction to R"
+format: html
+---
+
+## Learning Goals
+
+- Understand what R is and how to use it
+- Learn basic syntax, operators, and objects
+
+## Example Code
+
+```{r}
+2 + 2
+weight_kg <- 55
+weight_kg * 2.2
+```
+
+## Summary
+
+Lecture 1 covers the foundations of working with R in RStudio.
