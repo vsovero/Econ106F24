@@ -1,0 +1,7 @@
+
+---
+title: "Home"
+format: html
+---
+
+Welcome to the Econ 106 test site.
