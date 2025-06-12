@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Econ 106: Data Analysis in Economics - Lecture 3: dplyr and Pipes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Econ 106: Data Analysis in Economics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lectures" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Lectures</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture1.html">
+ <span class="dropdown-text">Lecture 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture2.html">
+ <span class="dropdown-text">Lecture 2</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../labs/index.html">
+ <span class="menu-text">Labs</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture 3: dplyr and Pipes</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Econ 1 06</p>
+<p>Da ta An alysi si n</p>
+<p>Econ omics</p>
+<p>Lec tur e 3</p>
+<p>Fal l 2024</p>
+<p>Ba sedo n:</p>
+<p>ht tp: // ww w. dat acar pent ry. or g/R</p>
+<ul>
+<li></li>
+</ul>
+<p>ecol ogy</p>
+<ul>
+<li></li>
+</ul>
+<p>l esson/</p>
+<p>R em i nd er s</p>
+<p>P oll E ve rywh ere will co un t t o war ds yo ur g ra de st a rt in g t his</p>
+<p>we ek</p>
+<p>gra de wi ll be b ased o n th e perce nt age o f po lls you a nswe rco rrect ly</p>
+<p>2</p>
+<p>h tt ps:/ /</p>
+<p>p o lle v.co m</p>
+<p>/</p>
+<p>vso ve ro</p>
+<section id="section" class="level1">
+<h1></h1>
+<p>ti d ytue sda y</p>
+<p>h tt p s: // ww w. blo om be rg. co</p>
+<p>m/ n ews/ a rt icle s/ 20 19</p>
+<ul>
+<li></li>
+</ul>
+<p>06</p>
+<ul>
+<li></li>
+</ul>
+<p>2 4/ ho w</p>
+<ul>
+<li></li>
+</ul>
+<p>ma ny</p>
+<ul>
+<li></li>
+</ul>
+<p>sq uir rel s</p>
+<ul>
+<li></li>
+</ul>
+<p>a re</p>
+<ul>
+<li></li>
+</ul>
+<p>in</p>
+<ul>
+<li></li>
+</ul>
+<p>n yc</p>
+<ul>
+<li></li>
+</ul>
+<p>s</p>
+<ul>
+<li></li>
+</ul>
+<p>ce nt ra l</p>
+<ul>
+<li></li>
+</ul>
+<p>p ark</p>
+<p>d at a:</p>
+<p>h tt p s: // g it hu b. co m/ rf or da t a</p>
+<p>scie nce / ti dyt ue sda y/ t ree / m</p>
+<p>a ste r/ d at a/ 2 01 9/ 2 01 9</p>
+<ul>
+<li></li>
+</ul>
+<p>10</p>
+<ul>
+<li></li>
+</ul>
+<p>29</p>
+<p>3</p>
+<p>Ou tl i ne</p>
+<p>T id yver se</p>
+<p>b a sics</p>
+<p>Da ta wra n g lin g with</p>
+<p>d p lyr</p>
+<p>4</p>
+<p>The</p>
+<p>ti d yver se</p>
+<p>Pa ckag e</p>
+<p>T he most po wer fu l, i ntu it iv e , and p op ul ar ap p ro ach to d ata</p>
+<p>cl eani n g, wr an gli ng , an d v isu ali zati o ni n R</p>
+<p>A dv ant ag es :</p>
+<p>C onsi stent p hi losophy and sy nt ax (p ack agei s mai nt ai ned! ! !! )</p>
+<p>” Verb “b ased appr oachm akes i t more fami li ar to users of</p>
+<p>St ata/ SA S/SPSS</p>
+<p>5</p>
+<p>Pa ckag es in si de th e</p>
+<p>ti d yver se</p>
+<p>p acka ge</p>
+<p>lo t so f pa ckag es in side th e</p>
+<p>t id yverse</p>
+<p>(i mpo rt a nt on es</p>
+<p>h igh lig ht ed )</p>
+<p>6</p>
+<p>” b ro o m”</p>
+<p>” co nf li cte d ”</p>
+<p>” cli ”</p>
+<p>”</p>
+<p>d b p lyr</p>
+<p>”</p>
+<p>” d pl yr”</p>
+<p>” d tp lyr ”</p>
+<p>” fo rca t s”</p>
+<p>”</p>
+<p>g g p lo t2 ”</p>
+<p>” g oo g l ed r ive ”</p>
+<p>” g oo g l esh e e ts4 ”</p>
+<p>” h ave n ”</p>
+<p>” h ms”</p>
+<p>” h tt r”</p>
+<p>” jso n li te ”</p>
+<p>” lu b ri d at e ”</p>
+<p>” ma g ri tt r”</p>
+<p>” mo d e lr”</p>
+<p>” p il la r”</p>
+<p>”</p>
+<p>p u rrr</p>
+<p>”</p>
+<p>” ra g g ”</p>
+<p>”</p>
+<p>re a d r</p>
+<p>”</p>
+<p>”</p>
+<p>re a d xl</p>
+<p>”</p>
+<p>” re p re x”</p>
+<p>” rl an g ”</p>
+<p>” rst ud i o ap i ”</p>
+<p>” rve st”</p>
+<p>” str in g r”</p>
+<p>” ti b bl e ”</p>
+<p>” ti d yr”</p>
+<p>” xml 2”</p>
+<p>” ti d yver se ”</p>
+<p>In stal l i ng</p>
+<p>ti d yver se</p>
+<p>p acka ge</p>
+<p>ins t a ll.p a ck a g es</p>
+<p>(”</p>
+<p>t idy v e rs e</p>
+<p>“)</p>
+<p>Out p ut</p>
+<p>:</p>
+<p>L oa di ng</p>
+<p>ti d yver se</p>
+<p>p acka ge</p>
+<p>l i br a ry</p>
+<p>(”</p>
+<p>t idy v e rs e</p>
+<p>“)</p>
+<p>O ut p ut</p>
+<p>:</p>
+<p>W</p>
+<p>e will load t he</p>
+<p>d atase t</p>
+<p>st ar war s</p>
+<p>fr o mth e</p>
+<p>ti d y ve r se</p>
+<p>p ack age</p>
+<p>li brar y</p>
+<p>(</p>
+<p>tidy verse</p>
+<p>)</p>
+<p>data</p>
+<p>(</p>
+<p>st arw ars</p>
+<p>)</p>
+<p>9</p>
+<p>D pl yr</p>
+<p>Exa m pl e</p>
+<p>fi lte r</p>
+<p>()</p>
+<p>i s a</p>
+<p>dp ly r</p>
+<p>fu nc tio n:</p>
+<p>F ir st a rg u m e n t i s a l wa ys a</p>
+<p>d a ta fra m e</p>
+<p>( n o v e cto rs )</p>
+<p>s e c o n d a r g u m e n t d e s cr ib e s w h i ch v a r ia b le s t o o p e ra te o n</p>
+<p>O utp ut</p>
+<p>:a da ta fr a me</p>
+<p>sh o rt_ ch a ra cte r s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>filte r</p>
+<p>(</p>
+<p>sta rw ar s</p>
+<p>,</p>
+<p>h e ig h t</p>
+<p>&lt;</p>
+<ol start="180" type="1">
+<li></li>
+</ol>
+<p>Pi p eo pe r ato r</p>
+<p>%&gt; %</p>
+<p>B est pr act i cei s to put</p>
+<p>eac hfunct i onon it s</p>
+<p>own line andi nd ent</p>
+<p>Use</p>
+<p>%&gt;%</p>
+<p>t o conn ect</p>
+<p>you rco de t o th e next</p>
+<p>li ne</p>
+<p>sh o rt_ ch a ra cte r s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>st ar war s</p>
+<p>%&gt;%</p>
+<p>fi l te r</p>
+<p>(</p>
+<p>h e ig h t</p>
+<p>&lt;</p>
+<p>180</p>
+<p>)</p>
+<p>S ame a s</p>
+<p>short_characters</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>filt er</p>
+<p>(</p>
+<p>st arw ars</p>
+<p>,</p>
+<p>height</p>
+<p>&lt;</p>
+<ol start="180" type="1">
+<li></li>
+</ol>
+<p>Ke y</p>
+<p>d pl yr</p>
+<p>ve rb s</p>
+<ul>
+<li><ul>
+<li>The re are f ive ke y</li>
+</ul></li>
+</ul>
+<p>d plyr</p>
+<p>ve rbs</p>
+<p>**</p>
+<ol type="1">
+<li></li>
+</ol>
+<dl>
+<dt>f ilt e r</dt>
+<dd>
+<p>Filt e r (i. e . su bse t ) ro ws ba sed o n t h eir va lu es.</p>
+</dd>
+</dl>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<dl>
+<dt>a rra ng e</dt>
+<dd>
+<p>Ar ra ng e (i. e . r eo rd er) row sb ase d o n t he ir va lue s.</p>
+</dd>
+</dl>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<dl>
+<dt>se lect</dt>
+<dd>
+<p>Se le ct ( i. e. sub set ) co lum ns b yt h eir na mes:</p>
+</dd>
+</dl>
+<ol start="4" type="1">
+<li></li>
+</ol>
+<dl>
+<dt>mu t at e</dt>
+<dd>
+<p>Cre at e n ew co lu mns.</p>
+</dd>
+</dl>
+<ol start="5" type="1">
+<li></li>
+</ol>
+<dl>
+<dt>su mma rize</dt>
+<dd>
+<p>Col lap se mu lt ip le ro ws in to a sin gle sum mar y</p>
+</dd>
+</dl>
+<p>va lue</p>
+<p>12</p>
+<p>f ilt er</p>
+<p>()</p>
+<p>13</p>
+<p>f ilt er</p>
+<p>()</p>
+<p>Ch o o se r o ws b a sed o n val ue s o f a va r ia b le</p>
+<dl>
+<dt>Ar gu me n ts</dt>
+<dd>
+<p>d ata a n d a lo g ica l e xpr e ssio n (r e tur n s</p>
+</dd>
+</dl>
+<p>tr ue /f a lse )</p>
+<blockquote class="blockquote">
+
+</blockquote>
+<p>,</p>
+<p>&lt;</p>
+<p>,</p>
+<blockquote class="blockquote">
+<p>=</p>
+</blockquote>
+<p>,</p>
+<p>&lt;=</p>
+<p>,</p>
+<p>==</p>
+<p>,</p>
+<p>!=</p>
+<dl>
+<dt>O ut p ut</dt>
+<dd>
+<p>d ata with ro ws t h a tm a tc h th e e xpr e ssio n</p>
+</dd>
+</dl>
+<p>L og ica l Op er ato r s</p>
+<p>S om e com mo nly u sed</p>
+<p>lo gica l op er at o rs an d t he ir</p>
+<p>d escri pt io ns</p>
+<p>15</p>
+<p>tal l is h</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>h ei gh t</p>
+<blockquote class="blockquote">
+<p>=</p>
+</blockquote>
+<p>19 0</p>
+<p>&amp;</p>
+<p>h ei gh t</p>
+<p>&lt;=</p>
+<p>25 0</p>
+<p>)</p>
+<p>we u se th e</p>
+<p>&amp;</p>
+<p>log ic al</p>
+<p>oper ator</p>
+<p>when acas ehas</p>
+<p>t om eet mult i ple</p>
+<p>c ondi ti ons fort hes ame</p>
+<p>v ari able</p>
+<p>ex trem es</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>h ei gh t</p>
+<p>&lt;=</p>
+<p>16 0</p>
+<p>h ei gh t</p>
+<blockquote class="blockquote">
+<p>=</p>
+</blockquote>
+<p>19 0</p>
+<p>)</p>
+<p>we u se th e</p>
+<p>log ic al</p>
+<p>oper ator</p>
+<p>when ourfi lt er</p>
+<p>has mult i ple</p>
+<p>c ondi ti ons for</p>
+<p>t hesam ev ari able</p>
+<p>h tt ps:/ /</p>
+<p>p o lle v.co m</p>
+<p>/</p>
+<p>vso ve ro</p>
+<p>Exe r cise</p>
+<p>Fin d t h e f irst an d t h ird q ua rt ile of t he mass va ria ble (t ry u sing</p>
+<p>su mma rize ()</p>
+<p>Fil te r f or cha ract e rs wh o f all w it hin th ose t wo va lue s</p>
+<p>18</p>
+<p>Fi l ter i ng w i thn on</p>
+<ul>
+<li></li>
+</ul>
+<p>n um er i cvar i ab l es</p>
+<p>I f we wa nt t o f ilt e r ba sed on</p>
+<p>a n on</p>
+<ul>
+<li></li>
+</ul>
+<p>n ume ric va lue , we</p>
+<p>h ave t o pu t it in qu ot es</p>
+<p>(si ng le o r do ub le is f in e)</p>
+<p>19</p>
+<p>h um an s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>sp ec ie s</p>
+<p>==</p>
+<p>“H um an”</p>
+<p>)</p>
+<p>C om b in i ng l og i cal co nd it io ns</p>
+<p>W e can also com bin e lo gica l con di ti on s, sa me a s wit h</p>
+<p>n ume ric va ria ble s</p>
+<p>20</p>
+<p>b lu e_ bl ac k</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>ey e_c ol o r</p>
+<p>==</p>
+<p>“b l ue”</p>
+<p>ey e_c ol o r</p>
+<p>==</p>
+<p>“b l ack”</p>
+<p>)</p>
+<p>A Use fu l tri ck:</p>
+<p>% in%</p>
+<p>l og i cal o pe ra to r</p>
+<p>21</p>
+<p>dr oid _humans_hutt</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>starwar s</p>
+<p>%&gt;%</p>
+<p>fil ter</p>
+<p>(</p>
+<p>species</p>
+<p>%in%</p>
+<p>c</p>
+<p>(</p>
+<p>” Human”</p>
+<p>,</p>
+<p>” Dro id”</p>
+<p>,</p>
+<p>” Hutt”</p>
+<p>))</p>
+<p>He lpf u l whe n yo u h ave a lon ge r list o f lo gi cal co nd it ion s fo r a</p>
+<p>n on</p>
+<ul>
+<li></li>
+</ul>
+<p>n ume ric va ria ble</p>
+<p>Exe r cise</p>
+<p>- àT ‰¬Ám6 % ÌÁë‰ à ‰à ¡ }¡ …6 ˜˜ T% ”}t</p>
+<p>mi sta ke1</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>sp ec ie s</p>
+<p>==</p>
+<p>“h u man”</p>
+<p>)</p>
+<p>mi sta ke2</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>sp ec ie s</p>
+<p>==</p>
+<p>“H um an”</p>
+<p>“D ro id”</p>
+<p>)</p>
+<p>23</p>
+<p>h t t ps: / /</p>
+<p>p o lle v. co m</p>
+<p>/</p>
+<p>vso ve ro</p>
+<p>wa nt</p>
+<p>we use t h e</p>
+<p>!</p>
+<p>lo gica l</p>
+<p>o pe rat o r</p>
+<p>n o t _h u m a n</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>st a rw ars</p>
+<p>% &gt;%</p>
+<p>f ilt er</p>
+<p>(</p>
+<p>sp e cie s</p>
+<p>!=</p>
+<p>” Hu m an ”</p>
+<p>)</p>
+<p>24</p>
+<p>f ilt er</p>
+<p>( ) an dm i ssi ng da ta</p>
+<p>mi ss in g _h ei gh ts</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>i s. na</p>
+<p>(</p>
+<p>h ei gh t</p>
+<p>))</p>
+<p>n on _m is si ng _h ei g hts</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>!</p>
+<p>i s. na</p>
+<p>(</p>
+<p>h ei gh t</p>
+<p>))</p>
+<p>A v ery</p>
+<p>co m mo n</p>
+<p>filte r</p>
+<p>u se case</p>
+<p>is iden t ify in g (o r</p>
+<p>re mo v in g) m iss ing dat a</p>
+<p>ca ses.</p>
+<p>T he se ex am ple su se</p>
+<p>i s. na</p>
+<p>!</p>
+<p>Exe r cise</p>
+<p>crea te a d at a fra me of t he ch aract ers wh ose sex is li ste d as non e</p>
+<p>crea te a d at a fra me of t he ch aract ers wh ose sex is un know n</p>
+<p>(missi ng)</p>
+<p>26</p>
+<p>f ilt er</p>
+<p>()</p>
+<p>tal l _h um an s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>sp ec ie s</p>
+<p>==</p>
+<p>“H um an”</p>
+<p>)</p>
+<p>%&gt;%</p>
+<p>fi lte r</p>
+<p>(</p>
+<p>h ei gh t</p>
+<blockquote class="blockquote">
+<p>=</p>
+</blockquote>
+<p>19 0</p>
+<p>)</p>
+<p>tall_h uman s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>starwar s</p>
+<p>%&gt;%</p>
+<p>fil ter</p>
+<p>(</p>
+<p>species</p>
+<p>==</p>
+<p>” Human”</p>
+<p>,</p>
+<p>hei ght</p>
+<blockquote class="blockquote">
+<p>=</p>
+</blockquote>
+<p>190</p>
+<p>)</p>
+<p>W e can cha in mul ti ple f il te rco mmand sw it h th e pip e</p>
+<p>%&gt;%</p>
+<p>we canals osepar ate them wi t hi nas ing lefi lt erc omm and usi ngc omm as.</p>
+<p>28</p>
+<p>h t t ps: / /</p>
+<p>p o lle v. co m</p>
+<p>/</p>
+<p>vso ve ro</p>
+<p>a rrang e</p>
+<p>()</p>
+<p>a rrang e</p>
+<p>()</p>
+<p>arr an ge</p>
+<p>()</p>
+<p>s ort s you rda ta</p>
+<p>fra mebya part i cu lar</p>
+<p>va ri ablei na sce ndi ngo rde r:</p>
+<p>n ume ric:</p>
+<p>1 ,2,3 ,e tc.</p>
+<p>cha ra ct e r:</p>
+<p>a ,b,c,e tc.</p>
+<dl>
+<dt>Ar guments</dt>
+<dd>
+
+</dd>
+</dl>
+<p>Av ariable</p>
+<p>Us e</p>
+<p>desc</p>
+<p>()to put them</p>
+<p>indesc endingorder</p>
+<p>as cen d in g <em>b ir th</em> yea r</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>ar ran g e</p>
+<p>(</p>
+<p>b ir th_ yea r</p>
+<p>)</p>
+<p>d esc en di n g_ bi rth _y ear</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>ar ran g e</p>
+<p>(</p>
+<p>d esc</p>
+<p>(</p>
+<p>b ir th_ yea r</p>
+<p>))</p>
+<p>Exe r cise</p>
+<p>W ho is t he t all est ch aract er in N abo o?</p>
+<p>31</p>
+<p>32</p>
+<p>h t t ps: / /</p>
+<p>p o lle v. co m</p>
+<p>/</p>
+<p>vso ve ro</p>
+<p>s ele ct</p>
+<p>()</p>
+<p>s ele ct</p>
+<p>()</p>
+<p>s e l ec t</p>
+<p>( ) se le ct s va ria b le s</p>
+<p>f r om a da t a f ra m e</p>
+<dl>
+<dt>Ar gu me n ts</dt>
+<dd>
+
+</dd>
+</dl>
+<p>va ria ble s to be kep t</p>
+<p>(se pa ra t ed b y com mas)</p>
+<dl>
+<dt>Out p ut</dt>
+<dd>
+<p>d ata with o nl yth e</p>
+</dd>
+</dl>
+<p>sp e cifie d va r ia b le s</p>
+<p>fe wer _va rs1</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>st arw ars</p>
+<p>% &gt;%</p>
+<p>se lec t</p>
+<p>(</p>
+<p>m ass</p>
+<p>,</p>
+<p>sp eci es</p>
+<p>,</p>
+<p>he igh t</p>
+<p>)</p>
+<p>35</p>
+<p>h t t ps: / /</p>
+<p>p o lle v. co m</p>
+<p>/</p>
+<p>vso ve ro</p>
+<p>s ele ct</p>
+<p>()</p>
+<p>Y ou ca n al so us e”</p>
+<p>fi rst :l a st</p>
+<p>” to se l ec t co ns ec u ti vec o lu mns .</p>
+<p>De se l ec ta c ol umn wi th ”</p>
+<ul>
+<li></li>
+</ul>
+<p>“.</p>
+<p>few er _va rs</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>se le ct</p>
+<p>(</p>
+<p>h ei gh t</p>
+<p>:</p>
+<p>ey e_c ol o r</p>
+<p>,</p>
+<ul>
+<li></li>
+</ul>
+<p>sk in _c ol o r</p>
+<p>)</p>
+<p>s ele ct</p>
+<p>()</p>
+<p>few er _va rs</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>se le ct</p>
+<p>(</p>
+<p>h ei gh t</p>
+<p>:</p>
+<p>ey e_c ol o r</p>
+<p>,</p>
+<ul>
+<li></li>
+</ul>
+<p>sk in _c ol o r</p>
+<p>)</p>
+<p>s ele ct</p>
+<p>( ) var i ab le n am est ha tm atch a pa tter n</p>
+<p>co l or _va rs</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>sta rw ars</p>
+<p>%&gt;%</p>
+<p>se le ct</p>
+<p>(</p>
+<p>co n tai ns</p>
+<p>(</p>
+<p>“c ol o r”</p>
+<p>))</p>
+<p>mut at e</p>
+<p>()</p>
+<p>mut at e</p>
+<p>()</p>
+<p>Cr e a te s a n ew va r ia b le</p>
+<dl>
+<dt>Ar gu me n ts</dt>
+<dd>
+
+</dd>
+</dl>
+<p>d a ta f r a me a n d</p>
+<p>th e d e fin itio n of a n ew</p>
+<p>va r ia bl e</p>
+<dl>
+<dt>Out p ut</dt>
+<dd>
+<p>d ata f ra m e with a n e w va ria b le</p>
+</dd>
+</dl>
+<p>mut at e</p>
+<p>()</p>
+<p>a d d _ n e w_ v a rs</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>s ta rw a rs</p>
+<p>% &gt; %</p>
+<p>m u ta te</p>
+<p>(</p>
+<p>d o g _ y e ar s</p>
+<p>=</p>
+<p>b i rt h _y e a r</p>
+<ul>
+<li></li>
+</ul>
+<p>7</p>
+<p>)</p>
+<p>% &gt; %</p>
+<p>m u ta te</p>
+<p>(</p>
+<p>h e i g h t_ m</p>
+<p>=</p>
+<p>h e i g h t</p>
+<p>/</p>
+<p>100</p>
+<p>)</p>
+<p>a d d _ n e w_ v a rs</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>s ta rw a rs</p>
+<p>% &gt; %</p>
+<p>m u ta te</p>
+<p>(</p>
+<p>d o g _ y e ar s</p>
+<p>=</p>
+<p>b i rt h _y e a r</p>
+<ul>
+<li></li>
+</ul>
+<p>7</p>
+<p>,</p>
+<p>h e i g h t_ m</p>
+<p>=</p>
+<p>h e i g h t</p>
+<p>/</p>
+<p>100</p>
+<p>)</p>
+<p>Youcanc reate multiple</p>
+<p>newv ariables at at ime</p>
+<p>wit hpipes (first example)</p>
+<p>Youcanalso skipt he</p>
+<p>pipesandputa comma</p>
+<p>inst ead(s ec ond ex ample)</p>
+<p>mut at e</p>
+<p>()</p>
+<p>W ec analso creat enon</p>
+<ul>
+<li></li>
+</ul>
+<p>num eri c vec t orsw it hm ut ate</p>
+<p>add _hei ght _var s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>st ar wa rs</p>
+<p>% &gt; %</p>
+<p>sel ect</p>
+<p>(</p>
+<p>nam e, h eigh t</p>
+<p>)</p>
+<p>% &gt; %</p>
+<p>m ut at e</p>
+<p>(</p>
+<p>t all 1 = hei ght</p>
+<blockquote class="blockquote">
+
+</blockquote>
+<p>180</p>
+<p>,</p>
+<p>t all 2 =</p>
+<p>i fel se</p>
+<p>( hei ght</p>
+<blockquote class="blockquote">
+
+</blockquote>
+<p>180 , “Tal l” , “S hor t”)</p>
+<p>)</p>
+<p>Be ca re ful w i th th eo rd er o fch ai ne d</p>
+<p>co mm an ds</p>
+<p>43</p>
+<p>hmm</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>starwar s</p>
+<p>%&gt;%</p>
+<p>select</p>
+<p>(</p>
+<p>name,mass</p>
+<p>)</p>
+<p>%&gt;%</p>
+<p>arr an ge</p>
+<p>(</p>
+<p>hei ght</p>
+<p>)</p>
+<p>Exe r cise</p>
+<p>Ca lcul at e th e BMI of th e sta rw ars chara cte rs(h eig ht d ivid ed by</p>
+<p>mass squ ared )</p>
+<p>f ilt er f or non</p>
+<ul>
+<li></li>
+</ul>
+<p>hu man cha ract ers</p>
+<p>sort th e dat a f rom hig hest to l owe st BMI</p>
+<p>44</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

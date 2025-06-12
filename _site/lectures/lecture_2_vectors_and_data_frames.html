@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Econ 106: Data Analysis in Economics - Lecture 2: Vectors and Data Frames</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Econ 106: Data Analysis in Economics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lectures" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Lectures</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture1.html">
+ <span class="dropdown-text">Lecture 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture2.html">
+ <span class="dropdown-text">Lecture 2</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../labs/index.html">
+ <span class="menu-text">Labs</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#exa-m-p-le-a-ve-ctor-o-fa-g-e-s" id="toc-exa-m-p-le-a-ve-ctor-o-fa-g-e-s" class="nav-link" data-scroll-target="#exa-m-p-le-a-ve-ctor-o-fa-g-e-s">Exa m p le : a ve ctor o fa g e s</a></li>
+  <li><a href="#exa-m-p-le-a-ve-ctor-o-fa-g-e-s-1" id="toc-exa-m-p-le-a-ve-ctor-o-fa-g-e-s-1" class="nav-link" data-scroll-target="#exa-m-p-le-a-ve-ctor-o-fa-g-e-s-1">Exa m p le : a ve ctor o fa g e s</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture 2: Vectors and Data Frames</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Econ 1 06</p>
+<p>Da ta An alysi si n</p>
+<p>Econ omics</p>
+<p>Fal l 2024</p>
+<p>Lec tur e 2</p>
+<p>Ba sedo n:</p>
+<p>ht tp: // ww w. dat acar pent ry. or g/R</p>
+<ul>
+<li></li>
+</ul>
+<p>ecol ogy</p>
+<ul>
+<li></li>
+</ul>
+<p>l esson/</p>
+<p>R em i nd er s</p>
+<p>P oll E ve rywh ere is pr act ice t h is wee k, ne xt we ek co un t s</p>
+<p>t ow ard s you r gr ad e</p>
+<p>P lea se r eme mb er t o log in a t t h e be gi nn ing of ea ch le ct ure :</p>
+<p>P ollE v.c om/ vs over o</p>
+<p>2</p>
+<section id="section" class="level1">
+<h1></h1>
+<p>ti d ytue sda y</p>
+<p>weekly datac hallengeusingR</p>
+<p>every Tuesdayanew</p>
+<p>challenge ispost ed</p>
+<p>here</p>
+<p>Thedata us ed inthis example</p>
+<p>canbef ound</p>
+<p>here</p>
+<p>youc an brow setheresult son</p>
+<p>soc ial media (#</p>
+<p>tidy tuesday</p>
+<p>)</p>
+<p>Good sourc eofins pirationf or</p>
+<p>yourprojects</p>
+<p>3</p>
+<p>Ou tl i ne</p>
+<p>Ve cto r s</p>
+<p>Pa cka g e s</p>
+<p>Da ta Fr a me s</p>
+<p>4</p>
+<p>Ob j ects</p>
+<p>Objects</p>
+<p>st ore dat a(information)</p>
+<p>Weus e theass ignment operator</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>to savev alues intoobjects</p>
+<p>we igh t_ k g</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>55</p>
+<p>5</p>
+<p>Ob j ects: No tJu stfo r Sto ri n gN u mb er s</p>
+<p>6</p>
+<p>t y pe</p>
+<p>x</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>32</p>
+<p>n u me r ic</p>
+<p>y</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>ch a ra cte r</p>
+<p>Ba sic Da ta t ype s:</p>
+<p>Ch a r acte r</p>
+<p>Nu m e ric</p>
+<p>D at astr u ctur es</p>
+<p>o ne va lu e st or ed i n on e o bje ct</p>
+<p>R h a s mo r e co m p le x da ta st ru ctu re s t h a t m a ke</p>
+<p>wo r kin g w ith m o re co m pl ex d a ta e a sie r :</p>
+<dl>
+<dt>Vec tor s</dt>
+<dd>
+<p>mu lt ipl e valu es of t he sa me typ e.</p>
+</dd>
+<dt>Da ta f r am e</dt>
+<dd>
+<p>mu lt iple</p>
+</dd>
+</dl>
+<p>v ec tor s</p>
+<p>o f t h e sam e le ng t h gr ou pe d</p>
+<p>a sco lu mns.</p>
+<p>7</p>
+<p>Ve cto rs: Obj e ctsw i thM u lt ip l eV al u es</p>
+<p>8</p>
+<p>R ca n st or e mu lt ipl e</p>
+<p>va lue s of t he sa me typ e</p>
+<p>in a da t a t ype call ed a</p>
+<p>ve cto r.</p>
+<p>A n o bje ct w it h a sin gl e</p>
+<p>e lem en t is a ct ua lly a</p>
+<p>ve cto r (l en gt h 1 ):</p>
+<p>x</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>12.3</p>
+<p>C r ea ti ng Obj e ctsW it hM ul ti p l eV al ue s</p>
+<p>Just like o th er obj ect s,</p>
+<p>vect ors are a ssign ed val ues</p>
+<p>usi ng t he assi gnme nt</p>
+<p>op erat or</p>
+<p>T o assig n mult ip le val ues t o</p>
+<p>t he ob ject , w e use t he</p>
+<p>comb ine f un cti on</p>
+<p>c</p>
+<p>()</p>
+<p>Each va lue i sse para te d by a</p>
+<p>comma</p>
+<p>9</p>
+</section>
+<section id="exa-m-p-le-a-ve-ctor-o-fa-g-e-s" class="level1">
+<h1>Exa m p le : a ve ctor o fa g e s</h1>
+<p>a ge</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>c</p>
+<p>(</p>
+<p>30</p>
+<p>,</p>
+<p>40</p>
+<p>,</p>
+<p>25</p>
+<p>,</p>
+<p>22</p>
+<p>)</p>
+<p>P ol lEv.c om/v s o ve r o</p>
+<p>C r ea ti ng Obj e ctsW it hM ul ti p l eV al ue s</p>
+<p>Co m b in e f u n ctio n</p>
+<p>c</p>
+<p>( ) :</p>
+<dl>
+<dt>Inp ut</dt>
+<dd>
+<p>va lu es</p>
+</dd>
+</dl>
+<p>se p a ra te d b y</p>
+<p>co m ma s</p>
+<dl>
+<dt>Out p ut</dt>
+<dd>
+<p>a ve cto r</p>
+</dd>
+</dl>
+<p>o b je ct</p>
+<p>Al l th e sa me d a ta</p>
+<p>typ e</p>
+</section>
+<section id="exa-m-p-le-a-ve-ctor-o-fa-g-e-s-1" class="level1">
+<h1>Exa m p le : a ve ctor o fa g e s</h1>
+<p>a ge</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>c</p>
+<p>(</p>
+<p>30</p>
+<p>,</p>
+<p>40</p>
+<p>,</p>
+<p>25</p>
+<p>,</p>
+<p>22</p>
+<p>)</p>
+<p>10</p>
+<p>C r ea ti ng Obj e ctsW it hM ul ti p l eV al ue s</p>
+<p>fo r ch a r acte r vecto r s,</p>
+<p>u se str a ig h tq u o te s</p>
+<p>a r ou n d t he va lu e s</p>
+<p>Si ng le o r d o u b le is</p>
+<p>fin e</p>
+<p>#Exa mple : a cha ract er vect or of f avo rit e</p>
+<p>an imal s</p>
+<p>an i mal s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>c</p>
+<p>(</p>
+<p>“c at”</p>
+<p>,</p>
+<p>“d o g”</p>
+<p>,</p>
+<p>“d o g”</p>
+<p>,</p>
+<p>“d o g”</p>
+<p>)</p>
+<p>#T hi sa lso wo rks</p>
+<p>an i mal s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>c</p>
+<p>(</p>
+<p>’ cat’</p>
+<p>,</p>
+<p>’ do g ’</p>
+<p>,</p>
+<p>’ do g ’</p>
+<p>,</p>
+<p>’ do g ’</p>
+<p>)</p>
+<p>11</p>
+<p>Fun cti on sfo r in spe cti ng ve ctor typ e</p>
+<p>R au to mat ical ly record sw hat</p>
+<p>t ype of dat a is st ored i n an</p>
+<p>ob ject</p>
+<p>He lp fu l fu nc tio n s:</p>
+<p>cl ass</p>
+<p>()</p>
+<p>t ypeof</p>
+<p>()</p>
+<p>c la ss</p>
+<p>( )</p>
+<p>t y pe of</p>
+<p>( )</p>
+<p>x</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>32</p>
+<p>n u me r ic</p>
+<p>d o u bl e</p>
+<p>y</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>“h i”</p>
+<p>ch a ra cte r</p>
+<p>ch a ra cte r</p>
+<p>12</p>
+<p>C l assC o er ci on</p>
+<p>A ve cto r can ’t mix a nd</p>
+<p>matc h ty pe s, so Rwi ll</p>
+<p>ch oose a ty p et hat ap pli e s</p>
+<p>to most v alu es(c lass</p>
+<p>co er ci on )</p>
+<p>So meti mes thi s cho i ce</p>
+<p>ë }%¬ ‰6 y½ ë 6€’€}€ TÊ</p>
+<p>ch ar acte r )</p>
+<p>Us e</p>
+<p>class</p>
+<p>()to seewhat R</p>
+<p>pick ed</p>
+<p>#Whatt ypesaret hes e vect ors ?</p>
+<p>fir st_vecto r</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>c</p>
+<p>(</p>
+<p>1, 2, 3, “a”</p>
+<p>)</p>
+<p>second _vector</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>c</p>
+<p>(</p>
+<p>1, 2, 3, “4”</p>
+<p>)</p>
+<p>13</p>
+<p>Su m ma ri zi n gN u me ri cV ecto r s</p>
+<p>Nume ric ve ct or:</p>
+<p>yo u can com pu te t he</p>
+<p>me an</p>
+<p>14</p>
+<p>#A vect or of age s</p>
+<p>ag e</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>c</p>
+<p>(</p>
+<p>30</p>
+<p>,</p>
+<p>40</p>
+<p>,</p>
+<p>25</p>
+<p>,</p>
+<p>22</p>
+<p>)</p>
+<p>#W ha t ha ppe ns whe n you t ryt o comp ut e</p>
+<p>t he mea n?</p>
+<p>me an</p>
+<p>(</p>
+<p>ag e</p>
+<p>)</p>
+<p>H el p ful f un cti on sfor su mm a ri zi ng</p>
+<p>n um er i cvect or s</p>
+<p>15</p>
+<p>me an</p>
+<p>()</p>
+<p>me di an</p>
+<p>()</p>
+<p>ma x</p>
+<p>()</p>
+<p>mi n</p>
+<p>()</p>
+<p>sd</p>
+<p>()</p>
+<p>su mma ry</p>
+<p>()</p>
+<p>Su m ma ri zi n gch ar act er vect or s?</p>
+<p>c har a cte r ve cto r:</p>
+<p>yo u will</p>
+<p>g et war nin g m essa ge i f</p>
+<p>yo u t ry t o co mpu t e t he</p>
+<p>me an , med ia n, min , m ax ()</p>
+<p>I t will re t ur n a va lue of NA</p>
+<p>(h ow R r eco rd sm issin g</p>
+<p>va lue s)</p>
+<p>16</p>
+<p>#a ch aract er vect or of fa vorit e an imal s</p>
+<p>an i mal s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>c</p>
+<p>(</p>
+<p>“c at”</p>
+<p>,</p>
+<p>“d o g”</p>
+<p>,</p>
+<p>“d o g”</p>
+<p>,</p>
+<p>“d o g”</p>
+<p>)</p>
+<p>#W ha t ha ppe ns whe n you t ryt o comp ut e</p>
+<p>t he mea n?</p>
+<p>me an</p>
+<p>(</p>
+<p>an i mal s</p>
+<p>)</p>
+<p>P ol lEv.c om/v s o ve r o</p>
+<p>Fact or s</p>
+<p>W e nee d to co nvert th e ani mal</p>
+<p>vect or in to a</p>
+<p>fac tor ,</p>
+<p>wa yo f st orin g cat ego rical d at a</p>
+<p>(vari abl es wit h a f ini te se t of</p>
+<p>cat eg orie s)</p>
+<p>we u se th e</p>
+<p>fac tor</p>
+<p>() fu nct ion t o</p>
+<p>crea te a f act or vari abl e fro mt he</p>
+<p>an imal sve cto r</p>
+<p>17</p>
+<p>#a ch aract er vect or of fa vorit e an imal s</p>
+<p>an i mal s</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>c</p>
+<p>(</p>
+<p>“c at”</p>
+<p>,</p>
+<p>“d o g”</p>
+<p>,</p>
+<p>“d o g”</p>
+<p>,</p>
+<p>“d o g”</p>
+<p>)</p>
+<p>an i mal s_ facto r</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>fac tor</p>
+<p>(</p>
+<p>an i mal s</p>
+<p>)</p>
+<p>Fact or s</p>
+<p>Y ou can a lre ad y see th at</p>
+<p>in f orm at io n wh en an ima ls is</p>
+<p>st or ed as a f a cto r in st ea d of</p>
+<p>a ch ar act e r vect o r</p>
+<p>18</p>
+<p>Su m ma ri zi n gFa ctor s</p>
+<p>W e can no w calcu la te</p>
+<p>su mma ry st at ist ics mo re</p>
+<p>a pp rop ria t e f or</p>
+<p>ca te go rica l da t a</p>
+<p>19</p>
+<p>Input</p>
+<p>O u tp u t</p>
+<p>l e v e l s</p>
+<p>(</p>
+<p>a n i m a l s _f ac to r</p>
+<p>)</p>
+<p>“c a t” “d o g”</p>
+<p>n l e v e l s</p>
+<p>(</p>
+<p>a n i m a l s _f ac to r</p>
+<p>)</p>
+<p>2</p>
+<p>s u m m a ry</p>
+<p>(</p>
+<p>a n i m a l s _f ac to r</p>
+<p>)</p>
+<p>c a t d o g</p>
+<p>1 3</p>
+<p>D at astr u ctur es: Ve ctor sto D ata Fr am es</p>
+<p>20</p>
+<p>W he n we h ave mu lt iple</p>
+<p>p iece s of inf o rma t ion</p>
+<p>f ro m t he same pe op le,</p>
+<p>t he inf o rma t ion st ore d</p>
+<p>a sa sing le t a ble vs</p>
+<p>in divi du al ve cto rs</p>
+<p>30</p>
+<p>40</p>
+<p>25</p>
+<p>22</p>
+<p>ca t</p>
+<p>do g</p>
+<p>do g</p>
+<p>do g</p>
+<p>ve cto r</p>
+<p>ve cto r</p>
+<p>30</p>
+<p>ca t</p>
+<p>40</p>
+<p>do g</p>
+<p>25</p>
+<p>do g</p>
+<p>22</p>
+<p>do g</p>
+<p>da taf ram e</p>
+<p>D at astr u ctur es: Ve ctor sto D ata Fr am es</p>
+<p>21</p>
+<p>Th is will a llo w us t o d o</p>
+<p>t hi ng su ch a s:</p>
+<p>cal cula te a verag e age</p>
+<p>f or cat p eop le</p>
+<p>cal cula te a verag e age</p>
+<p>f or dog p eop le</p>
+<p>t he se t h ing s ne xt we ek</p>
+<p>30</p>
+<p>ca t</p>
+<p>40</p>
+<p>do g</p>
+<p>25</p>
+<p>do g</p>
+<p>22</p>
+<p>do g</p>
+<p>da taf ram e</p>
+<p>D at astr u ctur es: Ve ctor sto D ata Fr am es</p>
+<p>22</p>
+<p>V ect o rs ar e t he bu ildi ng</p>
+<p>b locks o f Da t a Fr ame s</p>
+<p>D at afr a me s</p>
+<p>Ro w s</p>
+<p>= ob se r va ti on s</p>
+<p>Co lum ns</p>
+<p>= var ia b le s</p>
+<p>Al l val ue s in a col um n</p>
+<p>m u st b e t he sa m e d a ta</p>
+<p>typ e .</p>
+<p>Al l col um n s mu st h a ve</p>
+<p>sa m e n u m be r o f r o ws.</p>
+<p>23</p>
+<p>24</p>
+<p>Pa ckag es</p>
+<p>M any of the mo stu sefu lf unc ti ons of Rc ome fr om ad d</p>
+<ul>
+<li></li>
+</ul>
+<p>on</p>
+<p>p ack ag es .</p>
+<p>Pa ckag es can i nc lud e:</p>
+<p>reus ablefunc ti ons</p>
+<p>t hedoc ument at i ont hat desc ri bes howt ouse them</p>
+<p>sam pled ata</p>
+<p>So me ar ewe ll mai ntai ne d, and o ther s ar e not (use r b ewar e)</p>
+<p>25</p>
+<p>Pa ckag es Exam p le</p>
+<p>T hi nk of p ack age sas ap ps</p>
+<p>fo r y ou r p hon e</p>
+<p>% }‰T ë ‰6 %…¡ l T%” ©6b ¡% ª</p>
+<p>i t when y ou wan tto u sea</p>
+<p>p ack age i n y our scr i pt</p>
+<p>Imp or ta nt: y ou n eed t o</p>
+<p>lo ad the p ack age e ach ti me</p>
+<p>y ou op en RS tud i o</p>
+<p>26</p>
+<p>#r un thi so nce</p>
+<p>in sta ll. pa ckage s</p>
+<p>(</p>
+<p>”</p>
+<p>dsl abs</p>
+<p>“)</p>
+<p>#r un thi se ver yt ime yo uo pen</p>
+<p>RS tud io</p>
+<p>l ib ra ry</p>
+<p>(</p>
+<p>dsl abs</p>
+<p>)</p>
+<p>Loa d the</p>
+<p>d atase t</p>
+<p>mu rd er s</p>
+<p>fr o m</p>
+<p>th e</p>
+<p>d slab s</p>
+<p>p ack age :</p>
+<p>li br a ry</p>
+<p>(</p>
+<p>d sla b s</p>
+<p>)</p>
+<p>data</p>
+<p>(</p>
+<p>murders</p>
+<p>)</p>
+<p>27</p>
+<p>Y ou can a lre ad y see</p>
+<p>so me in f or mat io n</p>
+<p>a bo ut t he d at a fr am e:</p>
+<p>51 o bserva ti ons</p>
+<p>5 vari abl es</p>
+<p>28</p>
+<p>I f you p re ss th e b lue</p>
+<p>o f t h e na me , yo u wi ll</p>
+<p>g et mo re d et a iled</p>
+<p>in f orm at io n o n t he</p>
+<p>va ria ble s</p>
+<p>29</p>
+<p>Sa mei n for mati o n</p>
+<p>g ets sent to the</p>
+<p>co nsol ei f y ou</p>
+<p>ex amine i ts</p>
+<p>s tr</p>
+<p>uc tur e</p>
+<p>wi th the</p>
+<p>st r</p>
+<p>()</p>
+<p>f un ct ion</p>
+<p>:</p>
+<p>st r</p>
+<p>(</p>
+<p>mu rd er s</p>
+<p>)</p>
+<p>30</p>
+<p>C</p>
+<p>li ck o nt he</p>
+<p>d ataf ra me</p>
+<p>i n y our</p>
+<p>Env i r on ment p ane to</p>
+<p>v i ew the d ataset i n</p>
+<p>ë ‰¬</p>
+<p>en ti r ety</p>
+<p>Y ou can a lso t yp e:</p>
+<p>vie w</p>
+<p>(</p>
+<p>mu rd er s</p>
+<p>)</p>
+<p>31</p>
+<p>T he da tav i ewe r</p>
+<p>p r ov i de sa hel pf ul</p>
+<p>fi r st loo ka ty ou r d ata</p>
+<p>(y ou sho uld a lway s</p>
+<p>v i suall y i nsp ect y ou r</p>
+<p>d ata)</p>
+<p>We ca na lso app ly</p>
+<p>some e asy p oi nt and</p>
+<p>cl ic k tool sto</p>
+<p>sor t/ fi lte r i n the</p>
+<p>v i ewer</p>
+<p>32</p>
+<p>So r ti ng i nth e da tavi e w er</p>
+<p>you c an s or t by any</p>
+<p>c olum n by just by c li ck i ng</p>
+<p>on t hec ol umn</p>
+<p>alr ead ys or ted t o rever se</p>
+<p>t he s or t di r e c ti on</p>
+<p>33</p>
+<p>Fi l ter i ng i nt he da ta vie w er</p>
+<p>To ap ply fi lt er s ,c li c k the</p>
+<p>F i lter ic on i n t het oolb ar</p>
+<p>An yfi e ld t hat c an b e</p>
+<p>fi lt ered wi ll ha ve a whi t e</p>
+<p>b ox lab eled</p>
+<p>All</p>
+<p>34</p>
+<p>P ol lEv.c om/v s o ve r o</p>
+<p>Fi l ter i ng i nt he da ta vie w er</p>
+<p>If you c li c k o n an ume r ic</p>
+<p>var i abl e, a hi s togr am wi ll</p>
+<p>p op up wh er e you ca n</p>
+<p>s e le ct the value s yo uw ant</p>
+<p>t of il te r fo r</p>
+<p>35</p>
+<p>Fi l ter i ng i nt he da ta vie w er</p>
+<p>F i lte r i ng/ s or ti ng i n th e</p>
+<p>d ata vi ewer d oes not mak e</p>
+<p>an yp erma nent c han ges t o</p>
+<p>t he mu rd e rs dat a fra me</p>
+<p>F or ex amp le, i f you r eo pen</p>
+<p>t he vi e we r af te r fi lt e ri n g</p>
+<p>for the Sout h, all of the</p>
+<p>r egions w il ls t il lb et her e</p>
+<p>36</p>
+<p>Fun cti on sfo r Insp ecti n gd at afr a me s</p>
+<ul>
+<li>Also</li>
+</ul>
+<p>in spect s</p>
+<p>vect ors</p>
+<p>F un cti o n</p>
+<p>O utp u t</p>
+<p>cl as s</p>
+<ul>
+<li></li>
+</ul>
+<p>Cl ass of t he o bje ct</p>
+<p>str</p>
+<ul>
+<li></li>
+</ul>
+<p>st ruct ure: # ro ws, co ls, d at a typ es</p>
+<p>h ead</p>
+<p>/</p>
+<p>tai l</p>
+<ul>
+<li></li>
+</ul>
+<p>lo ok at f irst / last 6 rows (al l colu mns)</p>
+<p>n ro w</p>
+<p>/</p>
+<p>n co l</p>
+<p>nu mber of rows/ col umns</p>
+<p>n ame s</p>
+<p>col umn na mes</p>
+<p>su mm ary</p>
+<ul>
+<li></li>
+</ul>
+<p>summa ryst at s fo re ach col umn (min , max, et c.)</p>
+<p>37</p>
+<p>Su m ma ry Sta ti sti cs</p>
+<p>Disp lay so me</p>
+<p>summa ry stati sti cs</p>
+<p>with</p>
+<p>su mma ry</p>
+<p>()</p>
+<p>fu nct io n:</p>
+<p>su mma ry</p>
+<p>(</p>
+<p>mu rd er s</p>
+<p>)</p>
+<p>38</p>
+<p>Su m ma ry Sta ti sti cs(n um e ri c)</p>
+<p>su mma ry st at s f or</p>
+<p>n ume ric ve ct ors:</p>
+<p>min , max</p>
+<p>qu art ile s</p>
+<p>mea n</p>
+<p>39</p>
+<p>Su m ma ry Sta ti sti cs(f acto r)</p>
+<p>su mma ry st at s f or</p>
+<p>f act o r var iab le s:</p>
+<p>le vels (cat eg orie s)</p>
+<p>f requ enci es of e ach</p>
+<p>le vel</p>
+<p>40</p>
+<p>Su m ma ry Sta ti sti cs(ch ar a cter )</p>
+<p>su mma ry st at s f or</p>
+<p>ch ara ct er ve ct or s: n ot</p>
+<p>mu ch t o r ep or t</p>
+<p>b et t er t o sto re</p>
+<p>ca te go rica l da t a a sa</p>
+<p>f act o r</p>
+<p>41</p>
+<p>R ef er en ci ng Ve ctor si n aD a taFr am e</p>
+<p>W euse the a</p>
+<p>c cessor</p>
+<p>oper ator</p>
+<p>$</p>
+<p>t orefer ence av ect or in adat a</p>
+<p>fram e</p>
+<p>:</p>
+<p>m urder s</p>
+<p>$</p>
+<p>pop ulati on</p>
+<p>42</p>
+<p>Exa m pl e: C he ckvecto r type i n ad ata</p>
+<p>fr am e</p>
+<p>Y ou can u se t h e acce ssor</p>
+<p>o pe rat o r</p>
+<p>$</p>
+<p>co mbi ne d wit h</p>
+<p>cla ss</p>
+<p>() to che ck th e ve ct or t yp e</p>
+<p>o f p op ula t ion</p>
+<p>43</p>
+<p>c l a s s</p>
+<p>(</p>
+<p>m ur d er s</p>
+<p>$</p>
+<p>p op ula ti o n</p>
+<p>)</p>
+<p>C r ea ti ng ne w vecto r sw it h</p>
+<p>$</p>
+<p>44</p>
+<p>m urd er_ rat e</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>m urd ers</p>
+<p>$</p>
+<p>to tal</p>
+<p>/</p>
+<p>m urd ers</p>
+<p>$</p>
+<p>po pul atio n</p>
+<ul>
+<li></li>
+</ul>
+<p>10 000 0</p>
+<p>we cancreateanew</p>
+<p>vec tor(</p>
+<p>murder_rate</p>
+<p>)</p>
+<p>by ref erencing</p>
+<p>vec torsint he</p>
+<p>murders dataf rame</p>
+<p>Ad di n ga ve ctor to a Da ta Fra me w i th</p>
+<p>$</p>
+<p>45</p>
+<p>m urd ers</p>
+<p>$</p>
+<p>m urd er_ rat e</p>
+<p>&lt;</p>
+<ul>
+<li></li>
+</ul>
+<p>m urd ers</p>
+<p>$</p>
+<p>to tal</p>
+<p>/</p>
+<p>m urd ers</p>
+<p>$</p>
+<p>po pul atio n</p>
+<ul>
+<li></li>
+</ul>
+<p>10 000 0</p>
+<p>addthenew vector</p>
+<p>to themurder dat a</p>
+<p>frame</p>
+<p>P ol lEv.c om/v s o ve r o</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
