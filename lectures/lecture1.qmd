@@ -1,0 +1,16 @@
+
+---
+title: "Lecture 1: Introduction to R"
+format: html
+---
+
+## Why use R?
+
+- Free and open source
+- Great for data analysis and visualization
+- Widely used in academia and industry
+
+```{r}
+# Basic math
+2 + 2
+```

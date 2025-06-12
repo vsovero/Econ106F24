@@ -1,0 +1,9 @@
+
+---
+title: "Welcome to Econ 106"
+format: html
+---
+
+This website hosts course content for **Econ 106: Data Analysis in Economics**.
+
+Use the navigation bar to explore lecture notes, labs, and other course resources.

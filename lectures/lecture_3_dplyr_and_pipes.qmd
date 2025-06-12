@@ -1,0 +1,1520 @@
+---
+title: "Lecture 3: dplyr and Pipes"
+format: html
+---
+
+Econ 1 06
+
+Da ta An alysi si n 
+
+Econ omics
+
+Lec tur e 3
+
+Fal l 2024
+
+Ba sedo n: 
+
+ht tp: // ww w. dat acar pent ry. or g/R
+
+-
+
+ecol ogy
+
+-
+
+l esson/
+
+R em i nd er s
+
+P oll E ve rywh ere  will co un t t o war ds yo ur g ra de st a rt in g t his 
+
+we ek
+
+gra de wi ll be b ased o n th e perce nt age o f po lls you a nswe rco rrect ly
+
+2
+
+h tt ps:/ /
+
+p o lle v.co m
+
+/
+
+vso ve ro
+
+#
+
+ti d ytue sda y
+
+h tt p s: // ww w. blo om be rg. co
+
+m/ n ews/ a rt icle s/ 20 19
+
+-
+
+06
+
+-
+
+2 4/ ho w
+
+-
+
+ma ny
+
+-
+
+sq uir rel s
+
+-
+
+a re
+
+-
+
+in
+
+-
+
+n yc
+
+-
+
+s
+
+-
+
+ce nt ra l
+
+-
+
+p ark
+
+d at a:  
+
+h tt p s: // g it hu b. co m/ rf or da t a
+
+scie nce / ti dyt ue sda y/ t ree / m
+
+a ste r/ d at a/ 2 01 9/ 2 01 9
+
+-
+
+10
+
+-
+
+29
+
+3
+
+Ou tl i ne
+
+T id yver se
+
+b a sics
+
+Da ta  wra n g lin g  with  
+
+d p lyr
+
+4
+
+The  
+
+ti d yver se
+
+Pa ckag e
+
+T he most po wer fu l, i ntu it iv e , and p op ul ar ap p ro ach to d ata 
+
+cl eani n g, wr an gli ng , an d v isu ali zati o ni n R
+
+A dv ant ag es :
+
+C onsi stent p hi losophy and sy nt ax (p ack agei s mai nt ai ned! ! !! )
+
+" Verb "b ased appr oachm akes i t more fami li ar to users of 
+
+St ata/ SA S/SPSS
+
+5
+
+Pa ckag es in si de th e 
+
+ti d yver se
+
+p acka ge
+
+lo t so f  pa ckag es in side  th e 
+
+t id yverse
+
+(i mpo rt a nt  on es 
+
+h igh lig ht ed )
+
+ 
+
+6
+
+" b ro o m"
+
+" co nf li cte d "
+
+" cli "
+
+"
+
+d b p lyr
+
+"
+
+" d pl yr"
+
+" d tp lyr "
+
+" fo rca t s"
+
+"
+
+g g p lo t2 "
+
+" g oo g l ed r ive "
+
+" g oo g l esh e e ts4 "
+
+" h ave n "
+
+" h ms"
+
+" h tt r"
+
+" jso n li te "
+
+" lu b ri d at e "
+
+" ma g ri tt r"
+
+" mo d e lr"
+
+" p il la r"
+
+"
+
+p u rrr
+
+"
+
+" ra g g "
+
+"
+
+re a d r
+
+"
+
+"
+
+re a d xl
+
+"
+
+" re p re x"
+
+" rl an g "
+
+" rst ud i o ap i "
+
+" rve st"
+
+" str in g r"
+
+" ti b bl e "
+
+" ti d yr"
+
+" xml 2"
+
+" ti d yver se "
+
+In stal l i ng  
+
+ti d yver se
+
+p acka ge
+
+ins t a ll.p a ck a g es
+
+("
+
+t idy v e rs e
+
+")
+
+Out p ut
+
+:
+
+L oa di ng  
+
+ti d yver se
+
+p acka ge
+
+l i br a ry
+
+("
+
+t idy v e rs e
+
+")
+
+O ut p ut
+
+:
+
+ 
+
+W
+
+e will load t he 
+
+d atase t
+
+st ar war s
+
+fr o mth e 
+
+ti d y ve r se
+
+p ack age
+
+li brar y
+
+(
+
+tidy verse
+
+)
+
+data
+
+(
+
+st arw ars
+
+)
+
+9
+
+D pl yr
+
+Exa m pl e
+
+fi lte r
+
+()
+
+i s a  
+
+dp ly r
+
+fu nc tio n:
+
+F ir st a rg u m e n t i s a l wa ys  a  
+
+d a ta fra m e
+
+( n o  v e cto rs )
+
+s e c o n d  a r g u m e n t d e s cr ib e s w h i ch  v a r ia b le s t o  o p e ra te  o n
+
+O utp ut
+
+:a  da ta fr a me 
+
+sh o rt_ ch a ra cte r s
+
+<
+
+-
+
+filte r
+
+(
+
+sta rw ar s
+
+, 
+
+h e ig h t
+
+<
+
+180)
+
+Pi p eo pe r ato r 
+
+%> %
+
+B est pr act i cei s to put  
+
+eac hfunct i onon it s 
+
+own line andi nd ent
+
+Use  
+
+%>%
+
+t o conn ect  
+
+you rco de t o th e next  
+
+li ne
+
+sh o rt_ ch a ra cte r s
+
+<
+
+-
+
+st ar war s
+
+%>%
+
+fi l te r
+
+(
+
+h e ig h t
+
+<
+
+180
+
+) 
+
+S ame a s
+
+short_characters
+
+<
+
+-
+
+filt er
+
+(
+
+st arw ars
+
+, 
+
+height
+
+<
+
+180)
+
+Ke y 
+
+d pl yr
+
+ve rb s
+
+* * The re  are  f ive ke y 
+
+d plyr
+
+ve rbs
+
+**
+
+1.
+
+f ilt e r
+
+:  Filt e r (i. e . su bse t ) ro ws ba sed o n t h eir va lu es.
+
+2.
+
+a rra ng e
+
+:  Ar ra ng e (i. e . r eo rd er)  row sb ase d o n t he ir va lue s.
+
+3.
+
+se lect
+
+:  Se le ct ( i. e.  sub set ) co lum ns b yt h eir  na mes:  
+
+4.
+
+mu t at e
+
+:  Cre at e n ew co lu mns.
+
+5.
+
+su mma rize
+
+:  Col lap se mu lt ip le ro ws in to  a sin gle  sum mar y 
+
+va lue
+
+12
+
+f ilt er
+
+()
+
+13
+
+f ilt er
+
+()
+
+Ch o o se r o ws b a sed  o n  val ue s o f a va r ia b le
+
+Ar gu me n ts
+
+: d ata  a n d a  lo g ica l e xpr e ssio n  (r e tur n s 
+
+tr ue /f a lse ) 
+
+>
+
+, 
+
+<
+
+, 
+
+>=
+
+, 
+
+<=
+
+, 
+
+==
+
+, 
+
+!=
+
+O ut p ut
+
+: d ata  with  ro ws t h a tm a tc h th e  e xpr e ssio n
+
+L og ica l Op er ato r s
+
+S om e com mo nly u sed  
+
+lo gica l op er at o rs an d t he ir 
+
+d escri pt io ns
+
+15
+
+ 
+
+tal l is h
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+fi lte r
+
+(
+
+h ei gh t 
+
+>=
+
+19 0 
+
+& 
+
+h ei gh t 
+
+<=
+
+25 0 
+
+)
+
+we u se th e  
+
+& 
+
+log ic al 
+
+oper ator  
+
+when acas ehas 
+
+t om eet mult i ple 
+
+c ondi ti ons fort hes ame 
+
+v ari able
+
+ 
+
+ex trem es
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+fi lte r
+
+(
+
+h ei gh t 
+
+<=
+
+16 0 
+
+| 
+
+h ei gh t 
+
+>=
+
+19 0 
+
+)
+
+we u se th e  
+
+| 
+
+log ic al 
+
+oper ator  
+
+when ourfi lt er 
+
+has mult i ple 
+
+c ondi ti ons for 
+
+t hesam ev ari able
+
+h tt ps:/ /
+
+p o lle v.co m
+
+/
+
+vso ve ro
+
+Exe r cise
+
+Fin d t h e f irst  an d t h ird q ua rt ile  of  t he  mass va ria ble  (t ry u sing  
+
+su mma rize ()
+
+Fil te r f or  cha ract e rs wh o f all w it hin  th ose  t wo va lue s
+
+18
+
+Fi l ter i ng w i thn on
+
+-
+
+n um er i cvar i ab l es
+
+I f  we wa nt  t o f ilt e r ba sed  on  
+
+a n on
+
+-
+
+n ume ric va lue ,  we 
+
+h ave t o  pu t it  in  qu ot es 
+
+(si ng le o r do ub le is f in e)
+
+19
+
+h um an s
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+fi lte r
+
+(
+
+sp ec ie s
+
+==
+
+"H um an "
+
+)
+
+C om b in i ng l og i cal co nd it io ns
+
+W e can  also  com bin e lo gica l con di ti on s, sa me a s wit h 
+
+n ume ric va ria ble s
+
+20
+
+b lu e_ bl ac k
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+fi lte r
+
+(
+
+ey e_c ol o r
+
+==
+
+"b l ue " 
+
+|
+
+ey e_c ol o r
+
+==
+
+"b l ack "
+
+)
+
+A Use fu l tri ck: 
+
+% in%  
+
+l og i cal o pe ra to r
+
+21
+
+dr oid _humans_hutt
+
+<
+
+-
+
+starwar s
+
+%>%
+
+fil ter
+
+(
+
+species
+
+%in% 
+
+c
+
+( 
+
+" Human"  
+
+,
+
+" Dro id"  
+
+, 
+
+" Hutt"
+
+))
+
+He lpf u l whe n yo u h ave a  lon ge r list  o f lo gi cal co nd it ion s fo r a  
+
+n on
+
+-
+
+n ume ric va ria ble
+
+Exe r cise
+
+- àT ‰¬Ám6 % ÌÁë‰ à ‰à ¡ }¡ …6 ˜˜ T% ”}t
+
+mi sta ke1
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+fi lte r
+
+(
+
+sp ec ie s
+
+==
+
+"h u man "
+
+)
+
+mi sta ke2
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+fi lte r
+
+(
+
+sp ec ie s
+
+==
+
+"H um an " 
+
+| 
+
+"D ro id " 
+
+)
+
+23
+
+h t t ps: / /
+
+p o lle v. co m
+
+/
+
+vso ve ro
+
+ 
+
+wa nt
+
+we  use t h e 
+
+! 
+
+lo gica l 
+
+o pe rat o r
+
+n o t _h u m a n
+
+<
+
+-
+
+st a rw ars
+
+% >%
+
+f ilt er
+
+(
+
+sp e cie s
+
+!=
+
+" Hu m an "
+
+)
+
+24
+
+f ilt er
+
+( ) an dm i ssi ng da ta
+
+mi ss in g _h ei gh ts
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+fi lte r
+
+(
+
+i s. na
+
+(
+
+h ei gh t
+
+))
+
+n on _m is si ng _h ei g hts
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+fi lte r
+
+(
+
+!
+
+i s. na
+
+(
+
+h ei gh t
+
+))
+
+A v ery  
+
+co m mo n
+
+filte r
+
+u se case  
+
+is iden t ify in g (o r 
+
+re mo v in g) m iss ing  dat a 
+
+ca ses.
+
+T he se ex am ple su se 
+
+i s. na
+
+ 
+
+! 
+
+Exe r cise
+
+crea te a d at a fra me of t he ch aract ers wh ose sex is li ste d as non e
+
+crea te a d at a fra me of t he ch aract ers wh ose sex is un know n 
+
+(missi ng)
+
+26
+
+f ilt er
+
+()
+
+tal l _h um an s
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+fi lte r
+
+(
+
+sp ec ie s
+
+==
+
+"H um an "
+
+) 
+
+%>%
+
+fi lte r
+
+(
+
+h ei gh t 
+
+>=
+
+19 0
+
+)
+
+tall_h uman s
+
+<
+
+-
+
+starwar s
+
+%>%
+
+fil ter
+
+(
+
+species
+
+==
+
+" Human"
+
+,
+
+hei ght 
+
+>=
+
+190
+
+) 
+
+W e can cha in mul ti ple f il te rco mmand sw it h th e pip e 
+
+%>%
+
+we canals osepar ate them wi t hi nas ing lefi lt erc omm and usi ngc omm as.
+
+28
+
+h t t ps: / /
+
+p o lle v. co m
+
+/
+
+vso ve ro
+
+a rrang e
+
+()
+
+a rrang e
+
+()
+
+arr an ge
+
+()
+
+s ort s you rda ta  
+
+fra mebya part i cu lar 
+
+va ri ablei na sce ndi ngo rde r:
+
+n ume ric: 
+
+1 ,2,3 ,e tc.
+
+cha ra ct e r: 
+
+a ,b,c,e tc.
+
+Ar guments
+
+: 
+
+Av ariable
+
+Us e
+
+desc
+
+()to put them 
+
+indesc endingorder
+
+as cen d in g _b ir th_ yea r
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+ar ran g e
+
+(
+
+b ir th_ yea r
+
+)
+
+d esc en di n g_ bi rth _y ear
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+ar ran g e
+
+( 
+
+d esc
+
+(
+
+b ir th_ yea r
+
+))
+
+Exe r cise
+
+W ho is t he t all est ch aract er in N abo o?
+
+31
+
+32
+
+h t t ps: / /
+
+p o lle v. co m
+
+/
+
+vso ve ro
+
+s ele ct
+
+()
+
+s ele ct
+
+()
+
+s e l ec t
+
+( ) se le ct s va ria b le s 
+
+f r om  a  da t a  f ra m e
+
+Ar gu me n ts
+
+: 
+
+va ria ble s to  be  kep t 
+
+(se pa ra t ed b y com mas)
+
+Out p ut
+
+: d ata  with  o nl yth e  
+
+sp e cifie d va r ia b le s 
+
+fe wer _va rs1
+
+<
+
+-
+
+st arw ars
+
+% >%
+
+se lec t
+
+(
+
+m ass
+
+,
+
+sp eci es
+
+,
+
+he igh t
+
+)
+
+35
+
+h t t ps: / /
+
+p o lle v. co m
+
+/
+
+vso ve ro
+
+s ele ct
+
+()
+
+Y ou ca n al so us e"
+
+fi rst :l a st
+
+" to se l ec t co ns ec u ti vec o lu mns . 
+
+De se l ec ta c ol umn wi th "
+
+-
+
+".
+
+few er _va rs
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+se le ct
+
+(
+
+h ei gh t
+
+:
+
+ey e_c ol o r
+
+,
+
+-
+
+sk in _c ol o r
+
+)
+
+s ele ct
+
+()
+
+few er _va rs
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+se le ct
+
+(
+
+h ei gh t
+
+:
+
+ey e_c ol o r
+
+,
+
+-
+
+sk in _c ol o r
+
+)
+
+s ele ct
+
+( ) var i ab le n am est ha tm atch a pa tter n
+
+co l or _va rs
+
+<
+
+-
+
+sta rw ars
+
+%>%
+
+se le ct
+
+(
+
+co n tai ns
+
+(
+
+"c ol o r"
+
+))
+
+mut at e
+
+()
+
+mut at e
+
+()
+
+Cr e a te s a  n ew va r ia b le
+
+Ar gu me n ts
+
+: 
+
+d a ta f r a me  a n d
+
+th e d e fin itio n  of a  n ew  
+
+va r ia bl e
+
+Out p ut
+
+: d ata  f ra m e  with a  n e w va ria b le
+
+mut at e
+
+()
+
+a d d _ n e w_ v a rs
+
+<
+
+-
+
+s ta rw a rs
+
+% > %
+
+m u ta te
+
+(
+
+d o g _ y e ar s
+
+=
+
+b i rt h _y e a r
+
+*
+
+7
+
+) 
+
+% > %
+
+m u ta te
+
+(
+
+h e i g h t_ m
+
+=
+
+h e i g h t
+
+/
+
+100
+
+)
+
+a d d _ n e w_ v a rs
+
+<
+
+-
+
+s ta rw a rs
+
+% > %
+
+m u ta te
+
+(
+
+d o g _ y e ar s
+
+=
+
+b i rt h _y e a r
+
+*
+
+7
+
+,
+
+h e i g h t_ m
+
+=
+
+h e i g h t
+
+/
+
+100
+
+)
+
+Youcanc reate multiple 
+
+newv ariables at at ime 
+
+wit hpipes (first example)
+
+Youcanalso skipt he 
+
+pipesandputa comma 
+
+inst ead(s ec ond ex ample)
+
+mut at e
+
+()
+
+W ec analso creat enon
+
+-
+
+num eri c vec t orsw it hm ut ate
+
+add _hei ght _var s
+
+<
+
+-
+
+st ar wa rs
+
+% > %
+
+sel ect
+
+(
+
+nam e, h eigh t
+
+) 
+
+% > %
+
+m ut at e
+
+(
+
+t all 1 = hei ght  
+
+>
+
+180
+
+,
+
+t all 2 = 
+
+i fel se
+
+( hei ght  
+
+>
+
+180 , "Tal l" , "S hor t ")
+
+)
+
+Be ca re ful w i th th eo rd er o fch ai ne d 
+
+co mm an ds
+
+43
+
+hmm
+
+<
+
+-
+
+starwar s
+
+%>%
+
+select
+
+(
+
+name,mass
+
+) 
+
+%>%
+
+arr an ge
+
+(
+
+hei ght
+
+)
+
+Exe r cise
+
+Ca lcul at e th e BMI of  th e sta rw ars chara cte rs(h eig ht d ivid ed by 
+
+mass squ ared )
+
+f ilt er f or non
+
+-
+
+hu man cha ract ers
+
+sort  th e dat a f rom hig hest  to l owe st BMI
+
+44
