@@ -1,8 +1,0 @@
-
----
-title: "About"
-format: html
----
-
-Course taught by Dr. Veronica Sovero  
-Poll Everywhere: [pollev.com/vsovero](https://pollev.com/vsovero)
