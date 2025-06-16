@@ -2,239 +2,379 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "Econ 106",
     "section": "",
-    "text": "Welcome to the Econ 106 test site."
+    "text": "Welcome to the course site for Econ 106: Data Analysis in Economics. Below you’ll find materials for each lecture including slides, code, and summaries. Lecture HTML notes are being added on a rolling basis.\n\n\n\n\nSummary:\nIntroduces the RStudio interface and basic R syntax. Students learn how to assign objects, identify and interpret errors, and distinguish valid from invalid code. Emphasizes that making mistakes is part of learning.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n\n\n\nSummary:\nCovers how to install and load packages like tidyverse. Students are introduced to data frames and learn how to inspect variables using glimpse(), View(), and summary(). Emphasizes understanding variable types and the structure of tabular data.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nFocuses on subsetting data using filter() and logical operators. Students practice extracting rows based on multiple criteria and learn how to read nested conditions and write readable logical statements using |, &, and ==.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nIntroduces mutate() and arithmetic operations to create new columns in a dataset. Covers the use of the pipe (|>) and demonstrates how to chain multiple operations for cleaner code.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nCovers the foundational structure of ggplot(), aesthetic mappings with aes(), and creating scatterplots using geom_point(). Students explore adjusting size, transparency, color, and exporting plots.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nFocuses on identifying and fixing formatting issues in numeric columns. Students use as.numeric() to coerce character data, handle errors and missing values, and apply mutate() for cleanup. Introduces handling problematic column names with backticks.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nCovers str_replace_all() to clean strings and separate() to split columns. Students also use the lubridate package to convert character strings to dates with mdy() and extract components like month or weekday using month().\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nExplains how to recode and collapse factor levels using fct_recode(), fct_collapse(), and fct_lump(). Students work with messy survey data and learn how to order and group categorical variables for analysis and visualization.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nIntroduces plots for summarizing a single variable, including histograms, bar charts, and density plots. Students consider distribution shape, skew, modality, and how to choose the appropriate visual for categorical vs. numeric data.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nTeaches how to compare two variables using grouped density plots, boxplots, and faceted visualizations. Students learn to use facet_wrap(), geom_col() with summarize(), and how to represent uncertainty and sample size visually.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nCovers the principles of tidy data and how to reshape datasets using pivot_longer() and pivot_wider(). Students learn to identify untidy structures and practice transforming columns into rows and vice versa.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nExplains how to combine data frames using left_join(), inner_join(), and anti_join() with dplyr. Students practice identifying keys, resolving mismatches, and understanding how rows match across datasets.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nIntroduces basic text mining using the tidytext package. Students learn how to tokenize text into words, remove stopwords, and analyze word frequency. Includes examples using speeches and other open text sources.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nContinues with text analysis by introducing sentiment lexicons like bing and nrc. Students calculate sentiment scores, join text data to lexicons, and create visualizations such as top sentiment words by document or category.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nTeaches how to read and plot shapefiles using read_sf() and geom_sf(). Students work with real geographic data, filter spatial features, and overlay multiple layers to create annotated, informative maps.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nFocuses on using geom_sf() and scale_fill_ functions to create choropleth maps. Students explore continuous and discrete color palettes, apply labs() and theme() for customization, and use real policy datasets to visualize geographic variation.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nIntroduces spatial data concepts and how to plot shapefiles with read_sf() and geom_sf(). Students learn to distinguish between different types of spatial features (points, lines, polygons) and overlay multiple geographic layers for visual context.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nDemonstrates how to merge spatial data with tabular data using left_join(). Students learn to work with coordinate reference systems (CRS), reproject shapefiles using st_transform(), and analyze how projections affect map interpretation.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nPrepares students for the final project by reviewing expectations, grading rubrics, and successful past examples. Emphasizes visual clarity, reproducibility, and storytelling with data. Includes live feedback and peer review guidance.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n:::"
   },
   {
-    "objectID": "lectures/lecture1.html",
-    "href": "lectures/lecture1.html",
-    "title": "Lecture 1: Introduction to R",
+    "objectID": "html-lectures/lecture9.html",
+    "href": "html-lectures/lecture9.html",
+    "title": "Econ 106",
     "section": "",
-    "text": "📎 Download the R script for this lecture"
+    "text": "Lecture 9: HTML version Coming Soon"
   },
   {
-    "objectID": "lectures/lecture1.html#welcome-to-econ-106",
-    "href": "lectures/lecture1.html#welcome-to-econ-106",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Welcome to Econ 106",
-    "text": "Welcome to Econ 106\nData Analysis in Economics – Fall 2024\nBased on: R Ecology Lesson"
+    "objectID": "html-lectures/lecture19.html",
+    "href": "html-lectures/lecture19.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 19: HTML version Coming Soon"
   },
   {
-    "objectID": "lectures/lecture1.html#outline",
-    "href": "lectures/lecture1.html#outline",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Outline",
-    "text": "Outline\n\nClass Overview\nIntro to R\nRStudio Console\nOperators\nFunctions\nObjects"
+    "objectID": "html-lectures/lecture18.html",
+    "href": "html-lectures/lecture18.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 18: HTML version Coming Soon"
   },
   {
-    "objectID": "lectures/lecture1.html#data-is-everywhere",
-    "href": "lectures/lecture1.html#data-is-everywhere",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Data Is Everywhere",
-    "text": "Data Is Everywhere\n\nIn 2015, healthcare alone produced 1.2 billion clinical documents.\nDigital forms, social media, online portals, reports, emails, messages = data explosion.\nSource: Holmes (2017), Big Data: A Very Short Introduction"
+    "objectID": "html-lectures/lecture8.html",
+    "href": "html-lectures/lecture8.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 8: HTML version Coming Soon"
   },
   {
-    "objectID": "lectures/lecture1.html#why-work-with-data",
-    "href": "lectures/lecture1.html#why-work-with-data",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Why Work With Data?",
-    "text": "Why Work With Data?\n\nJobs: Data analysts are in demand\nEmphasize interpretation and communication\nData literacy = understanding + working with data to generate insight"
+    "objectID": "html-lectures/lecture10.html",
+    "href": "html-lectures/lecture10.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 10: HTML version Coming Soon"
   },
   {
-    "objectID": "lectures/lecture1.html#who-is-this-class-for",
-    "href": "lectures/lecture1.html#who-is-this-class-for",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Who Is This Class For?",
-    "text": "Who Is This Class For?\n\nStudents interested in:\n\nResearch assistant work\nConducting empirical analyses\nData Science careers\n\nPrerequisite: Econ 101\nNo programming experience required"
+    "objectID": "html-lectures/lecture11.html",
+    "href": "html-lectures/lecture11.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 11: HTML version Coming Soon"
   },
   {
-    "objectID": "lectures/lecture1.html#course-objectives",
-    "href": "lectures/lecture1.html#course-objectives",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Course Objectives",
-    "text": "Course Objectives\n\nCollect, process, and analyze data using R\nVisualize and communicate findings\nPresent results clearly to diverse audiences"
+    "objectID": "html-lectures/lecture1.html",
+    "href": "html-lectures/lecture1.html",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "",
+    "text": "Fall 2024\nBased on: https://datacarpentry.org/R-ecology-lesson/introduction-r-rstudio.html\n\n\n\n\n\nClass Overview\nIntro to R:\nRstudio Console\nOperators\nFunctions\nObjects\n\n\n\n\n\nIn 2015 the healthcare industry alone produced 1.2 billion clinical documents.\nThe amount of text data generated annually (digital forms, social media, online portals, pdf reports, emails, text messages) is ever increasing.\n\n\nHolmes, Dawn E., The data explosion, Big Data: A Very Short Introduction (Oxford, 2017). https://doi.org/10.1093/actrade/9780198779575.003.0001\n\n\n\n\n\n\n\n\nData literacy is the ability of an individual to read, understand, and work with data to create meaningful insights\nText analysis of job descriptions shows that data analysts emphasize the ability to interpret and communicate findings (insight, reporting).\nr-bloggers.com article\n\n\n\n\n\nStudents who want to:\nserve as research assistants\nconduct empirical analyses\nare interested in Data Science careers.\nNo prior programming experience is needed\n\nPrerequisites: Econ 101 (Statistics)\n\n\n\n\nMaster the ability to collect, process, interpret, analyze raw data using R.\nDevelop visualization skills necessary to summarize data findings\nCommunicate findings to various audiences and in various formats.\n\n\n\n\n\nAdvantages of R:\nIt’s free and open source\nIt’s widely used in industry\nIt has a large and active user community\nMore of a true programming language compared to Stata\n\n\n\n\n\nR:\nBuilt for statistics and data analysis\nBetter at econometrics and data visualization\nPython:\nBuilt for general-purpose programming and software development\nBetter at machine learning"
   },
   {
-    "objectID": "lectures/lecture1.html#why-use-r",
-    "href": "lectures/lecture1.html#why-use-r",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Why Use R?",
-    "text": "Why Use R?\n\nFree, open source\nWidely used in academia and industry\nBuilt for statistics and visualization"
+    "objectID": "html-lectures/lecture1.html#r-is-a-means-not-an-end",
+    "href": "html-lectures/lecture1.html#r-is-a-means-not-an-end",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "R is a means, not an end",
+    "text": "R is a means, not an end\n\nThe goals of this course are platform-agnostic\nIt’s not about the syntax of specific packages\nIt’s about the concepts, logic, and thought processes underlying what we’re doing and why\nYour eventual goal: Use the right tool for the job\nYou will likely learn all these tools at some point."
   },
   {
-    "objectID": "lectures/lecture1.html#r-vs.-python",
-    "href": "lectures/lecture1.html#r-vs.-python",
-    "title": "Lecture 1: Introduction to R",
-    "section": "R vs. Python",
-    "text": "R vs. Python\n\nR: Better at econometrics and graphics\nPython: Better at machine learning and software development"
+    "objectID": "html-lectures/lecture1.html#grading",
+    "href": "html-lectures/lecture1.html#grading",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Grading",
+    "text": "Grading"
   },
   {
-    "objectID": "lectures/lecture1.html#philosophy",
-    "href": "lectures/lecture1.html#philosophy",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Philosophy",
-    "text": "Philosophy\n\nIt’s not about syntax — it’s about thinking with data\nChoose the best tool for the job\nYou’ll eventually learn both R and Python"
+    "objectID": "html-lectures/lecture1.html#lab-assignments",
+    "href": "html-lectures/lecture1.html#lab-assignments",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Lab Assignments",
+    "text": "Lab Assignments\n\nLab assignments: gives you the opportunity to practice the data skills covered during lecture\nTwo components: writeup and R script\nDue on Sundays at 11:59pm\nI will drop the lowest lab score at the end of the quarter"
   },
   {
-    "objectID": "lectures/lecture1.html#course-grading",
-    "href": "lectures/lecture1.html#course-grading",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Course Grading",
-    "text": "Course Grading\n\nLabs: 40%\nProject Milestones: 30%\nFinal Project: 20%\nPoll Everywhere: 10%"
-  },
-  {
-    "objectID": "lectures/lecture1.html#labs",
-    "href": "lectures/lecture1.html#labs",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Labs",
-    "text": "Labs\n\nPractice skills from lecture\nComponents: write-up + R script\nDue: Sundays @ 11:59 PM\nLowest lab dropped"
-  },
-  {
-    "objectID": "lectures/lecture1.html#research-project",
-    "href": "lectures/lecture1.html#research-project",
-    "title": "Lecture 1: Introduction to R",
+    "objectID": "html-lectures/lecture1.html#research-project",
+    "href": "html-lectures/lecture1.html#research-project",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
     "section": "Research Project",
-    "text": "Research Project\n\nDesign and execute your own small research project\nIncludes 3 milestones\nFinal product:\n\n1500-word write-up\nDocumentation (R scripts)"
+    "text": "Research Project\n\nThe goal of this class is to give you the skills to conduct your own small research project.\nThree project milestones will walk you through the research process.\nFinal product:\n\nWriteup (~1500 words)\nDocumentation (R scripts)\n\nAll three will count toward your final grade (no drops)"
   },
   {
-    "objectID": "lectures/lecture1.html#lecture-logistics",
-    "href": "lectures/lecture1.html#lecture-logistics",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Lecture Logistics",
-    "text": "Lecture Logistics\n\nChatGPT is OK for code (must document use)\nNot allowed for write-up or milestones"
+    "objectID": "html-lectures/lecture1.html#examples-of-student-work",
+    "href": "html-lectures/lecture1.html#examples-of-student-work",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Examples of Student Work",
+    "text": "Examples of Student Work"
   },
   {
-    "objectID": "lectures/lecture1.html#lecture-quizzes",
-    "href": "lectures/lecture1.html#lecture-quizzes",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Lecture Quizzes",
-    "text": "Lecture Quizzes\n\nPosted on Canvas (ungraded)\nUseful for practice\nCan ask questions during lab"
+    "objectID": "html-lectures/lecture1.html#chatgptgenerative-ai",
+    "href": "html-lectures/lecture1.html#chatgptgenerative-ai",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "ChatGPT/Generative AI",
+    "text": "ChatGPT/Generative AI\n\nIt is up to you whether you want to use generative AI to help you with your code\nGuidelines:\nThe code has to use the tools covered in lecture\nYou cannot use it for the written portion of lab assignments or research milestones\nYou need to state whether you used it for your code and how."
   },
   {
-    "objectID": "lectures/lecture1.html#lecture-scripts",
-    "href": "lectures/lecture1.html#lecture-scripts",
-    "title": "Lecture 1: Introduction to R",
+    "objectID": "html-lectures/lecture1.html#poll-everywhere",
+    "href": "html-lectures/lecture1.html#poll-everywhere",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Poll Everywhere",
+    "text": "Poll Everywhere\n\nI use Poll Everywhere to encourage active learning during lecture\nMy polls will be available here when they go live: PollEv.com/vsovero"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#poll-everywhere-1",
+    "href": "html-lectures/lecture1.html#poll-everywhere-1",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Poll Everywhere",
+    "text": "Poll Everywhere\n\nYou will be redirected to the UCR SSO\nPlease use your UCR email address to sign in (do not sign up for an account)"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#lecture-quizzes-ungraded",
+    "href": "html-lectures/lecture1.html#lecture-quizzes-ungraded",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Lecture Quizzes (ungraded)",
+    "text": "Lecture Quizzes (ungraded)\n\nPosted on Canvas for you to practice after lecture\nDoes not count towards your grade\nFeel free to ask Fan to review these questions during lab section"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#lecture-scripts",
+    "href": "html-lectures/lecture1.html#lecture-scripts",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
     "section": "Lecture Scripts",
-    "text": "Lecture Scripts\n\nAll lecture code posted to Canvas\nUse it during and after lecture"
+    "text": "Lecture Scripts\n\nI post all of the code used during lecture as an R script on Canvas\nRunning the code during or after lecture will help you gain more familiarity with Rstudio"
   },
   {
-    "objectID": "lectures/lecture1.html#this-week-r-basics",
-    "href": "lectures/lecture1.html#this-week-r-basics",
-    "title": "Lecture 1: Introduction to R",
-    "section": "This Week: R Basics",
-    "text": "This Week: R Basics\n\nLearn the foundations before moving to data wrangling and visualization"
+    "objectID": "html-lectures/lecture1.html#this-week-introduction-to-r-basics",
+    "href": "html-lectures/lecture1.html#this-week-introduction-to-r-basics",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "This Week: Introduction to R Basics",
+    "text": "This Week: Introduction to R Basics\n\nBefore we cover more broad topics in data analysis, we need to understand some R basics\nWe need these building blocks before moving onto data wrangling, visualization, etc."
   },
   {
-    "objectID": "lectures/lecture1.html#coding-goals",
-    "href": "lectures/lecture1.html#coding-goals",
-    "title": "Lecture 1: Introduction to R",
+    "objectID": "html-lectures/lecture1.html#coding-goals",
+    "href": "html-lectures/lecture1.html#coding-goals",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
     "section": "Coding Goals",
-    "text": "Coding Goals\n\nCode runs without errors\nCode does what you expect\nYou understand how it works"
+    "text": "Coding Goals\n\nRun code that produces what you were expecting\nRun code that produces what you were expecting and you understand -Run code without errors (pretty doable with ChatGPT)"
   },
   {
-    "objectID": "lectures/lecture1.html#getting-help",
-    "href": "lectures/lecture1.html#getting-help",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Getting Help",
-    "text": "Getting Help\n\nRead error messages\nUse Stack Overflow, ChatGPT, or Slack\nAsk the instructor or TA"
+    "objectID": "html-lectures/lecture1.html#getting-help",
+    "href": "html-lectures/lecture1.html#getting-help",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Getting help",
+    "text": "Getting help\n\nRead the error message.\nTry some online resources:\nStack Overflow\nSlack\nStill stuck?\nShare your code, data, screenshots of the error message, etc. -ChatGPT (type in your code and the error message) -Please reach out to myself or your TA (Fan Bu)"
   },
   {
-    "objectID": "lectures/lecture1.html#be-precise",
-    "href": "lectures/lecture1.html#be-precise",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Be Precise",
-    "text": "Be Precise\ndata_rocks <- 2^3\ndatarocks     # Error: object not found\nData_rocks    # Error: object not found"
+    "objectID": "html-lectures/lecture1.html#example-be-careful-with-typos",
+    "href": "html-lectures/lecture1.html#example-be-careful-with-typos",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Example: Be Careful with Typos",
+    "text": "Example: Be Careful with Typos\n\nImplicit contract with the computer / scripting language:\nComputer will do tedious computation for you.\nIn return, you will be completely precise in your instructions\nTypos matter. Case matters.\n\ndata_rocks <- 2 ^ 3\ndatarocks\n#> Error in eval(expr, envir, enclos): object ‘datarocks' not found\nData_rocks\n#> Error in eval(expr, envir, enclos): object ‘Data_rocks' not found"
   },
   {
-    "objectID": "lectures/lecture1.html#what-is-r-and-rstudio",
-    "href": "lectures/lecture1.html#what-is-r-and-rstudio",
-    "title": "Lecture 1: Introduction to R",
-    "section": "What is R and RStudio?",
-    "text": "What is R and RStudio?\n\nR: A programming language\nRStudio: An interface to write and run R code"
+    "objectID": "html-lectures/lecture1.html#what-is-r-rstudio",
+    "href": "html-lectures/lecture1.html#what-is-r-rstudio",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "What is R? RStudio?",
+    "text": "What is R? RStudio?\n\nR – a programming language + software that interprets it\nRStudio – popular software to write R scripts and interact with the R software\nWe will be using Rstudio in this course (however you need to install R in order for it to run correctly)"
   },
   {
-    "objectID": "lectures/lecture1.html#rstudio-interface",
-    "href": "lectures/lecture1.html#rstudio-interface",
-    "title": "Lecture 1: Introduction to R",
-    "section": "RStudio Interface",
-    "text": "RStudio Interface\n\nConsole, script editor, environment, file pane"
+    "objectID": "html-lectures/lecture1.html#r-studio-interface",
+    "href": "html-lectures/lecture1.html#r-studio-interface",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "R Studio Interface",
+    "text": "R Studio Interface\n\nScript\nConsole\nEnvironment\nFiles"
   },
   {
-    "objectID": "lectures/lecture1.html#writing-code-in-scripts",
-    "href": "lectures/lecture1.html#writing-code-in-scripts",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Writing Code in Scripts",
-    "text": "Writing Code in Scripts\n\nSave with .R extension\nRun line-by-line with Cmd/Ctrl + Enter"
+    "objectID": "html-lectures/lecture1.html#rstudio-console",
+    "href": "html-lectures/lecture1.html#rstudio-console",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "RStudio Console",
+    "text": "RStudio Console\n\nYou can input and execute commands directly in the console.\nOutput of certain commands will be displayed in the console.\nConsole"
   },
   {
-    "objectID": "lectures/lecture1.html#comments",
-    "href": "lectures/lecture1.html#comments",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Comments",
-    "text": "Comments\n# This is a comment\n# R ignores anything after the #"
+    "objectID": "html-lectures/lecture1.html#rstudio-script-editor",
+    "href": "html-lectures/lecture1.html#rstudio-script-editor",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Rstudio Script Editor",
+    "text": "Rstudio Script Editor\n\nMost data analysis will require several steps\nThe script editor is used to record the steps (commands) we take to analyze our data"
   },
   {
-    "objectID": "lectures/lecture1.html#lets-start-coding",
-    "href": "lectures/lecture1.html#lets-start-coding",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Let’s Start Coding!",
-    "text": "Let’s Start Coding!\n\nOperators tell R what to do"
+    "objectID": "html-lectures/lecture1.html#rstudio-script-editor-1",
+    "href": "html-lectures/lecture1.html#rstudio-script-editor-1",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Rstudio Script Editor",
+    "text": "Rstudio Script Editor\n\nOnce you type them in the script, you still need to send them to the console to be run.\nWRITE\nRUN\nCtrl-Enter\nScripts are saved with the .R extension (“lecture1.R”)"
   },
   {
-    "objectID": "lectures/lecture1.html#arithmetic-operators",
-    "href": "lectures/lecture1.html#arithmetic-operators",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Arithmetic Operators",
-    "text": "Arithmetic Operators\n2 + 2      # add\n3 - 1      # subtract\n4 * 4      # multiply\n5 / 2      # divide\n5 ^ 2      # exponent"
+    "objectID": "html-lectures/lecture1.html#commenting-in-scripts",
+    "href": "html-lectures/lecture1.html#commenting-in-scripts",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Commenting in Scripts",
+    "text": "Commenting in Scripts\n\nR ignores the rest of a line after a #\nwrite notes to yourself about what your code is doing\ncomments are automatically in green"
   },
   {
-    "objectID": "lectures/lecture1.html#tip-example",
-    "href": "lectures/lecture1.html#tip-example",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Tip Example",
-    "text": "Tip Example\n# Louberto’s tip\nbill_louberto <- 25\ntip_louberto <- 0.15 * bill_louberto\n\n# Louie’s tip\nbill_louie <- 32\ntip_louie <- 0.12 * bill_louie"
+    "objectID": "html-lectures/lecture1.html#lets-start-coding",
+    "href": "html-lectures/lecture1.html#lets-start-coding",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Let’s start coding!",
+    "text": "Let’s start coding!\n\nAn operator is a symbol that tells R to perform some sort of operation.\nTypes of Operators:\n\nmath (arithmetic)\nlogical (compare values)\nassignment (saving values to objects)\nextraction (take out/replace parts of objects)"
   },
   {
-    "objectID": "lectures/lecture1.html#functions",
-    "href": "lectures/lecture1.html#functions",
-    "title": "Lecture 1: Introduction to R",
+    "objectID": "html-lectures/lecture1.html#operators",
+    "href": "html-lectures/lecture1.html#operators",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Operators",
+    "text": "Operators\n\nhttps://www.statmethods.net/management/operators.html"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#arithmetic-operators",
+    "href": "html-lectures/lecture1.html#arithmetic-operators",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Arithmetic operators",
+    "text": "Arithmetic operators\n\nDoes math:\nAdd: 2 + 2\nSubtract: 3 - 1\nMultiply: 4 * 4\nDivide: 5 / 2\nExponent: 5^2\nCtrl/Cmd+Enter to run\nResults in the Console"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#example-who-left-a-larger-tip",
+    "href": "html-lectures/lecture1.html#example-who-left-a-larger-tip",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Example: Who left a larger Tip?",
+    "text": "Example: Who left a larger Tip?\n\nLouberto’s bill at Shake Shack came out to $25\nHe tips 15%\nLouie’s bill at Shake Shack came out to $32\nHe tips 12%\nUse operators to calculate how much Louie and Louberto tipped"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#functions",
+    "href": "html-lectures/lecture1.html#functions",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
     "section": "Functions",
-    "text": "Functions\nround(x = 3.14159, digits = 0)\nround(3.14159)  # digits is optional"
+    "text": "Functions\n\nFor more complicated tasks, R also comes pre-installed with a variety of functions.\nFunctions are a sequence of instructions that perform a task:\n\nHave names\nAccept arguments (input)\nReturn a value (output)"
   },
   {
-    "objectID": "lectures/lecture1.html#assignment-operator",
-    "href": "lectures/lecture1.html#assignment-operator",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Assignment Operator",
-    "text": "Assignment Operator\nweight_kg <- 55\nweight_lb <- weight_kg * 2.2"
+    "objectID": "html-lectures/lecture1.html#arguments",
+    "href": "html-lectures/lecture1.html#arguments",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Arguments",
+    "text": "Arguments\n\nSome arguments are required, some are optional.\nYou can see that digits is optional because you don’t need to include it and you will get the same output\nTo find out what arguments a function takes, look up its help file"
   },
   {
-    "objectID": "lectures/lecture1.html#naming-objects",
-    "href": "lectures/lecture1.html#naming-objects",
-    "title": "Lecture 1: Introduction to R",
+    "objectID": "html-lectures/lecture1.html#arguments-1",
+    "href": "html-lectures/lecture1.html#arguments-1",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Arguments",
+    "text": "Arguments\n\nHowever, it’s much easier to understand your code when you write out the name of the argument\nYou technically don’t even need to write out the names of the arguments (x, digits) if values are in the correct order"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#assignment-operator",
+    "href": "html-lectures/lecture1.html#assignment-operator",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Assignment operator",
+    "text": "Assignment operator\n\nSaves values into objects\nOverwrites previous values\nCan be combined with other operators\n\nobject <- value\nweight_kg <- 55\nweight_lb <- 2.2*weight_kg\n<-\n(alt/option - dash)"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#naming-objects",
+    "href": "html-lectures/lecture1.html#naming-objects",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
     "section": "Naming Objects",
-    "text": "Naming Objects\n# Good\nweight_kg <- 55\n\n# Not good\nweightkg! <- 55\nweight in kg <- 55"
+    "text": "Naming Objects\n\nObject names:\ncannot start with a digit\ncannot contain certain other characters such as a comma or a space.\nTips:\nMake it as descriptive as possible\nUse underscores to mark spaces\n#this is good\n#not these\n\nweight_kg <- 55\nweightkg! <- 55\nweight in kg <- 55\nblah <- 55"
   },
   {
-    "objectID": "lectures/lecture1.html#viewing-objects",
-    "href": "lectures/lecture1.html#viewing-objects",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Viewing Objects",
-    "text": "Viewing Objects\nls()\nobjects()\nweight_kg"
+    "objectID": "html-lectures/lecture1.html#where-are-my-objects",
+    "href": "html-lectures/lecture1.html#where-are-my-objects",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Where are my objects?",
+    "text": "Where are my objects?\n\nYou can also get a listing of these objects with commands:\n\nYou can see your objects in the workspace (top right pane of Rstudio)\nls()\nobjects()"
   },
   {
-    "objectID": "lectures/lecture1.html#removing-objects",
-    "href": "lectures/lecture1.html#removing-objects",
-    "title": "Lecture 1: Introduction to R",
+    "objectID": "html-lectures/lecture1.html#checking-values-of-an-object",
+    "href": "html-lectures/lecture1.html#checking-values-of-an-object",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Checking Values of an Object",
+    "text": "Checking Values of an Object\n\nIf you want to inspect the values of an object, type the name of the object in the console\nweight_kg\n\nweight_kg <- 55"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#example-who-left-a-larger-tip-1",
+    "href": "html-lectures/lecture1.html#example-who-left-a-larger-tip-1",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Example: Who left a larger Tip?",
+    "text": "Example: Who left a larger Tip?\n\nLouberto’s bill at Shake Shack came out to $25\nHe tips 15%\nLouie’s bill at Shake Shack came out to $32\nHe tips 12%\nUse the assignment operator to save how much Louie and Louberto tipped (create 6 objects)"
+  },
+  {
+    "objectID": "html-lectures/lecture1.html#removing-objects",
+    "href": "html-lectures/lecture1.html#removing-objects",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
     "section": "Removing Objects",
-    "text": "Removing Objects\nrm(y)             # remove y\nrm(list = ls())   # clear all"
+    "text": "Removing Objects\n\nSometimes when you have Rstudio open for a while, your workspace gets cluttered up with objects\nYou can remove objects with commands (right) or by clicking the broom icon in Rstudio’s Environment pane\n\n#remove object called y\nrm(y)\n#remove everything in your workspace\nrm(list = ls())"
   },
   {
-    "objectID": "lectures/lecture1.html#data-types",
-    "href": "lectures/lecture1.html#data-types",
-    "title": "Lecture 1: Introduction to R",
-    "section": "Data Types",
-    "text": "Data Types\n\nNumeric (e.g. 55)\nCharacter (e.g. “hello”)"
+    "objectID": "html-lectures/lecture1.html#objects-not-just-for-storing-numbers",
+    "href": "html-lectures/lecture1.html#objects-not-just-for-storing-numbers",
+    "title": "Lecture 1: Introduction to R (Preliminary Draft)",
+    "section": "Objects: Not Just for Storing Numbers",
+    "text": "Objects: Not Just for Storing Numbers\n\nBasic Data types:\nCharacter\nNumeric\n\n````"
+  },
+  {
+    "objectID": "html-lectures/lecture3.html",
+    "href": "html-lectures/lecture3.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 3: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture13.html",
+    "href": "html-lectures/lecture13.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 13: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture12.html",
+    "href": "html-lectures/lecture12.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 12: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture2.html",
+    "href": "html-lectures/lecture2.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 2: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture6.html",
+    "href": "html-lectures/lecture6.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 6: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture16.html",
+    "href": "html-lectures/lecture16.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 16: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture17.html",
+    "href": "html-lectures/lecture17.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 17: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture7.html",
+    "href": "html-lectures/lecture7.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 7: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture5.html",
+    "href": "html-lectures/lecture5.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 5: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture15.html",
+    "href": "html-lectures/lecture15.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 15: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture14.html",
+    "href": "html-lectures/lecture14.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 14: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture4.html",
+    "href": "html-lectures/lecture4.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 4: HTML version Coming Soon"
   }
 ]

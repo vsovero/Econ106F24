@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Econ 106 Test Site - Home</title>
+<title>Econ 106</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -70,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Econ 106 Test Site</span>
+    <span class="navbar-title">Econ 106</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -81,10 +82,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page">
  <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./lectures/lecture1.html">
- <span class="menu-text">Lecture 1</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -97,31 +94,242 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#econ-106-lecture-materials" id="toc-econ-106-lecture-materials" class="nav-link active" data-scroll-target="#econ-106-lecture-materials">📚 Econ 106 Lecture Materials</a>
+  <ul class="collapse">
+  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">Lectures</a>
+  <ul class="collapse">
+  <li><a href="#lecture-1-introduction-to-r-and-rstudio" id="toc-lecture-1-introduction-to-r-and-rstudio" class="nav-link" data-scroll-target="#lecture-1-introduction-to-r-and-rstudio">📘 Lecture 1: Introduction to R and RStudio</a></li>
+  <li><a href="#lecture-2-packages-data-frames-and-summary-statistics" id="toc-lecture-2-packages-data-frames-and-summary-statistics" class="nav-link" data-scroll-target="#lecture-2-packages-data-frames-and-summary-statistics">📘 Lecture 2: Packages, Data Frames, and Summary Statistics</a></li>
+  <li><a href="#lecture-3-filtering-rows-with-logical-conditions" id="toc-lecture-3-filtering-rows-with-logical-conditions" class="nav-link" data-scroll-target="#lecture-3-filtering-rows-with-logical-conditions">📘 Lecture 3: Filtering Rows with Logical Conditions</a></li>
+  <li><a href="#lecture-4-mutating-and-creating-new-variables" id="toc-lecture-4-mutating-and-creating-new-variables" class="nav-link" data-scroll-target="#lecture-4-mutating-and-creating-new-variables">📘 Lecture 4: Mutating and Creating New Variables</a></li>
+  <li><a href="#lecture-5-data-visualization-with-ggplot2" id="toc-lecture-5-data-visualization-with-ggplot2" class="nav-link" data-scroll-target="#lecture-5-data-visualization-with-ggplot2">📘 Lecture 5: Data Visualization with ggplot2</a></li>
+  <li><a href="#lecture-6-cleaning-numeric-variables" id="toc-lecture-6-cleaning-numeric-variables" class="nav-link" data-scroll-target="#lecture-6-cleaning-numeric-variables">📘 Lecture 6: Cleaning Numeric Variables</a></li>
+  <li><a href="#lecture-7-working-with-strings-and-dates" id="toc-lecture-7-working-with-strings-and-dates" class="nav-link" data-scroll-target="#lecture-7-working-with-strings-and-dates">📘 Lecture 7: Working with Strings and Dates</a></li>
+  <li><a href="#lecture-8-factors-and-categorical-variables" id="toc-lecture-8-factors-and-categorical-variables" class="nav-link" data-scroll-target="#lecture-8-factors-and-categorical-variables">📘 Lecture 8: Factors and Categorical Variables</a></li>
+  <li><a href="#lecture-9-visualizing-single-variables" id="toc-lecture-9-visualizing-single-variables" class="nav-link" data-scroll-target="#lecture-9-visualizing-single-variables">📘 Lecture 9: Visualizing Single Variables</a></li>
+  <li><a href="#lecture-10-comparing-variables-with-visuals" id="toc-lecture-10-comparing-variables-with-visuals" class="nav-link" data-scroll-target="#lecture-10-comparing-variables-with-visuals">📘 Lecture 10: Comparing Variables with Visuals</a></li>
+  <li><a href="#lecture-11-tidy-data-and-reshaping" id="toc-lecture-11-tidy-data-and-reshaping" class="nav-link" data-scroll-target="#lecture-11-tidy-data-and-reshaping">📘 Lecture 11: Tidy Data and Reshaping</a></li>
+  <li><a href="#lecture-12-joining-tables-with-dplyr" id="toc-lecture-12-joining-tables-with-dplyr" class="nav-link" data-scroll-target="#lecture-12-joining-tables-with-dplyr">📘 Lecture 12: Joining Tables with dplyr</a></li>
+  <li><a href="#lecture-13-text-data-i-tokenization-and-frequency" id="toc-lecture-13-text-data-i-tokenization-and-frequency" class="nav-link" data-scroll-target="#lecture-13-text-data-i-tokenization-and-frequency">📘 Lecture 13: Text Data I – Tokenization and Frequency</a></li>
+  <li><a href="#lecture-14-text-data-ii-sentiment-analysis" id="toc-lecture-14-text-data-ii-sentiment-analysis" class="nav-link" data-scroll-target="#lecture-14-text-data-ii-sentiment-analysis">📘 Lecture 14: Text Data II – Sentiment Analysis</a></li>
+  <li><a href="#lecture-15-mapping-spatial-data-with-sf" id="toc-lecture-15-mapping-spatial-data-with-sf" class="nav-link" data-scroll-target="#lecture-15-mapping-spatial-data-with-sf">📘 Lecture 15: Mapping Spatial Data with sf</a></li>
+  <li><a href="#lecture-16-thematic-mapping-and-color-scales" id="toc-lecture-16-thematic-mapping-and-color-scales" class="nav-link" data-scroll-target="#lecture-16-thematic-mapping-and-color-scales">📘 Lecture 16: Thematic Mapping and Color Scales</a></li>
+  <li><a href="#lecture-17-introduction-to-spatial-data-layers" id="toc-lecture-17-introduction-to-spatial-data-layers" class="nav-link" data-scroll-target="#lecture-17-introduction-to-spatial-data-layers">📘 Lecture 17: Introduction to Spatial Data Layers</a></li>
+  <li><a href="#lecture-18-spatial-analysis-with-regular-joins-and-projections" id="toc-lecture-18-spatial-analysis-with-regular-joins-and-projections" class="nav-link" data-scroll-target="#lecture-18-spatial-analysis-with-regular-joins-and-projections">📘 Lecture 18: Spatial Analysis with Regular Joins and Projections</a></li>
+  <li><a href="#lecture-19-final-project-workshop-and-examples" id="toc-lecture-19-final-project-workshop-and-examples" class="nav-link" data-scroll-target="#lecture-19-final-project-workshop-and-examples">📘 Lecture 19: Final Project Workshop and Examples</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Home</h1>
-</div>
 
 
+<section id="econ-106-lecture-materials" class="level1">
+<h1>📚 Econ 106 Lecture Materials</h1>
+<p>Welcome to the course site for <strong>Econ 106: Data Analysis in Economics</strong>. Below you’ll find materials for each lecture including slides, code, and summaries. Lecture HTML notes are being added on a rolling basis.</p>
+<section id="lectures" class="level2">
+<h2 class="anchored" data-anchor-id="lectures">Lectures</h2>
+<section id="lecture-1-introduction-to-r-and-rstudio" class="level3 panel panel-group">
+<h3 class="panel anchored" data-anchor-id="lecture-1-introduction-to-r-and-rstudio">📘 Lecture 1: Introduction to R and RStudio</h3>
+<p><strong>Summary:</strong><br>
+Introduces the RStudio interface and basic R syntax. Students learn how to assign objects, identify and interpret errors, and distinguish valid from invalid code. Emphasizes that making mistakes is part of learning.</p>
+<ul>
+<li><a href="html-lectures/lecture1.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 1.pdf">📥 Download PDF</a></li>
+</ul>
+</section>
+<section id="lecture-2-packages-data-frames-and-summary-statistics" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-2-packages-data-frames-and-summary-statistics">📘 Lecture 2: Packages, Data Frames, and Summary Statistics</h3>
+<p><strong>Summary:</strong><br>
+Covers how to install and load packages like <code>tidyverse</code>. Students are introduced to data frames and learn how to inspect variables using <code>glimpse()</code>, <code>View()</code>, and <code>summary()</code>. Emphasizes understanding variable types and the structure of tabular data.</p>
+<ul>
+<li><a href="html-lectures/lecture2.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 2.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-3-filtering-rows-with-logical-conditions" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-3-filtering-rows-with-logical-conditions">📘 Lecture 3: Filtering Rows with Logical Conditions</h3>
+<p><strong>Summary:</strong><br>
+Focuses on subsetting data using <code>filter()</code> and logical operators. Students practice extracting rows based on multiple criteria and learn how to read nested conditions and write readable logical statements using <code>|</code>, <code>&amp;</code>, and <code>==</code>.</p>
+<ul>
+<li><a href="html-lectures/lecture3.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 3.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-4-mutating-and-creating-new-variables" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-4-mutating-and-creating-new-variables">📘 Lecture 4: Mutating and Creating New Variables</h3>
+<p><strong>Summary:</strong><br>
+Introduces <code>mutate()</code> and arithmetic operations to create new columns in a dataset. Covers the use of the pipe (<code>|&gt;</code>) and demonstrates how to chain multiple operations for cleaner code.</p>
+<ul>
+<li><a href="html-lectures/lecture4.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 4.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-5-data-visualization-with-ggplot2" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-5-data-visualization-with-ggplot2">📘 Lecture 5: Data Visualization with ggplot2</h3>
+<p><strong>Summary:</strong><br>
+Covers the foundational structure of <code>ggplot()</code>, aesthetic mappings with <code>aes()</code>, and creating scatterplots using <code>geom_point()</code>. Students explore adjusting size, transparency, color, and exporting plots.</p>
+<ul>
+<li><a href="html-lectures/lecture5.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 5.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-6-cleaning-numeric-variables" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-6-cleaning-numeric-variables">📘 Lecture 6: Cleaning Numeric Variables</h3>
+<p><strong>Summary:</strong><br>
+Focuses on identifying and fixing formatting issues in numeric columns. Students use <code>as.numeric()</code> to coerce character data, handle errors and missing values, and apply <code>mutate()</code> for cleanup. Introduces handling problematic column names with backticks.</p>
+<ul>
+<li><a href="html-lectures/lecture6.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 6.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-7-working-with-strings-and-dates" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-7-working-with-strings-and-dates">📘 Lecture 7: Working with Strings and Dates</h3>
+<p><strong>Summary:</strong><br>
+Covers <code>str_replace_all()</code> to clean strings and <code>separate()</code> to split columns. Students also use the <code>lubridate</code> package to convert character strings to dates with <code>mdy()</code> and extract components like month or weekday using <code>month()</code>.</p>
+<ul>
+<li><a href="html-lectures/lecture7.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 7.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-8-factors-and-categorical-variables" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-8-factors-and-categorical-variables">📘 Lecture 8: Factors and Categorical Variables</h3>
+<p><strong>Summary:</strong><br>
+Explains how to recode and collapse factor levels using <code>fct_recode()</code>, <code>fct_collapse()</code>, and <code>fct_lump()</code>. Students work with messy survey data and learn how to order and group categorical variables for analysis and visualization.</p>
+<ul>
+<li><a href="html-lectures/lecture8.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 8.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-9-visualizing-single-variables" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-9-visualizing-single-variables">📘 Lecture 9: Visualizing Single Variables</h3>
+<p><strong>Summary:</strong><br>
+Introduces plots for summarizing a single variable, including histograms, bar charts, and density plots. Students consider distribution shape, skew, modality, and how to choose the appropriate visual for categorical vs.&nbsp;numeric data.</p>
+<ul>
+<li><a href="html-lectures/lecture9.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 9.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-10-comparing-variables-with-visuals" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-10-comparing-variables-with-visuals">📘 Lecture 10: Comparing Variables with Visuals</h3>
+<p><strong>Summary:</strong><br>
+Teaches how to compare two variables using grouped density plots, boxplots, and faceted visualizations. Students learn to use <code>facet_wrap()</code>, <code>geom_col()</code> with <code>summarize()</code>, and how to represent uncertainty and sample size visually.</p>
+<ul>
+<li><a href="html-lectures/lecture10.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 10.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-11-tidy-data-and-reshaping" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-11-tidy-data-and-reshaping">📘 Lecture 11: Tidy Data and Reshaping</h3>
+<p><strong>Summary:</strong><br>
+Covers the principles of tidy data and how to reshape datasets using <code>pivot_longer()</code> and <code>pivot_wider()</code>. Students learn to identify untidy structures and practice transforming columns into rows and vice versa.</p>
+<ul>
+<li><a href="html-lectures/lecture11.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 11.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-12-joining-tables-with-dplyr" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-12-joining-tables-with-dplyr">📘 Lecture 12: Joining Tables with dplyr</h3>
+<p><strong>Summary:</strong><br>
+Explains how to combine data frames using <code>left_join()</code>, <code>inner_join()</code>, and <code>anti_join()</code> with <code>dplyr</code>. Students practice identifying keys, resolving mismatches, and understanding how rows match across datasets.</p>
+<ul>
+<li><a href="html-lectures/lecture12.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 12.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-13-text-data-i-tokenization-and-frequency" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-13-text-data-i-tokenization-and-frequency">📘 Lecture 13: Text Data I – Tokenization and Frequency</h3>
+<p><strong>Summary:</strong><br>
+Introduces basic text mining using the <code>tidytext</code> package. Students learn how to tokenize text into words, remove stopwords, and analyze word frequency. Includes examples using speeches and other open text sources.</p>
+<ul>
+<li><a href="html-lectures/lecture13.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 13.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-14-text-data-ii-sentiment-analysis" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-14-text-data-ii-sentiment-analysis">📘 Lecture 14: Text Data II – Sentiment Analysis</h3>
+<p><strong>Summary:</strong><br>
+Continues with text analysis by introducing sentiment lexicons like <code>bing</code> and <code>nrc</code>. Students calculate sentiment scores, join text data to lexicons, and create visualizations such as top sentiment words by document or category.</p>
+<ul>
+<li><a href="html-lectures/lecture14.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 14.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-15-mapping-spatial-data-with-sf" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-15-mapping-spatial-data-with-sf">📘 Lecture 15: Mapping Spatial Data with sf</h3>
+<p><strong>Summary:</strong><br>
+Teaches how to read and plot shapefiles using <code>read_sf()</code> and <code>geom_sf()</code>. Students work with real geographic data, filter spatial features, and overlay multiple layers to create annotated, informative maps.</p>
+<ul>
+<li><a href="html-lectures/lecture15.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 15.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-16-thematic-mapping-and-color-scales" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-16-thematic-mapping-and-color-scales">📘 Lecture 16: Thematic Mapping and Color Scales</h3>
+<p><strong>Summary:</strong><br>
+Focuses on using <code>geom_sf()</code> and <code>scale_fill_</code> functions to create choropleth maps. Students explore continuous and discrete color palettes, apply <code>labs()</code> and <code>theme()</code> for customization, and use real policy datasets to visualize geographic variation.</p>
+<ul>
+<li><a href="html-lectures/lecture16.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 16.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-17-introduction-to-spatial-data-layers" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-17-introduction-to-spatial-data-layers">📘 Lecture 17: Introduction to Spatial Data Layers</h3>
+<p><strong>Summary:</strong><br>
+Introduces spatial data concepts and how to plot shapefiles with <code>read_sf()</code> and <code>geom_sf()</code>. Students learn to distinguish between different types of spatial features (points, lines, polygons) and overlay multiple geographic layers for visual context.</p>
+<ul>
+<li><a href="html-lectures/lecture17.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 17.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-18-spatial-analysis-with-regular-joins-and-projections" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-18-spatial-analysis-with-regular-joins-and-projections">📘 Lecture 18: Spatial Analysis with Regular Joins and Projections</h3>
+<p><strong>Summary:</strong><br>
+Demonstrates how to merge spatial data with tabular data using <code>left_join()</code>. Students learn to work with coordinate reference systems (CRS), reproject shapefiles using <code>st_transform()</code>, and analyze how projections affect map interpretation.</p>
+<ul>
+<li><a href="html-lectures/lecture18.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 18.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+</section>
+<section id="lecture-19-final-project-workshop-and-examples" class="level3 panel">
+<h3 class="panel anchored" data-anchor-id="lecture-19-final-project-workshop-and-examples">📘 Lecture 19: Final Project Workshop and Examples</h3>
+<p><strong>Summary:</strong><br>
+Prepares students for the final project by reviewing expectations, grading rubrics, and successful past examples. Emphasizes visual clarity, reproducibility, and storytelling with data. Includes live feedback and peer review guidance.</p>
+<ul>
+<li><a href="html-lectures/lecture19.html">📖 View Lecture Notes (HTML)</a></li>
+<li><a href="lectures/Econ 106 Lecture 19.pdf">📥 Download PDF</a></li>
+</ul>
+<p>:::</p>
+<p>:::</p>
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p>Welcome to the Econ 106 test site.</p>
-
-
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -258,6 +466,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">© 2024 Veronica Sovero | UC Riverside</div>
+  </div>
+</footer>
 
 
 

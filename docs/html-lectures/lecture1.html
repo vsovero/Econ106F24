@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Econ 106 - Lecture 1: Introduction to R (Preliminary Draft)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Econ 106</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#course-overview" id="toc-course-overview" class="nav-link active" data-scroll-target="#course-overview">Course Overview</a>
+  <ul class="collapse">
+  <li><a href="#econ-106-data-analysis-in-economics" id="toc-econ-106-data-analysis-in-economics" class="nav-link" data-scroll-target="#econ-106-data-analysis-in-economics">Econ 106Data Analysis in Economics</a></li>
+  <li><a href="#outline" id="toc-outline" class="nav-link" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#data-is-everywhere" id="toc-data-is-everywhere" class="nav-link" data-scroll-target="#data-is-everywhere">Data is everywhere</a></li>
+  <li><a href="#httpswol.iza.orgarticlesbig-data-in-economics" id="toc-httpswol.iza.orgarticlesbig-data-in-economics" class="nav-link" data-scroll-target="#httpswol.iza.orgarticlesbig-data-in-economics">https://wol.iza.org/articles/big-data-in-economics</a></li>
+  <li><a href="#need-a-job-learn-how-to-work-with-data" id="toc-need-a-job-learn-how-to-work-with-data" class="nav-link" data-scroll-target="#need-a-job-learn-how-to-work-with-data">Need a job? Learn how to work with data</a></li>
+  <li><a href="#intended-audience" id="toc-intended-audience" class="nav-link" data-scroll-target="#intended-audience">Intended Audience</a></li>
+  <li><a href="#course-objectives" id="toc-course-objectives" class="nav-link" data-scroll-target="#course-objectives">Course Objectives</a></li>
+  <li><a href="#why-are-we-using-r-in-this-course" id="toc-why-are-we-using-r-in-this-course" class="nav-link" data-scroll-target="#why-are-we-using-r-in-this-course">Why are we using R in this course?</a></li>
+  <li><a href="#r-vs.-python" id="toc-r-vs.-python" class="nav-link" data-scroll-target="#r-vs.-python">R vs.&nbsp;Python</a></li>
+  </ul></li>
+  <li><a href="#why-r" id="toc-why-r" class="nav-link" data-scroll-target="#why-r">Why R</a>
+  <ul class="collapse">
+  <li><a href="#r-is-a-means-not-an-end" id="toc-r-is-a-means-not-an-end" class="nav-link" data-scroll-target="#r-is-a-means-not-an-end">R is a means, not an end</a></li>
+  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
+  <li><a href="#lab-assignments" id="toc-lab-assignments" class="nav-link" data-scroll-target="#lab-assignments">Lab Assignments</a></li>
+  <li><a href="#research-project" id="toc-research-project" class="nav-link" data-scroll-target="#research-project">Research Project</a></li>
+  <li><a href="#examples-of-student-work" id="toc-examples-of-student-work" class="nav-link" data-scroll-target="#examples-of-student-work">Examples of Student Work</a></li>
+  <li><a href="#chatgptgenerative-ai" id="toc-chatgptgenerative-ai" class="nav-link" data-scroll-target="#chatgptgenerative-ai">ChatGPT/Generative AI</a></li>
+  <li><a href="#poll-everywhere" id="toc-poll-everywhere" class="nav-link" data-scroll-target="#poll-everywhere">Poll Everywhere</a></li>
+  </ul></li>
+  <li><a href="#course-logistics" id="toc-course-logistics" class="nav-link" data-scroll-target="#course-logistics">Course Logistics</a>
+  <ul class="collapse">
+  <li><a href="#poll-everywhere-1" id="toc-poll-everywhere-1" class="nav-link" data-scroll-target="#poll-everywhere-1">Poll Everywhere</a></li>
+  <li><a href="#lecture-quizzes-ungraded" id="toc-lecture-quizzes-ungraded" class="nav-link" data-scroll-target="#lecture-quizzes-ungraded">Lecture Quizzes (ungraded)</a></li>
+  <li><a href="#lecture-scripts" id="toc-lecture-scripts" class="nav-link" data-scroll-target="#lecture-scripts">Lecture Scripts</a></li>
+  <li><a href="#this-week-introduction-to-r-basics" id="toc-this-week-introduction-to-r-basics" class="nav-link" data-scroll-target="#this-week-introduction-to-r-basics">This Week: Introduction to R Basics</a></li>
+  <li><a href="#coding-goals" id="toc-coding-goals" class="nav-link" data-scroll-target="#coding-goals">Coding Goals</a></li>
+  </ul></li>
+  <li><a href="#coding-in-r" id="toc-coding-in-r" class="nav-link" data-scroll-target="#coding-in-r">Coding in R</a>
+  <ul class="collapse">
+  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting help</a></li>
+  <li><a href="#example-be-careful-with-typos" id="toc-example-be-careful-with-typos" class="nav-link" data-scroll-target="#example-be-careful-with-typos">Example: Be Careful with Typos</a></li>
+  <li><a href="#what-is-r-rstudio" id="toc-what-is-r-rstudio" class="nav-link" data-scroll-target="#what-is-r-rstudio">What is R? RStudio?</a></li>
+  <li><a href="#r-studio-interface" id="toc-r-studio-interface" class="nav-link" data-scroll-target="#r-studio-interface">R Studio Interface</a></li>
+  <li><a href="#rstudio-console" id="toc-rstudio-console" class="nav-link" data-scroll-target="#rstudio-console">RStudio Console</a></li>
+  <li><a href="#rstudio-script-editor" id="toc-rstudio-script-editor" class="nav-link" data-scroll-target="#rstudio-script-editor">Rstudio Script Editor</a></li>
+  <li><a href="#rstudio-script-editor-1" id="toc-rstudio-script-editor-1" class="nav-link" data-scroll-target="#rstudio-script-editor-1">Rstudio Script Editor</a></li>
+  <li><a href="#commenting-in-scripts" id="toc-commenting-in-scripts" class="nav-link" data-scroll-target="#commenting-in-scripts">Commenting in Scripts</a></li>
+  <li><a href="#lets-start-coding" id="toc-lets-start-coding" class="nav-link" data-scroll-target="#lets-start-coding">Let’s start coding!</a></li>
+  <li><a href="#operators" id="toc-operators" class="nav-link" data-scroll-target="#operators">Operators</a></li>
+  <li><a href="#arithmetic-operators" id="toc-arithmetic-operators" class="nav-link" data-scroll-target="#arithmetic-operators">Arithmetic operators</a></li>
+  <li><a href="#example-who-left-a-larger-tip" id="toc-example-who-left-a-larger-tip" class="nav-link" data-scroll-target="#example-who-left-a-larger-tip">Example: Who left a larger Tip?</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
+  </ul></li>
+  <li><a href="#rstudio-tour" id="toc-rstudio-tour" class="nav-link" data-scroll-target="#rstudio-tour">RStudio Tour</a>
+  <ul class="collapse">
+  <li><a href="#arguments" id="toc-arguments" class="nav-link" data-scroll-target="#arguments">Arguments</a></li>
+  <li><a href="#arguments-1" id="toc-arguments-1" class="nav-link" data-scroll-target="#arguments-1">Arguments</a></li>
+  <li><a href="#assignment-operator" id="toc-assignment-operator" class="nav-link" data-scroll-target="#assignment-operator">Assignment operator</a></li>
+  <li><a href="#naming-objects" id="toc-naming-objects" class="nav-link" data-scroll-target="#naming-objects">Naming Objects</a></li>
+  <li><a href="#where-are-my-objects" id="toc-where-are-my-objects" class="nav-link" data-scroll-target="#where-are-my-objects">Where are my objects?</a></li>
+  </ul></li>
+  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a>
+  <ul class="collapse">
+  <li><a href="#checking-values-of-an-object" id="toc-checking-values-of-an-object" class="nav-link" data-scroll-target="#checking-values-of-an-object">Checking Values of an Object</a></li>
+  <li><a href="#example-who-left-a-larger-tip-1" id="toc-example-who-left-a-larger-tip-1" class="nav-link" data-scroll-target="#example-who-left-a-larger-tip-1">Example: Who left a larger Tip?</a></li>
+  <li><a href="#removing-objects" id="toc-removing-objects" class="nav-link" data-scroll-target="#removing-objects">Removing Objects</a></li>
+  <li><a href="#objects-not-just-for-storing-numbers" id="toc-objects-not-just-for-storing-numbers" class="nav-link" data-scroll-target="#objects-not-just-for-storing-numbers">Objects: Not Just for Storing Numbers</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture 1: Introduction to R (Preliminary Draft)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="course-overview" class="level1">
+<h1>Course Overview</h1>
+<section id="econ-106-data-analysis-in-economics" class="level2">
+<h2 class="anchored" data-anchor-id="econ-106-data-analysis-in-economics">Econ 106Data Analysis in Economics</h2>
+<ul>
+<li>Fall 2024</li>
+<li>Based on: https://datacarpentry.org/R-ecology-lesson/introduction-r-rstudio.html</li>
+</ul>
+</section>
+<section id="outline" class="level2">
+<h2 class="anchored" data-anchor-id="outline">Outline</h2>
+<ul>
+<li>Class Overview</li>
+<li>Intro to R:</li>
+<li>Rstudio Console</li>
+<li>Operators</li>
+<li>Functions</li>
+<li>Objects</li>
+</ul>
+</section>
+<section id="data-is-everywhere" class="level2">
+<h2 class="anchored" data-anchor-id="data-is-everywhere">Data is everywhere</h2>
+<ul>
+<li>In 2015 the healthcare industry alone produced 1.2 billion clinical documents.</li>
+<li>The amount of text data generated annually (digital forms, social media, online portals, pdf reports, emails, text messages) is ever increasing.</li>
+</ul>
+<blockquote class="blockquote">
+<p>Holmes, Dawn E., <em>The data explosion</em>, <em>Big Data: A Very Short Introduction</em> (Oxford, 2017). <a href="https://doi.org/10.1093/actrade/9780198779575.003.0001" class="uri">https://doi.org/10.1093/actrade/9780198779575.003.0001</a></p>
+</blockquote>
+</section>
+<section id="httpswol.iza.orgarticlesbig-data-in-economics" class="level2">
+<h2 class="anchored" data-anchor-id="httpswol.iza.orgarticlesbig-data-in-economics">https://wol.iza.org/articles/big-data-in-economics</h2>
+</section>
+<section id="need-a-job-learn-how-to-work-with-data" class="level2">
+<h2 class="anchored" data-anchor-id="need-a-job-learn-how-to-work-with-data">Need a job? Learn how to work with data</h2>
+<ul>
+<li>Data literacy is the ability of an individual to read, understand, and work with data to create meaningful insights</li>
+<li>Text analysis of job descriptions shows that <strong>data analysts</strong> emphasize the ability to interpret and communicate findings (insight, reporting).<br>
+<a href="https://www.r-bloggers.com/2022/04/text-analysis-of-job-descriptions-for-data-scientists-data-engineers-machine-learning-engineers-and-data-analysts/">r-bloggers.com article</a></li>
+</ul>
+</section>
+<section id="intended-audience" class="level2">
+<h2 class="anchored" data-anchor-id="intended-audience">Intended Audience</h2>
+<ul>
+<li>Students who want to:</li>
+<li>serve as research assistants</li>
+<li>conduct empirical analyses</li>
+<li>are interested in Data Science careers.</li>
+<li>No prior programming experience is needed</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Prerequisites<span class="sc">:</span> Econ <span class="dv">101</span> (Statistics)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="course-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="course-objectives">Course Objectives</h2>
+<ul>
+<li>Master the ability to collect, process, interpret, analyze&nbsp;raw&nbsp;data using R.</li>
+<li>Develop visualization skills necessary to summarize data findings</li>
+<li>Communicate findings to various audiences and in various formats.</li>
+</ul>
+</section>
+<section id="why-are-we-using-r-in-this-course" class="level2">
+<h2 class="anchored" data-anchor-id="why-are-we-using-r-in-this-course">Why are we using R in this course?</h2>
+<ul>
+<li>Advantages of R:</li>
+<li>It’s free and open source</li>
+<li>It’s widely used in industry</li>
+<li>It has a large and active user community</li>
+<li>More of a true programming language compared to Stata</li>
+</ul>
+</section>
+<section id="r-vs.-python" class="level2">
+<h2 class="anchored" data-anchor-id="r-vs.-python">R vs.&nbsp;Python</h2>
+<ul>
+<li>R:</li>
+<li>Built for statistics and data analysis</li>
+<li>Better at econometrics and data visualization</li>
+<li>Python:</li>
+<li>Built for general-purpose programming and software development</li>
+<li>Better at machine learning</li>
+</ul>
+<p><img src="../../html-lectures/images/slide09_img5.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+</section>
+<section id="why-r" class="level1">
+<h1>Why R</h1>
+<section id="r-is-a-means-not-an-end" class="level2">
+<h2 class="anchored" data-anchor-id="r-is-a-means-not-an-end">R is a means, not an end</h2>
+<ul>
+<li>The goals of this course are&nbsp;platform-agnostic</li>
+<li>It’s not about the syntax of specific packages</li>
+<li>It’s about the concepts, logic, and thought processes underlying what we’re doing and why</li>
+<li>Your eventual goal:&nbsp;Use the right tool for the job</li>
+<li>You will likely learn all these tools at some point.</li>
+</ul>
+</section>
+<section id="grading" class="level2">
+<h2 class="anchored" data-anchor-id="grading">Grading</h2>
+</section>
+<section id="lab-assignments" class="level2">
+<h2 class="anchored" data-anchor-id="lab-assignments">Lab Assignments</h2>
+<ul>
+<li>Lab assignments: gives you the opportunity to practice the data skills covered during lecture</li>
+<li>Two components: writeup and R script</li>
+<li>Due on Sundays at 11:59pm</li>
+<li>I will drop the lowest lab score at the end of the quarter</li>
+</ul>
+</section>
+<section id="research-project" class="level2">
+<h2 class="anchored" data-anchor-id="research-project">Research Project</h2>
+<ul>
+<li>The goal of this class is to give you the skills to conduct your own small research project.</li>
+<li>Three project milestones will walk you through the research process.</li>
+<li>Final product:
+<ul>
+<li>Writeup (~1500 words)</li>
+<li>Documentation (R scripts)</li>
+</ul></li>
+<li>All three will count toward your final grade (no drops)</li>
+</ul>
+</section>
+<section id="examples-of-student-work" class="level2">
+<h2 class="anchored" data-anchor-id="examples-of-student-work">Examples of Student Work</h2>
+<p><img src="../../html-lectures/images/slide14_img6.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="../../html-lectures/images/slide14_img7.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="../../html-lectures/images/slide14_img8.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+<section id="chatgptgenerative-ai" class="level2">
+<h2 class="anchored" data-anchor-id="chatgptgenerative-ai">ChatGPT/Generative AI</h2>
+<ul>
+<li>It is up to you whether you want to use generative AI to help you with your code</li>
+<li>Guidelines:</li>
+<li>The code has to use the tools covered in lecture</li>
+<li>You cannot use it for the written portion of lab assignments or research milestones</li>
+<li>You need to state whether you used it for your code and how.</li>
+</ul>
+</section>
+<section id="poll-everywhere" class="level2">
+<h2 class="anchored" data-anchor-id="poll-everywhere">Poll Everywhere</h2>
+<ul>
+<li>I use Poll Everywhere to encourage active learning during lecture</li>
+<li>My polls will be available here when they go live: PollEv.com/vsovero</li>
+</ul>
+</section>
+</section>
+<section id="course-logistics" class="level1">
+<h1>Course Logistics</h1>
+<section id="poll-everywhere-1" class="level2">
+<h2 class="anchored" data-anchor-id="poll-everywhere-1">Poll Everywhere</h2>
+<ul>
+<li>You will be redirected to the UCR SSO</li>
+<li>Please use your UCR email address to sign in (do not sign up for an account)</li>
+</ul>
+<p><img src="../images/slide17_img11.png" class="img-fluid" style="width:60.0%"></p>
+</section>
+<section id="lecture-quizzes-ungraded" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-quizzes-ungraded">Lecture Quizzes (ungraded)</h2>
+<ul>
+<li>Posted on Canvas for you to practice after lecture</li>
+<li>Does not count towards your grade</li>
+<li>Feel free to ask Fan to review these questions during lab section</li>
+</ul>
+</section>
+<section id="lecture-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-scripts">Lecture Scripts</h2>
+<ul>
+<li>I post all of the code used during lecture as an R script on Canvas</li>
+<li>Running the code during or after lecture will help you gain more familiarity with Rstudio</li>
+</ul>
+</section>
+<section id="this-week-introduction-to-r-basics" class="level2">
+<h2 class="anchored" data-anchor-id="this-week-introduction-to-r-basics">This Week: Introduction to R Basics</h2>
+<ul>
+<li>Before we cover more broad topics in data analysis, we need to understand some R basics</li>
+<li>We need these building blocks before moving onto data wrangling, visualization, etc.</li>
+</ul>
+</section>
+<section id="coding-goals" class="level2">
+<h2 class="anchored" data-anchor-id="coding-goals">Coding Goals</h2>
+<ul>
+<li>Run code that produces what you were expecting</li>
+<li>Run code that produces what you were expecting and you understand -Run code without errors (pretty doable with ChatGPT)</li>
+</ul>
+</section>
+</section>
+<section id="coding-in-r" class="level1">
+<h1>Coding in R</h1>
+<section id="getting-help" class="level2">
+<h2 class="anchored" data-anchor-id="getting-help">Getting help</h2>
+<ul>
+<li>Read the error message.</li>
+<li>Try some online resources:</li>
+<li>Stack Overflow</li>
+<li>Slack</li>
+<li>Still stuck?</li>
+<li>Share your code, data, screenshots of the error message, etc. -ChatGPT (type in your code and the error message) -Please reach out to myself or your TA (Fan Bu)</li>
+</ul>
+</section>
+<section id="example-be-careful-with-typos" class="level2">
+<h2 class="anchored" data-anchor-id="example-be-careful-with-typos">Example: Be Careful with Typos</h2>
+<ul>
+<li><p>Implicit contract with the computer / scripting language:</p></li>
+<li><p>Computer will do tedious computation for you.</p></li>
+<li><p>In return, you will be completely precise in your instructions</p></li>
+<li><p>Typos matter. Case matters.</p></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_rocks <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">^</span> <span class="dv">3</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>datarocks</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Error in eval(expr, envir, enclos): object ‘datarocks' not found</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Data_rocks</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Error in eval(expr, envir, enclos): object ‘Data_rocks' not found</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="what-is-r-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-r-rstudio">What is R? RStudio?</h2>
+<ul>
+<li>R – a programming language + software that interprets it</li>
+<li>RStudio – popular software to write R scripts and interact with the R software</li>
+<li>We will be using Rstudio in this course (however you need to install R in order for it to run correctly)</li>
+</ul>
+<p><img src="../../html-lectures/images/slide24_img12.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+<section id="r-studio-interface" class="level2">
+<h2 class="anchored" data-anchor-id="r-studio-interface">R Studio Interface</h2>
+<ul>
+<li>Script</li>
+<li>Console</li>
+<li>Environment</li>
+<li>Files</li>
+</ul>
+<p><img src="../../html-lectures/images/slide25_img13.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+<section id="rstudio-console" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-console">RStudio Console</h2>
+<ul>
+<li>You can input and execute commands directly in the console.</li>
+<li>Output of certain commands will be displayed in the console.</li>
+<li>Console</li>
+</ul>
+<p><img src="../../html-lectures/images/slide26_img14.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+<section id="rstudio-script-editor" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-script-editor">Rstudio Script Editor</h2>
+<ul>
+<li>Most data analysis will require several steps</li>
+<li>The script editor is used to record the steps (commands) we take to analyze our data</li>
+</ul>
+<p><img src="../../html-lectures/images/slide27_img15.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+<section id="rstudio-script-editor-1" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-script-editor-1">Rstudio Script Editor</h2>
+<ul>
+<li>Once you type them in the script, you still need to send them to the console to be run.</li>
+<li>WRITE</li>
+<li>RUN</li>
+<li>Ctrl-Enter</li>
+<li>Scripts are saved with the .R extension (“lecture1.R”)</li>
+</ul>
+<p><img src="../../html-lectures/images/slide28_img16.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+<section id="commenting-in-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="commenting-in-scripts">Commenting in Scripts</h2>
+<ul>
+<li>R ignores the rest of a line after a&nbsp;#</li>
+<li>write notes to yourself about what your code is doing</li>
+<li>comments are automatically in green</li>
+</ul>
+<p><img src="../../html-lectures/images/slide29_img17.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+<section id="lets-start-coding" class="level2">
+<h2 class="anchored" data-anchor-id="lets-start-coding">Let’s start coding!</h2>
+<ul>
+<li>An operator is a symbol that tells R to perform some sort of operation.</li>
+<li>Types of Operators:
+<ul>
+<li><p>math (arithmetic)</p></li>
+<li><p>logical (compare values)</p></li>
+<li><p>assignment (saving values to objects)</p></li>
+<li><p>extraction (take out/replace parts of objects)</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="operators" class="level2">
+<h2 class="anchored" data-anchor-id="operators">Operators</h2>
+<ul>
+<li>https://www.statmethods.net/management/operators.html</li>
+</ul>
+</section>
+<section id="arithmetic-operators" class="level2">
+<h2 class="anchored" data-anchor-id="arithmetic-operators">Arithmetic operators</h2>
+<ul>
+<li>Does math:</li>
+<li>Add: 2 + 2</li>
+<li>Subtract: 3 - 1</li>
+<li>Multiply: 4 * 4</li>
+<li>Divide: 5 / 2</li>
+<li>Exponent: 5^2</li>
+<li>Ctrl/Cmd+Enter to run</li>
+<li>Results in the Console</li>
+</ul>
+<p><img src="../../html-lectures/images/slide32_img18.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+<section id="example-who-left-a-larger-tip" class="level2">
+<h2 class="anchored" data-anchor-id="example-who-left-a-larger-tip">Example: Who left a larger Tip?</h2>
+<ul>
+<li>Louberto’s bill at Shake Shack came out to $25</li>
+<li>He tips 15%</li>
+<li>Louie’s bill at Shake Shack came out to $32</li>
+<li>He tips 12%</li>
+<li>Use operators to calculate how much Louie and Louberto tipped</li>
+</ul>
+</section>
+<section id="functions" class="level2">
+<h2 class="anchored" data-anchor-id="functions">Functions</h2>
+<ul>
+<li>For more complicated tasks, R also comes pre-installed with a variety of functions.</li>
+<li>Functions are a sequence of instructions that perform a task:
+<ul>
+<li><p>Have names</p></li>
+<li><p>Accept arguments (input)</p></li>
+<li><p>Return a value (output)</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="rstudio-tour" class="level1">
+<h1>RStudio Tour</h1>
+<section id="arguments" class="level2">
+<h2 class="anchored" data-anchor-id="arguments">Arguments</h2>
+<ul>
+<li>Some arguments are required, some are optional.</li>
+<li>You can see that&nbsp;digits&nbsp;is optional because you don’t need to include it and you will get the same output</li>
+<li>To find out what&nbsp;arguments&nbsp;a function takes, look up its help file</li>
+</ul>
+</section>
+<section id="arguments-1" class="level2">
+<h2 class="anchored" data-anchor-id="arguments-1">Arguments</h2>
+<ul>
+<li>However, it’s much easier to understand your code when you write out the name of the argument</li>
+<li>You technically don’t even need to write out the names of the arguments (x, digits) if values are in the correct order</li>
+</ul>
+</section>
+<section id="assignment-operator" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-operator">Assignment operator</h2>
+<ul>
+<li>Saves values into objects</li>
+<li>Overwrites previous values</li>
+<li>Can be combined with other operators</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>object <span class="ot">&lt;-</span> value</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>weight_kg <span class="ot">&lt;-</span> <span class="dv">55</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>weight_lb <span class="ot">&lt;-</span> <span class="fl">2.2</span><span class="sc">*</span>weight_kg</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;-</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>(alt<span class="sc">/</span>option <span class="sc">-</span> dash)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="naming-objects" class="level2">
+<h2 class="anchored" data-anchor-id="naming-objects">Naming Objects</h2>
+<ul>
+<li>Object names:</li>
+<li>cannot start with a digit</li>
+<li>cannot contain certain other characters such as a comma or a space.</li>
+<li>Tips:</li>
+<li>Make it as descriptive as possible</li>
+<li>Use underscores to mark spaces</li>
+<li>#this is good</li>
+<li>#not these</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>weight_kg <span class="ot">&lt;-</span> <span class="dv">55</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>weightkg<span class="sc">!</span> <span class="er">&lt;</span><span class="sc">-</span> <span class="dv">55</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>weight <span class="cf">in</span> kg <span class="ot">&lt;-</span> <span class="dv">55</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>blah <span class="ot">&lt;-</span> <span class="dv">55</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="where-are-my-objects" class="level2">
+<h2 class="anchored" data-anchor-id="where-are-my-objects">Where are my objects?</h2>
+<ul>
+<li>You can also get a listing of these objects with commands:</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>You can see your objects <span class="cf">in</span> the <span class="fu">workspace</span> (top right pane of Rstudio)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">objects</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="../../html-lectures/images/slide39_img19.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+</section>
+<section id="other" class="level1">
+<h1>Other</h1>
+<section id="checking-values-of-an-object" class="level2">
+<h2 class="anchored" data-anchor-id="checking-values-of-an-object">Checking Values of an Object</h2>
+<ul>
+<li>If you want to inspect the values of an object, type the name of the object in the console</li>
+<li>weight_kg</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>weight_kg <span class="ot">&lt;-</span> <span class="dv">55</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="example-who-left-a-larger-tip-1" class="level2">
+<h2 class="anchored" data-anchor-id="example-who-left-a-larger-tip-1">Example: Who left a larger Tip?</h2>
+<ul>
+<li>Louberto’s bill at Shake Shack came out to $25</li>
+<li>He tips 15%</li>
+<li>Louie’s bill at Shake Shack came out to $32</li>
+<li>He tips 12%</li>
+<li>Use the assignment operator to save how much Louie and Louberto tipped (create 6 objects)</li>
+</ul>
+</section>
+<section id="removing-objects" class="level2">
+<h2 class="anchored" data-anchor-id="removing-objects">Removing Objects</h2>
+<ul>
+<li>Sometimes when you have Rstudio open for a while, your workspace gets cluttered up with objects</li>
+<li>You can remove objects with commands (right) or by clicking the broom icon in Rstudio’s Environment pane</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#remove object called y</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(y)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#remove everything in your workspace</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list =</span> <span class="fu">ls</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="../../html-lectures/images/slide42_img20.png" width="60%" style="display: block; margin: auto;"></p>
+</section>
+<section id="objects-not-just-for-storing-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="objects-not-just-for-storing-numbers">Objects: Not Just for Storing Numbers</h2>
+<ul>
+<li>Basic Data types:</li>
+<li>Character</li>
+<li>Numeric</li>
+</ul>
+<p>````</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">© 2024 Veronica Sovero | UC Riverside</div>
+  </div>
+</footer>
+
+
+
+</body></html>

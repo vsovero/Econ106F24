@@ -1,7 +1,201 @@
 
----
-title: "Home"
-format: html
----
 
-Welcome to the Econ 106 test site.
+# 📚 Econ 106 Lecture Materials
+
+Welcome to the course site for **Econ 106: Data Analysis in Economics**. Below you'll find materials for each lecture including slides, code, and summaries. Lecture HTML notes are being added on a rolling basis.
+
+## Lectures
+
+::: {.panel-group}
+
+### 📘 Lecture 1: Introduction to R and RStudio {.panel}
+
+**Summary:**  
+Introduces the RStudio interface and basic R syntax. Students learn how to assign objects, identify and interpret errors, and distinguish valid from invalid code. Emphasizes that making mistakes is part of learning.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture1.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 1.pdf)
+
+:::
+
+### 📘 Lecture 2: Packages, Data Frames, and Summary Statistics {.panel}
+
+**Summary:**  
+Covers how to install and load packages like `tidyverse`. Students are introduced to data frames and learn how to inspect variables using `glimpse()`, `View()`, and `summary()`. Emphasizes understanding variable types and the structure of tabular data.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture2.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 2.pdf)
+
+:::
+
+### 📘 Lecture 3: Filtering Rows with Logical Conditions {.panel}
+
+**Summary:**  
+Focuses on subsetting data using `filter()` and logical operators. Students practice extracting rows based on multiple criteria and learn how to read nested conditions and write readable logical statements using `|`, `&`, and `==`.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture3.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 3.pdf)
+
+:::
+
+### 📘 Lecture 4: Mutating and Creating New Variables {.panel}
+
+**Summary:**  
+Introduces `mutate()` and arithmetic operations to create new columns in a dataset. Covers the use of the pipe (`|>`) and demonstrates how to chain multiple operations for cleaner code.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture4.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 4.pdf)
+
+:::
+
+### 📘 Lecture 5: Data Visualization with ggplot2 {.panel}
+
+**Summary:**  
+Covers the foundational structure of `ggplot()`, aesthetic mappings with `aes()`, and creating scatterplots using `geom_point()`. Students explore adjusting size, transparency, color, and exporting plots.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture5.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 5.pdf)
+
+:::
+
+### 📘 Lecture 6: Cleaning Numeric Variables {.panel}
+
+**Summary:**  
+Focuses on identifying and fixing formatting issues in numeric columns. Students use `as.numeric()` to coerce character data, handle errors and missing values, and apply `mutate()` for cleanup. Introduces handling problematic column names with backticks.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture6.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 6.pdf)
+
+:::
+
+### 📘 Lecture 7: Working with Strings and Dates {.panel}
+
+**Summary:**  
+Covers `str_replace_all()` to clean strings and `separate()` to split columns. Students also use the `lubridate` package to convert character strings to dates with `mdy()` and extract components like month or weekday using `month()`.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture7.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 7.pdf)
+
+:::
+
+### 📘 Lecture 8: Factors and Categorical Variables {.panel}
+
+**Summary:**  
+Explains how to recode and collapse factor levels using `fct_recode()`, `fct_collapse()`, and `fct_lump()`. Students work with messy survey data and learn how to order and group categorical variables for analysis and visualization.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture8.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 8.pdf)
+
+:::
+
+### 📘 Lecture 9: Visualizing Single Variables {.panel}
+
+**Summary:**  
+Introduces plots for summarizing a single variable, including histograms, bar charts, and density plots. Students consider distribution shape, skew, modality, and how to choose the appropriate visual for categorical vs. numeric data.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture9.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 9.pdf)
+
+:::
+
+### 📘 Lecture 10: Comparing Variables with Visuals {.panel}
+
+**Summary:**  
+Teaches how to compare two variables using grouped density plots, boxplots, and faceted visualizations. Students learn to use `facet_wrap()`, `geom_col()` with `summarize()`, and how to represent uncertainty and sample size visually.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture10.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 10.pdf)
+
+:::
+
+### 📘 Lecture 11: Tidy Data and Reshaping {.panel}
+
+**Summary:**  
+Covers the principles of tidy data and how to reshape datasets using `pivot_longer()` and `pivot_wider()`. Students learn to identify untidy structures and practice transforming columns into rows and vice versa.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture11.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 11.pdf)
+
+:::
+
+### 📘 Lecture 12: Joining Tables with dplyr {.panel}
+
+**Summary:**  
+Explains how to combine data frames using `left_join()`, `inner_join()`, and `anti_join()` with `dplyr`. Students practice identifying keys, resolving mismatches, and understanding how rows match across datasets.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture12.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 12.pdf)
+
+:::
+
+### 📘 Lecture 13: Text Data I – Tokenization and Frequency {.panel}
+
+**Summary:**  
+Introduces basic text mining using the `tidytext` package. Students learn how to tokenize text into words, remove stopwords, and analyze word frequency. Includes examples using speeches and other open text sources.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture13.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 13.pdf)
+
+:::
+
+### 📘 Lecture 14: Text Data II – Sentiment Analysis {.panel}
+
+**Summary:**  
+Continues with text analysis by introducing sentiment lexicons like `bing` and `nrc`. Students calculate sentiment scores, join text data to lexicons, and create visualizations such as top sentiment words by document or category.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture14.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 14.pdf)
+
+:::
+
+### 📘 Lecture 15: Mapping Spatial Data with sf {.panel}
+
+**Summary:**  
+Teaches how to read and plot shapefiles using `read_sf()` and `geom_sf()`. Students work with real geographic data, filter spatial features, and overlay multiple layers to create annotated, informative maps.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture15.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 15.pdf)
+
+:::
+
+### 📘 Lecture 16: Thematic Mapping and Color Scales {.panel}
+
+**Summary:**  
+Focuses on using `geom_sf()` and `scale_fill_` functions to create choropleth maps. Students explore continuous and discrete color palettes, apply `labs()` and `theme()` for customization, and use real policy datasets to visualize geographic variation.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture16.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 16.pdf)
+
+:::
+
+### 📘 Lecture 17: Introduction to Spatial Data Layers {.panel}
+
+**Summary:**  
+Introduces spatial data concepts and how to plot shapefiles with `read_sf()` and `geom_sf()`. Students learn to distinguish between different types of spatial features (points, lines, polygons) and overlay multiple geographic layers for visual context.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture17.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 17.pdf)
+
+:::
+
+### 📘 Lecture 18: Spatial Analysis with Regular Joins and Projections {.panel}
+
+**Summary:**  
+Demonstrates how to merge spatial data with tabular data using `left_join()`. Students learn to work with coordinate reference systems (CRS), reproject shapefiles using `st_transform()`, and analyze how projections affect map interpretation.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture18.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 18.pdf)
+
+:::
+
+### 📘 Lecture 19: Final Project Workshop and Examples {.panel}
+
+**Summary:**  
+Prepares students for the final project by reviewing expectations, grading rubrics, and successful past examples. Emphasizes visual clarity, reproducibility, and storytelling with data. Includes live feedback and peer review guidance.
+
+- [📖 View Lecture Notes (HTML)](html-lectures/lecture19.html)
+- [📥 Download PDF](lectures/Econ 106 Lecture 19.pdf)
+
+:::
+
+:::

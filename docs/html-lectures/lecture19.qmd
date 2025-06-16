@@ -1,0 +1,3 @@
+# Lecture 19: HTML version Coming Soon
+
+<iframe src="../lectures/Econ 106 Lecture 19.pdf" width="100%" height="800px"></iframe>

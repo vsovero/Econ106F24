@@ -1,18 +1,22 @@
-
 project:
   type: website
   output-dir: docs
+  resources:
+    - lectures/
+    - lecture-scripts/
+    - html-lectures/
 
 website:
-  title: "Econ 106 Test Site"
+  title: "Econ 106"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: lectures/lecture1.qmd
-        text: Lecture 1
+  page-footer:
+    center: "© 2024 Veronica Sovero | UC Riverside"
 
 format:
   html:
     theme: cosmo
+    css: styles.css
     toc: true
