@@ -1,0 +1,40 @@
+## 🧪 Research Project Resources
+
+
+### 📘 Final Project Overview {.panel}
+
+**Summary:**  
+The final project asks students to pose a research question, prepare and clean a real-world dataset, conduct exploratory data analysis in R, and communicate results through both narrative and visual formats.
+
+- [📄 Final Project Guidelines (PDF)](Project Milestones/Final Project Guidelines.pdf)
+
+
+### 📘 Milestone 1: Research Question & Data Plan {.panel}
+
+**Summary:**  
+Students define a clear and feasible research question, identify a dataset, and describe how the data will be prepared and analyzed to answer the question. This milestone focuses on planning, justification, and feasibility.
+
+- [📄 Milestone 1 Description (PDF)](Project Milestones/Research Milestone 1.pdf)  
+- [📋 Milestone 1 Template (R Script)](Project Milestones/Milestone 1.R)
+
+:::
+
+### 📘 Milestone 2: Data Wrangling & EDA {.panel}
+
+**Summary:**  
+Students submit cleaned and well-documented data, demonstrate key wrangling steps, and include exploratory visualizations. Emphasis is placed on reproducibility, clarity, and completeness of the data pipeline.
+
+- [📄 Milestone 2 Description (PDF)](Project Milestones/Research Milestone 2.pdf)  
+- [📋 Milestone 2 Template (R Script)](Project Milestones/Milestone 2 template.R)
+
+:::
+
+### 📘 Milestone 3: Visualizations & Narrative {.panel}
+
+**Summary:**  
+Students finalize their visualizations and submit a short, well-structured narrative that explains trends, patterns, and insights for a general audience. This milestone includes the final R script and communication draft.
+
+- [📄 Milestone 3 Description (PDF)](Project Milestones/Research Milestone 3.pdf)  
+- [📋 Milestone 3 Template (R Script)](Project Milestones/Milestone 3.R)
+
+:::

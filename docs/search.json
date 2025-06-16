@@ -4,49 +4,21 @@
     "href": "index.html",
     "title": "Econ 106",
     "section": "",
-    "text": "Welcome to the course site for Econ 106: Data Analysis in Economics. Below you’ll find materials for each lecture including slides, code, and summaries. Lecture HTML notes are being added on a rolling basis.\n\n\n\n\nSummary:\nIntroduces the RStudio interface and basic R syntax. Students learn how to assign objects, identify and interpret errors, and distinguish valid from invalid code. Emphasizes that making mistakes is part of learning.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n\n\n\nSummary:\nCovers how to install and load packages like tidyverse. Students are introduced to data frames and learn how to inspect variables using glimpse(), View(), and summary(). Emphasizes understanding variable types and the structure of tabular data.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nFocuses on subsetting data using filter() and logical operators. Students practice extracting rows based on multiple criteria and learn how to read nested conditions and write readable logical statements using |, &, and ==.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nIntroduces mutate() and arithmetic operations to create new columns in a dataset. Covers the use of the pipe (|>) and demonstrates how to chain multiple operations for cleaner code.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nCovers the foundational structure of ggplot(), aesthetic mappings with aes(), and creating scatterplots using geom_point(). Students explore adjusting size, transparency, color, and exporting plots.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nFocuses on identifying and fixing formatting issues in numeric columns. Students use as.numeric() to coerce character data, handle errors and missing values, and apply mutate() for cleanup. Introduces handling problematic column names with backticks.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nCovers str_replace_all() to clean strings and separate() to split columns. Students also use the lubridate package to convert character strings to dates with mdy() and extract components like month or weekday using month().\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nExplains how to recode and collapse factor levels using fct_recode(), fct_collapse(), and fct_lump(). Students work with messy survey data and learn how to order and group categorical variables for analysis and visualization.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nIntroduces plots for summarizing a single variable, including histograms, bar charts, and density plots. Students consider distribution shape, skew, modality, and how to choose the appropriate visual for categorical vs. numeric data.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nTeaches how to compare two variables using grouped density plots, boxplots, and faceted visualizations. Students learn to use facet_wrap(), geom_col() with summarize(), and how to represent uncertainty and sample size visually.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nCovers the principles of tidy data and how to reshape datasets using pivot_longer() and pivot_wider(). Students learn to identify untidy structures and practice transforming columns into rows and vice versa.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nExplains how to combine data frames using left_join(), inner_join(), and anti_join() with dplyr. Students practice identifying keys, resolving mismatches, and understanding how rows match across datasets.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nIntroduces basic text mining using the tidytext package. Students learn how to tokenize text into words, remove stopwords, and analyze word frequency. Includes examples using speeches and other open text sources.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nContinues with text analysis by introducing sentiment lexicons like bing and nrc. Students calculate sentiment scores, join text data to lexicons, and create visualizations such as top sentiment words by document or category.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nTeaches how to read and plot shapefiles using read_sf() and geom_sf(). Students work with real geographic data, filter spatial features, and overlay multiple layers to create annotated, informative maps.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nFocuses on using geom_sf() and scale_fill_ functions to create choropleth maps. Students explore continuous and discrete color palettes, apply labs() and theme() for customization, and use real policy datasets to visualize geographic variation.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nIntroduces spatial data concepts and how to plot shapefiles with read_sf() and geom_sf(). Students learn to distinguish between different types of spatial features (points, lines, polygons) and overlay multiple geographic layers for visual context.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nDemonstrates how to merge spatial data with tabular data using left_join(). Students learn to work with coordinate reference systems (CRS), reproject shapefiles using st_transform(), and analyze how projections affect map interpretation.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n\n\n\nSummary:\nPrepares students for the final project by reviewing expectations, grading rubrics, and successful past examples. Emphasizes visual clarity, reproducibility, and storytelling with data. Includes live feedback and peer review guidance.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n\n:::\n:::"
+    "text": "Welcome to the course site for Econ 106: Data Analysis in Economics at UC Riverside. This site provides access to lecture notes, R scripts, the course syllabus, and research project materials."
   },
   {
-    "objectID": "html-lectures/lecture9.html",
-    "href": "html-lectures/lecture9.html",
+    "objectID": "lectures.html",
+    "href": "lectures.html",
     "title": "Econ 106",
     "section": "",
-    "text": "Lecture 9: HTML version Coming Soon"
+    "text": "Summary:\nIntroduces the RStudio interface and basic R syntax. Students learn how to assign objects, identify and interpret errors, and distinguish valid from invalid code. Emphasizes that making mistakes is part of learning.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nCovers how to install and load packages like tidyverse. Students are introduced to data frames and learn how to inspect variables using glimpse(), View(), and summary(). Emphasizes understanding variable types and the structure of tabular data.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nFocuses on subsetting data using filter() and logical operators. Students practice extracting rows based on multiple criteria and learn how to read nested conditions and write readable logical statements using |, &, and ==.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nIntroduces mutate() and arithmetic operations to create new columns in a dataset. Covers the use of the pipe (|>) and demonstrates how to chain multiple operations for cleaner code.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nCovers the foundational structure of ggplot(), aesthetic mappings with aes(), and creating scatterplots using geom_point(). Students explore adjusting size, transparency, color, and exporting plots.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nFocuses on identifying and fixing formatting issues in numeric columns. Students use as.numeric() to coerce character data, handle errors and missing values, and apply mutate() for cleanup. Introduces handling problematic column names with backticks.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nCovers str_replace_all() to clean strings and separate() to split columns. Students also use the lubridate package to convert character strings to dates with mdy() and extract components like month or weekday using month().\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nExplains how to recode and collapse factor levels using fct_recode(), fct_collapse(), and fct_lump(). Students work with messy survey data and learn how to order and group categorical variables for analysis and visualization.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nIntroduces plots for summarizing a single variable, including histograms, bar charts, and density plots. Students consider distribution shape, skew, modality, and how to choose the appropriate visual for categorical vs. numeric data.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nTeaches how to compare two variables using grouped density plots, boxplots, and faceted visualizations. Students learn to use facet_wrap(), geom_col() with summarize(), and how to represent uncertainty and sample size visually.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nCovers the principles of tidy data and how to reshape datasets using pivot_longer() and pivot_wider(). Students learn to identify untidy structures and practice transforming columns into rows and vice versa.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nExplains how to combine data frames using left_join(), inner_join(), and anti_join() with dplyr. Students practice identifying keys, resolving mismatches, and understanding how rows match across datasets.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nIntroduces basic text mining using the tidytext package. Students learn how to tokenize text into words, remove stopwords, and analyze word frequency. Includes examples using speeches and other open text sources.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nContinues with text analysis by introducing sentiment lexicons like bing and nrc. Students calculate sentiment scores, join text data to lexicons, and create visualizations such as top sentiment words by document or category.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nTeaches how to read and plot shapefiles using read_sf() and geom_sf(). Students work with real geographic data, filter spatial features, and overlay multiple layers to create annotated, informative maps.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nFocuses on using geom_sf() and scale_fill_ functions to create choropleth maps. Students explore continuous and discrete color palettes, apply labs() and theme() for customization, and use real policy datasets to visualize geographic variation.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nIntroduces spatial data concepts and how to plot shapefiles with read_sf() and geom_sf(). Students learn to distinguish between different types of spatial features (points, lines, polygons) and overlay multiple geographic layers for visual context.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nDemonstrates how to merge spatial data with tabular data using left_join(). Students learn to work with coordinate reference systems (CRS), reproject shapefiles using st_transform(), and analyze how projections affect map interpretation.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script\n\n\n\n\nSummary:\nPrepares students for the final project by reviewing expectations, grading rubrics, and successful past examples. Emphasizes visual clarity, reproducibility, and storytelling with data. Includes live feedback and peer review guidance.\n\n📖 View Lecture Notes (HTML)\n📥 Download PDF\n💾 R Script"
   },
   {
-    "objectID": "html-lectures/lecture19.html",
-    "href": "html-lectures/lecture19.html",
+    "objectID": "project.html",
+    "href": "project.html",
     "title": "Econ 106",
     "section": "",
-    "text": "Lecture 19: HTML version Coming Soon"
-  },
-  {
-    "objectID": "html-lectures/lecture18.html",
-    "href": "html-lectures/lecture18.html",
-    "title": "Econ 106",
-    "section": "",
-    "text": "Lecture 18: HTML version Coming Soon"
-  },
-  {
-    "objectID": "html-lectures/lecture8.html",
-    "href": "html-lectures/lecture8.html",
-    "title": "Econ 106",
-    "section": "",
-    "text": "Lecture 8: HTML version Coming Soon"
-  },
-  {
-    "objectID": "html-lectures/lecture10.html",
-    "href": "html-lectures/lecture10.html",
-    "title": "Econ 106",
-    "section": "",
-    "text": "Lecture 10: HTML version Coming Soon"
-  },
-  {
-    "objectID": "html-lectures/lecture11.html",
-    "href": "html-lectures/lecture11.html",
-    "title": "Econ 106",
-    "section": "",
-    "text": "Lecture 11: HTML version Coming Soon"
+    "text": "Summary:\nThe final project asks students to pose a research question, prepare and clean a real-world dataset, conduct exploratory data analysis in R, and communicate results through both narrative and visual formats.\n\n📄 Final Project Guidelines (PDF)\n\n\n\n\nSummary:\nStudents define a clear and feasible research question, identify a dataset, and describe how the data will be prepared and analyzed to answer the question. This milestone focuses on planning, justification, and feasibility.\n\n📄 Milestone 1 Description (PDF)\n\n📋 Milestone 1 Template (R Script)\n\n:::\n\n\n\nSummary:\nStudents submit cleaned and well-documented data, demonstrate key wrangling steps, and include exploratory visualizations. Emphasis is placed on reproducibility, clarity, and completeness of the data pipeline.\n\n📄 Milestone 2 Description (PDF)\n\n📋 Milestone 2 Template (R Script)\n\n:::\n\n\n\nSummary:\nStudents finalize their visualizations and submit a short, well-structured narrative that explains trends, patterns, and insights for a general audience. This milestone includes the final R script and communication draft.\n\n📄 Milestone 3 Description (PDF)\n\n📋 Milestone 3 Template (R Script)\n\n:::"
   },
   {
     "objectID": "html-lectures/lecture1.html",
@@ -294,6 +266,13 @@
     "text": "Objects: Not Just for Storing Numbers\n\nBasic Data types:\nCharacter\nNumeric\n\n````"
   },
   {
+    "objectID": "html-lectures/lecture2.html",
+    "href": "html-lectures/lecture2.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 2: HTML version Coming Soon"
+  },
+  {
     "objectID": "html-lectures/lecture3.html",
     "href": "html-lectures/lecture3.html",
     "title": "Econ 106",
@@ -301,11 +280,60 @@
     "text": "Lecture 3: HTML version Coming Soon"
   },
   {
-    "objectID": "html-lectures/lecture13.html",
-    "href": "html-lectures/lecture13.html",
+    "objectID": "html-lectures/lecture4.html",
+    "href": "html-lectures/lecture4.html",
     "title": "Econ 106",
     "section": "",
-    "text": "Lecture 13: HTML version Coming Soon"
+    "text": "Lecture 4: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture5.html",
+    "href": "html-lectures/lecture5.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 5: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture6.html",
+    "href": "html-lectures/lecture6.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 6: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture7.html",
+    "href": "html-lectures/lecture7.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 7: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture8.html",
+    "href": "html-lectures/lecture8.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 8: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture9.html",
+    "href": "html-lectures/lecture9.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 9: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture10.html",
+    "href": "html-lectures/lecture10.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 10: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture11.html",
+    "href": "html-lectures/lecture11.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 11: HTML version Coming Soon"
   },
   {
     "objectID": "html-lectures/lecture12.html",
@@ -315,18 +343,25 @@
     "text": "Lecture 12: HTML version Coming Soon"
   },
   {
-    "objectID": "html-lectures/lecture2.html",
-    "href": "html-lectures/lecture2.html",
+    "objectID": "html-lectures/lecture13.html",
+    "href": "html-lectures/lecture13.html",
     "title": "Econ 106",
     "section": "",
-    "text": "Lecture 2: HTML version Coming Soon"
+    "text": "Lecture 13: HTML version Coming Soon"
   },
   {
-    "objectID": "html-lectures/lecture6.html",
-    "href": "html-lectures/lecture6.html",
+    "objectID": "html-lectures/lecture14.html",
+    "href": "html-lectures/lecture14.html",
     "title": "Econ 106",
     "section": "",
-    "text": "Lecture 6: HTML version Coming Soon"
+    "text": "Lecture 14: HTML version Coming Soon"
+  },
+  {
+    "objectID": "html-lectures/lecture15.html",
+    "href": "html-lectures/lecture15.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Lecture 15: HTML version Coming Soon"
   },
   {
     "objectID": "html-lectures/lecture16.html",
@@ -343,38 +378,17 @@
     "text": "Lecture 17: HTML version Coming Soon"
   },
   {
-    "objectID": "html-lectures/lecture7.html",
-    "href": "html-lectures/lecture7.html",
+    "objectID": "html-lectures/lecture18.html",
+    "href": "html-lectures/lecture18.html",
     "title": "Econ 106",
     "section": "",
-    "text": "Lecture 7: HTML version Coming Soon"
+    "text": "Lecture 18: HTML version Coming Soon"
   },
   {
-    "objectID": "html-lectures/lecture5.html",
-    "href": "html-lectures/lecture5.html",
+    "objectID": "html-lectures/lecture19.html",
+    "href": "html-lectures/lecture19.html",
     "title": "Econ 106",
     "section": "",
-    "text": "Lecture 5: HTML version Coming Soon"
-  },
-  {
-    "objectID": "html-lectures/lecture15.html",
-    "href": "html-lectures/lecture15.html",
-    "title": "Econ 106",
-    "section": "",
-    "text": "Lecture 15: HTML version Coming Soon"
-  },
-  {
-    "objectID": "html-lectures/lecture14.html",
-    "href": "html-lectures/lecture14.html",
-    "title": "Econ 106",
-    "section": "",
-    "text": "Lecture 14: HTML version Coming Soon"
-  },
-  {
-    "objectID": "html-lectures/lecture4.html",
-    "href": "html-lectures/lecture4.html",
-    "title": "Econ 106",
-    "section": "",
-    "text": "Lecture 4: HTML version Coming Soon"
+    "text": "Lecture 19: HTML version Coming Soon"
   }
 ]

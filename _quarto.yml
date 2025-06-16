@@ -1,10 +1,29 @@
 project:
   type: website
   output-dir: docs
-  resources:
-    - lectures/
-    - lecture-scripts/
-    - html-lectures/
+  render:
+    - index.qmd
+    - lectures.qmd
+    - project.qmd
+    - html-lectures/lecture1.qmd
+    - html-lectures/lecture2.qmd
+    - html-lectures/lecture3.qmd
+    - html-lectures/lecture4.qmd
+    - html-lectures/lecture5.qmd
+    - html-lectures/lecture6.qmd
+    - html-lectures/lecture7.qmd
+    - html-lectures/lecture8.qmd
+    - html-lectures/lecture9.qmd
+    - html-lectures/lecture10.qmd
+    - html-lectures/lecture11.qmd
+    - html-lectures/lecture12.qmd
+    - html-lectures/lecture13.qmd
+    - html-lectures/lecture14.qmd
+    - html-lectures/lecture15.qmd
+    - html-lectures/lecture16.qmd
+    - html-lectures/lecture17.qmd
+    - html-lectures/lecture18.qmd
+    - html-lectures/lecture19.qmd
 
 website:
   title: "Econ 106"
@@ -12,11 +31,22 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: lectures.qmd
+        text: Lectures
+      - href: project.qmd
+        text: Research Project
   page-footer:
     center: "© 2024 Veronica Sovero | UC Riverside"
 
 format:
   html:
     theme: cosmo
-    css: styles.css
     toc: true
+    toc-location: left
+    css: styles.css
+
+resources:
+  - lectures/
+  - lecture-scripts/
+  - Project Milestones/
+  - Econ 106 Syllabus  Fall 2024.pdf
