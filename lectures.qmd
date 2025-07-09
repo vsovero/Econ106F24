@@ -178,10 +178,11 @@ Focuses on using `geom_sf()` and `scale_fill_` functions to create choropleth ma
 
 
 
-### 📘 Lecture 17: Introduction to Spatial Data Layers 
+### 📘 Lecture 17: Communicating Data Visually (Part 1)
 
 **Summary:**  
-Introduces spatial data concepts and how to plot shapefiles with `read_sf()` and `geom_sf()`. Students learn to distinguish between different types of spatial features (points, lines, polygons) and overlay multiple geographic layers for visual context.
+Introduces the transition from exploratory to explanatory plots. Emphasizes the use of `ggplot2::labs()`, `ggplot2::geom_smooth()`, `ggrepel::geom_label_repel()`, and theme adjustments (`theme_bw()`, `theme()`) to highlight research insights. Data from the `cspp` package is used to illustrate label design, axis formatting, and plot interpretation.
+
 
 - [📖 View Lecture Notes (HTML)](html-lectures/lecture17.html)
 - [📥 Download PDF](lectures/Econ 106 Lecture 17.pdf)
@@ -189,10 +190,10 @@ Introduces spatial data concepts and how to plot shapefiles with `read_sf()` and
 
 
 
-### 📘 Lecture 18: Spatial Analysis with Regular Joins and Projections 
+### 📘 Lecture 18: Communicating Data Visually (Part 2)
 
 **Summary:**  
-Demonstrates how to merge spatial data with tabular data using `left_join()`. Students learn to work with coordinate reference systems (CRS), reproject shapefiles using `st_transform()`, and analyze how projections affect map interpretation.
+Extends plot customization techniques for categorical and continuous data. Focuses on `ggplot2::geom_bar()`, `geom_col()`, `geom_text()`, `scale_fill_manual()`, `scale_fill_brewer()`, and `theme(legend.position = 'none')`. Introduces distribution visualization with `ggridges::geom_density_ridges()` and `viridis::scale_fill_viridis_c()` to improve clarity and impact.
 
 - [📖 View Lecture Notes (HTML)](html-lectures/lecture18.html)
 - [📥 Download PDF](lectures/Econ 106 Lecture 18.pdf)

@@ -129,7 +129,7 @@ Prerequisites: Econ 101 (Statistics)
 -   You will be redirected to the UCR SSO
 -   Please use your UCR email address to sign in (do not sign up for an account)
 
-![](../images/slide17_img11.png){width="60%"}
+![](images/slide17_img11.png){width="60%"}
 
 ## Lecture Quizzes (ungraded)
 

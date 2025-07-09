@@ -123,8 +123,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#lecture-14-text-data-ii-sentiment-analysis" id="toc-lecture-14-text-data-ii-sentiment-analysis" class="nav-link" data-scroll-target="#lecture-14-text-data-ii-sentiment-analysis">📘 Lecture 14: Text Data II – Sentiment Analysis</a></li>
   <li><a href="#lecture-15-mapping-spatial-data-with-sf" id="toc-lecture-15-mapping-spatial-data-with-sf" class="nav-link" data-scroll-target="#lecture-15-mapping-spatial-data-with-sf">📘 Lecture 15: Mapping Spatial Data with sf</a></li>
   <li><a href="#lecture-16-thematic-mapping-and-color-scales" id="toc-lecture-16-thematic-mapping-and-color-scales" class="nav-link" data-scroll-target="#lecture-16-thematic-mapping-and-color-scales">📘 Lecture 16: Thematic Mapping and Color Scales</a></li>
-  <li><a href="#lecture-17-introduction-to-spatial-data-layers" id="toc-lecture-17-introduction-to-spatial-data-layers" class="nav-link" data-scroll-target="#lecture-17-introduction-to-spatial-data-layers">📘 Lecture 17: Introduction to Spatial Data Layers</a></li>
-  <li><a href="#lecture-18-spatial-analysis-with-regular-joins-and-projections" id="toc-lecture-18-spatial-analysis-with-regular-joins-and-projections" class="nav-link" data-scroll-target="#lecture-18-spatial-analysis-with-regular-joins-and-projections">📘 Lecture 18: Spatial Analysis with Regular Joins and Projections</a></li>
+  <li><a href="#lecture-17-communicating-data-visually-part-1" id="toc-lecture-17-communicating-data-visually-part-1" class="nav-link" data-scroll-target="#lecture-17-communicating-data-visually-part-1">📘 Lecture 17: Communicating Data Visually (Part 1)</a></li>
+  <li><a href="#lecture-18-communicating-data-visually-part-2" id="toc-lecture-18-communicating-data-visually-part-2" class="nav-link" data-scroll-target="#lecture-18-communicating-data-visually-part-2">📘 Lecture 18: Communicating Data Visually (Part 2)</a></li>
   <li><a href="#lecture-19-final-project-workshop-and-examples" id="toc-lecture-19-final-project-workshop-and-examples" class="nav-link" data-scroll-target="#lecture-19-final-project-workshop-and-examples">📘 Lecture 19: Final Project Workshop and Examples</a></li>
   </ul></li>
   </ul>
@@ -300,20 +300,20 @@ Focuses on using <code>geom_sf()</code> and <code>scale_fill_</code> functions t
 <li><a href="lecture-scripts/Lecture 16.R">💾 R Script</a></li>
 </ul>
 </section>
-<section id="lecture-17-introduction-to-spatial-data-layers" class="level3">
-<h3 class="anchored" data-anchor-id="lecture-17-introduction-to-spatial-data-layers">📘 Lecture 17: Introduction to Spatial Data Layers</h3>
+<section id="lecture-17-communicating-data-visually-part-1" class="level3">
+<h3 class="anchored" data-anchor-id="lecture-17-communicating-data-visually-part-1">📘 Lecture 17: Communicating Data Visually (Part 1)</h3>
 <p><strong>Summary:</strong><br>
-Introduces spatial data concepts and how to plot shapefiles with <code>read_sf()</code> and <code>geom_sf()</code>. Students learn to distinguish between different types of spatial features (points, lines, polygons) and overlay multiple geographic layers for visual context.</p>
+Introduces the transition from exploratory to explanatory plots. Emphasizes the use of <code>ggplot2::labs()</code>, <code>ggplot2::geom_smooth()</code>, <code>ggrepel::geom_label_repel()</code>, and theme adjustments (<code>theme_bw()</code>, <code>theme()</code>) to highlight research insights. Data from the <code>cspp</code> package is used to illustrate label design, axis formatting, and plot interpretation.</p>
 <ul>
 <li><a href="html-lectures/lecture17.html">📖 View Lecture Notes (HTML)</a></li>
 <li><a href="lectures/Econ 106 Lecture 17.pdf">📥 Download PDF</a></li>
 <li><a href="lecture-scripts/Lecture 17.R">💾 R Script</a></li>
 </ul>
 </section>
-<section id="lecture-18-spatial-analysis-with-regular-joins-and-projections" class="level3">
-<h3 class="anchored" data-anchor-id="lecture-18-spatial-analysis-with-regular-joins-and-projections">📘 Lecture 18: Spatial Analysis with Regular Joins and Projections</h3>
+<section id="lecture-18-communicating-data-visually-part-2" class="level3">
+<h3 class="anchored" data-anchor-id="lecture-18-communicating-data-visually-part-2">📘 Lecture 18: Communicating Data Visually (Part 2)</h3>
 <p><strong>Summary:</strong><br>
-Demonstrates how to merge spatial data with tabular data using <code>left_join()</code>. Students learn to work with coordinate reference systems (CRS), reproject shapefiles using <code>st_transform()</code>, and analyze how projections affect map interpretation.</p>
+Extends plot customization techniques for categorical and continuous data. Focuses on <code>ggplot2::geom_bar()</code>, <code>geom_col()</code>, <code>geom_text()</code>, <code>scale_fill_manual()</code>, <code>scale_fill_brewer()</code>, and <code>theme(legend.position = 'none')</code>. Introduces distribution visualization with <code>ggridges::geom_density_ridges()</code> and <code>viridis::scale_fill_viridis_c()</code> to improve clarity and impact.</p>
 <ul>
 <li><a href="html-lectures/lecture18.html">📖 View Lecture Notes (HTML)</a></li>
 <li><a href="lectures/Econ 106 Lecture 18.pdf">📥 Download PDF</a></li>
@@ -323,7 +323,7 @@ Demonstrates how to merge spatial data with tabular data using <code>left_join()
 <section id="lecture-19-final-project-workshop-and-examples" class="level3">
 <h3 class="anchored" data-anchor-id="lecture-19-final-project-workshop-and-examples">📘 Lecture 19: Final Project Workshop and Examples</h3>
 <p><strong>Summary:</strong><br>
-Prepares students for the final project by reviewing expectations, grading rubrics, and successful past examples. Emphasizes visual clarity, reproducibility, and storytelling with data. Includes live feedback and peer review guidance.</p>
+Prepares students for the final project by reviewing expectations and successful past examples. Emphasizes visual clarity, reproducibility, and storytelling with data.</p>
 <ul>
 <li><a href="html-lectures/lecture19.html">📖 View Lecture Notes (HTML)</a></li>
 <li><a href="lectures/Econ 106 Lecture 19.pdf">📥 Download PDF</a></li>
